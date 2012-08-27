@@ -1,1 +1,0 @@
-<?php $title='каменная дробилка Японии'; $content='<ul class="byul">  </ul>'; include('head.php'); include('foot.php'); ?>

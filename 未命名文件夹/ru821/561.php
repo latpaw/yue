@@ -1,1 +1,0 @@
-<?php $title='Машина песка дробилка'; $content='<ul class="byul">  </ul>'; include('head.php'); include('foot.php'); ?>

@@ -1,1 +1,0 @@
-<?php $title='двойной ротор дробилки'; $content='<ul class="byul">  </ul>'; include('head.php'); include('foot.php'); ?>

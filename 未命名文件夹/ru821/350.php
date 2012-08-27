@@ -1,1 +1,0 @@
-<?php $title='Как же конусная дробилка работ'; $content='<ul class="byul">  </ul>'; include('head.php'); include('foot.php'); ?>

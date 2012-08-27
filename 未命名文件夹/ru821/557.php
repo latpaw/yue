@@ -1,1 +1,0 @@
-<?php $title='Машина для производства cruhser'; $content='<ul class="byul">  </ul>'; include('head.php'); include('foot.php'); ?>

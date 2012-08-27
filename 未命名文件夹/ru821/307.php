@@ -1,1 +1,0 @@
-<?php $title='Камень crushors рабочих'; $content='<ul class="byul">  </ul>'; include('head.php'); include('foot.php'); ?>
