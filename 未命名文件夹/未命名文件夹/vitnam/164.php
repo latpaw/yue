@@ -1,0 +1,42 @@
+<?php $title='Thiết bị xay xát mỏ vàng'; $content='<ul class="byul"><li class="byli"><h5><a href="92.php" title="Cướp tiệm vàng bằng mìn tự tạo - Pháp luật TPHCM">Cướp tiệm vàng bằng mìn tự tạo - Pháp luật TPHCM</a></h5>
+<p>Trưa 21-6, người dân gần tiệm vàng Hoàng Tín (124 Nguyễn Thái Học, quận Ba ... CNTT - Viễn thông · Khoa học - Tự nhiên · Thiết bị - Phần cứng ... gây án là loại thuốc nổ công nghiệp chuyên dùng khai thác đá trong các mỏ. ... Ông Vũ Hải Đường (chủ tiệm vàng) cũng bị thương nhẹ, xây xát ở đầu và đã được cho về nhà.</p></li>
+<br /><li class="byli"><h5><a href="98.php" title="Một phụ nữ tử vong do va quệt với xe chở bê tông - Hà Nội Mới">Một phụ nữ tử vong do va quệt với xe chở bê tông - Hà Nội Mới</a></h5>
+<p>(HNMO) – Vụ tai nạn xảy ra vào khoảng 7h sáng nay (17/7), tại chân cầu vượt ... Hậu quả khiến nam thanh niên điều khiển phương tiện văng ra xa, bị xây xát ...</p></li>
+<br /><li class="byli"><h5><a href="40.php" title="Tàu khách Sài Gòn - Phan Thiết bị lật - Ngoisao.net">Tàu khách Sài Gòn - Phan Thiết bị lật - Ngoisao.net</a></h5>
+<p>Tàu khách Sài Gòn - Phan Thiết bị lật ... Riêng đầu tàu mất khả năng kiểm soát, tự chạy về  ga Phan Thiết cách đó 20 km. ... Ít nhất, 2 nhân viên phục vụ bị xây xát . Chếc xe ben màu vàng văng trên đường ray. ... quá tải - Đại Đoàn Kết; Vụ sạt lở tại mỏ than Phấn Mễ, Thái Nguyên: Đã tìm thấy 4 thi thể bị vùi lấp - Đại Đoàn Kết ...</p></li>
+<br /><li class="byli"><h5><a href="79.php" title="Mỏ vàng Bồng Miêu: Bao giờ chấm dứt nạn khai thác lộng hành ...">Mỏ vàng Bồng Miêu: Bao giờ chấm dứt nạn khai thác lộng hành ...</a></h5>
+<p>... chết và 1 người bị thương nặng.ạn - Mỏ vàng Bồng Miêu: Bao giờ chấm dứt nạn ... đá có quặng vàng xuống núi xay xát, đãi lấy vàng, nhóm người này tiếp tục ... ký vàng), đập phá toàn bộ cửa kính phòng y tế, lấy một số thuốc men, thiết bị y ...</p></li>
+<br /><li class="byli"><h5><a href="24.php" title="Nổ mìn chết người tại mỏ vàng - Thanh Niên">Nổ mìn chết người tại mỏ vàng - Thanh Niên</a></h5>
+<p>Khi xảy ra vụ nổ mìn chết người, khu vực bãi  khai thác vàng của Công ty ... là vụ xô xát đình đám dùng mìn ném, đánh nhau khiến nhiều người bị thương vào ...</p></li>
+<br /><li class="byli"><h5><a href="69.php" title="Đôi điều về công tác cơ khí hóa khai thác than của ... - Máy thiết bị mỏ">Đôi điều về công tác cơ khí hóa khai thác than của ... - Máy thiết bị mỏ</a></h5>
+<p>Cán bộ quản lý nhiều, cán bộ khoa học kỹ thuật còn thiếu và ít được cọ xát với ... Những năm 70 của thế kỷ trước, chúng ta đã xây dựng nhà máy Cơ khí trung tâm ... Những chi tiết thuỷ lực then chốt của máy, thiết bị mỏ nhà máy không phục hồi ... 2K-52M kết hợp cột chống cơ khí đơn chiếc (cột ma sát) cho mỏ Vàng Danh.</p></li>
+<br /><li class="byli"><h5><a href="23.php" title="khai thác thiết bị, nhà máy xay nghiền để bán tại Việt Nam">khai thác thiết bị, nhà máy xay nghiền để bán tại Việt Nam</a></h5>
+<p>Thiết bị khai thác sử dụng rộng rãi trong ngành công nghiệp khai thác mỏ ... khi khai thác mỏ processs nghiền, chúng ta bước vào quá trình xay xát khai thác mỏ.</p></li>
+<br /><li class="byli"><h5><a href="18.php" title="Uông Bí – Wikipedia tiếng Việt">Uông Bí – Wikipedia tiếng Việt</a></h5>
+<p>Uông Bí nổi tiếng với nền công nghiệp khai thác than. Mỏ than Vàng Danh được khai thác từ thời thuộc địa. Những năm gần đây thêm nhiều mỏ và  công ty than ...</p></li>
+<br /><li class="byli"><h5><a href="75.php" title="Đăk Lăk: Mô hình tái chế cà phê giải quyết việc  làm cho hàng chục ...">Đăk Lăk: Mô hình tái chế cà phê giải quyết việc  làm cho hàng chục ...</a></h5>
+<p>18 Tháng Bảy 2012 – Trong thời gian qua, các cơ sở chế biến cà phê trong tỉnh đã đầu tư mua sắm các thiết bị hiện đại của nước ngoài phục vụ cho việc xay xát, ...</p></li>
+<br /><li class="byli"><h5><a href="37.php" title="Đưa phong trào tiết kiệm điện vào sản  xuất và ... - Bao dien tu Can Tho">Đưa phong trào tiết kiệm điện vào sản  xuất và ... - Bao dien tu Can Tho</a></h5>
+<p>6 ngày trước – Tấm lòng vàng ... Xác định xay xát là khâu tiêu tốn nhiều năng lượng điện, ông Khanh đã mạnh dạn đầu tư đổi mới ... Theo ông Khanh, ứng dụng các thiết bị tiên tiến không chỉ giúp tiết giảm lượng điện tiêu thụ .... ngày 4-8 cho biết Sudan và Nam Sudan đã đạt được thỏa thuận về chia sẻ nguồn dầu mỏ.</p></li>
+<br /> <li class="byli"><h5><a href="86.php" title="Sớm giải quyết lộn xộn ở mỏ vàng Bồng Miêu - Báo Tin tức">Sớm giải quyết lộn xộn ở mỏ vàng Bồng Miêu - Báo Tin tức</a></h5>
+<p>... ( Quảng Nam) liên tục xảy ra những vụ xô xát giữa bảo vệ nhà máy vàng Bồng Miêu ... dẫn đến thương tích giữa hai bên và hàng tấn quặng vàng cũng bị cướp đi. ... vàng do thời Pháp để lại, nếu không cần thiết thì bịt chặt cửa hầm để người ...</p></li>
+<br /><li class="byli"><h5><a href="46.php" title="3 tai nạn trong buổi sáng, 4 người thương vong - Người Lao Động">3 tai nạn trong buổi sáng, 4 người thương vong - Người Lao Động</a></h5>
+<p>(NLĐO)- Chỉ trong một buổi sáng tại quận 12 và Thủ Đức-TPHCM đã xảy ra 3 vụ TNGT làm 2 người ... Bé nhỏ bị hất văng vào lề đường nên chỉ bị xây xát nhẹ.</p></li>
+<br /><li class="byli"><h5><a href="79.php" title="“Vàng tặc” đẩy“ Công ty Vàng Bồng Miêu vào “cửa tử“ - Pháp luật VN">“Vàng tặc” đẩy“ Công ty Vàng Bồng Miêu vào “cửa tử“ - Pháp luật VN</a></h5>
+<p>Sự lộng hành của “vàng tặc” trên địa bàn xã Tam Lãnh, huyện Phú Ninh, Quảng Nam ... khi đội quân này đột nhập vào khu vực của mỏ vàng Bông Miêu cướp hàng chục tấn ... CNTT - Viễn thông · Khoa học - Tự nhiên · Thiết bị - Phần cứng ... đội bảo vệ bị búa đánh vào cẳng chân, các nhân viên bảo vệ khác đều bị xây xát.</p></li>
+<br /><li class="byli"><h5><a href="99.php" title="Bất ổn mỏ vàng Bồng Miêu: Cần giải quyết “vấn đề gốc” - Lao Động">Bất ổn mỏ vàng Bồng Miêu: Cần giải quyết “vấn đề gốc” - Lao Động</a></h5>
+<p>... tại mỏ vàng Bồng Miêu (xã Tam Lãnh, huyện Phú Ninh) lại xảy ra vụ xô xát giữa ... TNHH khai thác vàng Bồng Miêu, khiến 3 người của cả hai “phe” bị thương.</p></li>
+<br /><li class="byli"><h5><a href="10.php" title="Xe tải lủi đường cấm, cán chết 1 học sinh - Người Lao Động">Xe tải lủi đường cấm, cán chết 1 học sinh - Người Lao Động</a></h5>
+<p>Còn Lợi té văng ra ngoài nên chỉ bị xây xát. ... CAND Portal 539 lượt đọc; Nỗi đau 3 đám tang thợ mỏ trong 50 mét đường - Nguoiduatin.vn 538 lượt đọc ...</p></li>
+<br /><li class="byli"><h5><a href="25.php" title="Nguy cơ mất kiểm soát mỏ vàng Bồng Miêu - Lao Động">Nguy cơ mất kiểm soát mỏ vàng Bồng Miêu - Lao Động</a></h5>
+<p>Kể từ sau khi xảy ra việc một học sinh mót quặng bị lực lượng bảo vệ mỏ vàng gí roi điện bất tỉnh, dẫn đến vụ nhiều người cướp, phá nhà máy chế biến vàng ...</p></li>
+<br /><li class="byli"><h5><a href="79.php" title="Tạm đình chỉ công tác một giám  đốc - Tin Ngắn">Tạm đình chỉ công tác một giám  đốc - Tin Ngắn</a></h5>
+<li class="byli"><h5><a href="77.php" title="Xem kết quả khác trong 24 giờ qua">Xem kết quả khác trong 24 giờ qua</a></h5>
+<p>16 giờ trước – ... đăng ký mua  điện để phục vụ sinh hoạt và dùng xay xát, cưa xẻ và hàn xì. ... Trong đợt kiểm tra của UBND tỉnh Bắc Kạn tại mỏ vàng Pác Lạng, cho thấy: ... thác vàng trái phép, bởi chỉ dùng điện sinh hoạt thì không nhất thiết phải ... ấu trùng sán đóng kén ở mắt, bị biến chứng thần kinh nếu sán lên não.</p></li>
+<br /><li class="byli"><h5><a href="44.php" title="Kinh tế- Xã hội">Kinh tế- Xã hội</a></h5>
+<p>... bé và què quặt, chủ yếu là công nghiệp khai thác mỏ và một số cơ sở công nghiệp ... kẽm, chì; 598.000 tấn sắt, măng gan, 1.384 kg vàng, 315.500 tấn phốt pho. ... máy đường, rượu, xay xát lương thực, dệt may, giấy với máy móc thiết bị cũ.</p></li>
+<br /><li class="byli"><h5><a href="45.php" title="nhà máy xay">nhà máy xay</a></h5>
+<p>nhà máy xay - nha may xay - Việt Báo, Mỗi năm, các nhà máy xay xát ở khu vực ĐBSCL ... Đây là cơ sở có trang thiết bị hiện đại nhất Đông Nam Á.  .... Vàng tiếp tục xu hướng giảm ... Tạp chí Forbes vừa công bố danh sách 10 công ty dầu mỏ lớn nhất thế giới dựa trên sản lượng dầu và khí gas tự nhiên mà họ sản xuất mỗi.</p></li>
+<br /><li class="byli"><h5><a href="84.php" title="CÔNG NGHIỆP VIỆT NAM TRÙNG GIAI 130M">CÔNG NGHIỆP VIỆT NAM TRÙNG GIAI 130M</a></h5>
+<p>cả trang thiết bị của nhà máy sợi Hà  Nội được chuyển về ... ".ĩ00kg đến 800 kg kén vàng vào năm 1923. (38), sang .... cường hoạt động, các cơ sở xay xát mới mọc lên ở khắp nơi. .... thác mỏ hoặc các công nghiệp khác tư cung cấp mà chưa ...</p></li>
+<br /></ul>'; include('head.php'); include('foot.php'); ?>
