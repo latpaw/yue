@@ -1,6 +1,11 @@
+# Function: Translate a page from some language to another
+# Author: Emerson
+# Author URL: http://www.latpaw.me
+
 require 'nokogiri'
 require 'open-uri'
 require 'mechanize'
+require 'fileutils'
 
 class Tran
   def main(url)
@@ -70,7 +75,7 @@ class Tran
         htmls = doc.to_html
         htmls.gsub!(/<>/,"")
         htmls.gsub!(/<\/>/,"")
-        puts htmls
+        return htmls
      
     end
    end
@@ -88,49 +93,61 @@ def get_url(url)
       tran = Tran.new
       page.search("a").each do |a|
        _url = a["href"]
-       tran.main(_url)
+      return tran.main(_url)
       end
 
     end
 end
 
+def init(link)
     b = Mechanize.new do |agent|
       agent.user_agent_alias = 'Mac Safari'
       agent.set_proxy("127.0.0.1",8087)
     end
     
-    somelink = "http://crusherstone.com/products/cone-crusher.html"
-    somelink = URI.escape("http://translate.google.com/translate?hl=zh-CN&sl=auto&tl=zh-CN&u="+somelink)
+    somelink = link
+    somelink = URI.escape("http://translate.google.com/translate?hl=zh-CN&sl=auto&tl=es&u="+somelink)
     b.get(somelink) do |page|
      
       page.search("iframe").each do |frame|
         url = "http://translate.google.com"+frame["src"].to_s
-        get_url(url)
+       return get_url(url)
       end
 
     end
-
+end
 
 
 # i=661
-# IO.foreach("keyword") do |line|
-#     line = line.chop
-#     newspider = Spider.new
-#     newhtml = newspider.html(line)
-#     newhtml.gsub!(/metso|sandvik|terex|shanbao|sbm|shibang|liming|zenith/i,"Zenith")
-#     newhtml.gsub!(/[\w]+@[\w]+.(com|net|org|cn)/,"")
-#     newhtml.gsub!(/[\d]{5,12}/,"")
-#     newhtml.gsub!(/'/,"")
-#     newhtml = "<?php $title='"+line+"'; $content='<ul class=\"byul\">"+ newhtml +"</ul>'; include('head.php'); include('foot.php'); ?>"
-#     # line2 = line.split.join("-")
-#     fh = File.open(i.to_s+".php","w")
-#     fh.puts(newhtml)
-#     fh.close
 
-#     title_output = '$_' + i.to_s + '= "'+ line +'";'
-#     fi = File.open("title.php","a")
-#     fi.puts(title_output)
-#     fi.close
-#     i=i.succ
-#     sleep(5)
-# end
+
+IO.foreach("links") do |line|
+    line = line.chop
+    # newspider = Spider.new
+    unless line.nil?
+        result = init(line)
+
+        path = line.split("/")
+        len = path.length
+
+
+
+        if len == 4
+        rpath =  path[3]
+        # rpath = rpath.join("/")
+        else
+        rpath = path[3..(len-2)]
+        rpath = rpath.join("/")
+        FileUtils.makedirs(rpath)
+        rpath = rpath + "/" + path[len-1]
+        end
+        
+
+        fh = File.open(rpath,"w")
+        fh.puts(result)
+        fh.close
+
+
+        sleep(5)
+    end
+end
