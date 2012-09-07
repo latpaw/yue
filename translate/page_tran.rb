@@ -1,11 +1,18 @@
 # Function: Translate a page from some language to another
 # Author: Emerson
 # Author URL: http://www.latpaw.me
+#
+#
+#
 # Help: irb > load "page_tran.rb"
-#       irb > tran  // this make the translation from all to es, and the site is set to self.It will make a dir in                     the current path with the name of es.
-#You can use it this way too:
+#       irb > tran  // this make the translation from all to es, and the site is set to self.It will make a dir 
+#                      in the current path with the name of es.
+# You can use it this way too:
 #       irb > load "page_tran.rb"
 #       irb > tran("fr","www.crusherstone.com")
+#
+#
+#
 
 require 'nokogiri'
 require 'open-uri'
@@ -162,8 +169,8 @@ def tran(lan="es",site=nil)
 
             i=i+1
             per = i*100/linum
-            puts "The translation has been #{per}%"
-            sleep(5)
+            puts "The translation has been #{i} lines, almost #{per}%"
+            sleep(10)
         end
     end
     return "Complete to #{lan}, Congratulations !! "
