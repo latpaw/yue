@@ -2,15 +2,19 @@ require "spidr"
 require "nokogiri"
 require "open-uri"
 
- url = "http://www.crusherstone.com"
+ url = ARGV[0]
+  # p url
  links = Set[]
- Spidr.site(url) do |site|
+ Spidr.site(url,:ignore_links=>[/news/]) do |site|
  	site.every_html_page do |page|
- 		links << page.url
+ 		if page.is_ok?
+ 		    links << page.url
+ 		    p page.url
+ 	     end
  	end
  end
   		fi = File.open("links","a")
   		links.each do |link|
   		   fi.puts(link)
-        end
-        fi.close
+         end
+         fi.close

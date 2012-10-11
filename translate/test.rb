@@ -130,7 +130,7 @@ def init(link,lan)
 end
 
 
-def tran(lan="es",site=nil)
+def tran(lan="en",site=nil)
     i = 0
     alline = IO.readlines("links")
     linum = alline.size 
@@ -138,17 +138,37 @@ def tran(lan="es",site=nil)
         line = line.chop
         # newspider = Spider.new
         unless line.nil?
+         unless line.index("news")
             result = init(line,lan)
+            docr = Nokogiri::HTML(result)
+            docr.search("title").each do |t|
+              $title = t.content || "no title"
+            end
+            docr.css('.lmN_l').each do |cont| #截取主要内容部分
+              cont.search("a").each do |a| #去除链接
+                a.replace(a.content)
+              end
+              cont.search("table").each do |ta| #删除表格
+                ta.remove
+              end
+              cont.search("img").each do |im| #删除图片
+                im.remove
+              end
+              cont.last_element_child.remove #去除最后一个节点
+              result = cont
+            end
+
+            result = result.to_html
 
             path = line.split("/")
             len = path.length
 
-            sitefrom = path[2]
-            if site.nil?
-              result.gsub!(/#{sitefrom}/,sitefrom+"/"+lan)
-            else
-              result.gsub!(/#{sitefrom}/,site)
-            end
+            # sitefrom = path[2] # 修正链接
+            # if site.nil?
+            #   result.gsub!(/#{sitefrom}/,sitefrom+"/"+lan)
+            # else
+            #   result.gsub!(/#{sitefrom}/,site)
+            # end
 
             lanp = lan + "/"
             if len == 4
@@ -162,15 +182,23 @@ def tran(lan="es",site=nil)
             FileUtils.makedirs(rpath)
             rpath = rpath + "/" + path[len-1]
             end
-            
+
+            rpath = rpath.gsub!(/html/,"php")
+
+            result.gsub!(/metso|sandvik|terex|symons|shanbao|shan bao|sbm|shibang|liming|zenith|henan|thailand/i,"")
+            result.gsub!(/[\w]+@[\w]+.(com|net|org|cn)/,"")
+            result.gsub!(/[\d]{4,12}/,"")
+            result = "<?php\n$title = '" + $title + "';\n" + "$content = <<<EOF\n" + result + "\nEOF;\n?>\n<?php include('../head.php');?>\n<?php include('../foot.php');?>"
+
             fh = File.open(rpath,"w")
             fh.puts(result)
             fh.close
 
             i=i+1
             per = i*100/linum
-            puts "The translation has been #{i} lines, almost #{per}%"
+            puts "The translation has been #{i} lines, about #{per}%, into #{rpath}"
             sleep(10)
+         end
         end
     end
     return "Complete to #{lan}, Congratulations !! "
