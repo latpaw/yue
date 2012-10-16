@@ -1,15 +1,15 @@
-# Function: Translate a page from some language to another
+# Function: Translate a page from some language to another and extract the main content part from the page.
 # Author: Emerson
 # Author URL: http://www.latpaw.me
 #
 #
 #
-# Help: irb > load "page_tran.rb"
-#       irb > tran  // this make the translation from all to es, and the site is set to self.It will make a dir 
-#                      in the current path with the name of es.
+# Help: irb > load "pages.rb"
+#       irb > tran  // this make the translation from all to en, and the site is set to self.It will make a dir 
+#                      in the current path with the name of en.
 # You can use it this way too:
-#       irb > load "page_tran.rb"
-#       irb > tran("fr","www.crusherstone.com")
+#       irb > load "pages.rb"
+#       irb > tran("fr")
 #
 #
 #
@@ -144,6 +144,9 @@ def tran(lan="en",site=nil)
             docr.search("title").each do |t|
               $title = t.content || "no title"
             end
+
+###############################可编辑部分############################################
+
             docr.css('.lmN_l').each do |cont| #截取主要内容部分
               cont.search("a").each do |a| #去除链接
                 a.replace(a.content)
@@ -157,6 +160,7 @@ def tran(lan="en",site=nil)
               cont.last_element_child.remove #去除最后一个节点
               result = cont
             end
+#################################结束####################################################
 
             result = result.to_html
 
