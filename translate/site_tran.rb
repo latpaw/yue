@@ -4,11 +4,11 @@
 #
 #
 #
-# Help: irb > load "page_tran.rb"
+# Help: irb > load "site_tran.rb"
 #       irb > tran  // this make the translation from all to es, and the site is set to self.It will make a dir 
 #                      in the current path with the name of es.
 # You can use it this way too:
-#       irb > load "page_tran.rb"
+#       irb > load "site_tran.rb"
 #       irb > tran("fr","www.crusherstone.com")
 #
 #
@@ -37,12 +37,14 @@ class Tran
             src.remove
         end
         doc.search("a").each do |link|
-            linksplit = link["href"].split("=")
-            linksplit.each do |http|
-               if http.index("http") && !http.index("google")
-                 linknew = http.gsub(/&usg/,"")
-                 link["href"] = linknew
-               end
+            unless link["href"].nil?
+                linksplit = link["href"].split("=")
+                linksplit.each do |http|
+                   if http.index("http") && !http.index("google")
+                     linknew = http.gsub(/&usg/,"")
+                     link["href"] = linknew
+                   end
+                end
             end
         end
 
@@ -141,6 +143,14 @@ def tran(lan="es",site=nil)
             result = init(line,lan)
 
             path = line.split("/")
+            path_last = path.last
+            
+            unless (path_last.include? "htm" )
+                unless path_last.include? "php"
+                    path = path + ["index.html"]
+                end
+            end
+
             len = path.length
 
             sitefrom = path[2]
