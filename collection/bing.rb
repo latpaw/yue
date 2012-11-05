@@ -1,3 +1,4 @@
+#最原始的版本.bing采集
 require 'nokogiri'
 require 'open-uri'
 
@@ -27,12 +28,14 @@ class Spider
 
 end
 
-
-IO.foreach("keyword") do |line|
-    line = line.chop
-    newspider = Spider.new
-    newhtml = newspider.html(line)
-    fh = File.open(line,"w")
-    fh.puts(newhtml)
-    fh.close
+def caiji
+    IO.foreach("keyword") do |line|
+        line = line.chop
+        newspider = Spider.new
+        newhtml = newspider.html(line)
+        # fh = File.open(line,"w")
+        # fh.puts(newhtml)
+        # fh.close
+        Post.create(:name=>line,:content=>newhtml,:title=>"")
+    end
 end

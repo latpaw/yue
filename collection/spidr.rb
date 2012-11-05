@@ -1,3 +1,5 @@
+#Simpled function for spider all the links in a site and create it in your site.
+
 require "nokogiri"
 require "spidr"
 require "open-uri"

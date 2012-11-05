@@ -1,3 +1,5 @@
+#yandex version with nokogiri and open-uri
+
 require 'nokogiri'
 require 'open-uri'
 

@@ -1,3 +1,5 @@
+#es collection with lycos
+
 require 'nokogiri'
 require 'open-uri'
 require 'mechanize'

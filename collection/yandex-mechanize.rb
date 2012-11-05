@@ -1,3 +1,5 @@
+#yandex version with mechanize
+
 require 'nokogiri'
 require 'open-uri'
 require 'mechanize'

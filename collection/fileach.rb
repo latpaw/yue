@@ -1,3 +1,4 @@
+# a function for recurse all the files in a directory
 def yue(dir)
 	 Dir::foreach(dir) do |file|
 	 	if file.eql? "." or file.eql? ".."
