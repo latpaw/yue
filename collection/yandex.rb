@@ -12,6 +12,7 @@ class Spider
      vars = Array.new
      i=0
      doc.css('.b-serp2-item').each do |content|
+        p.content.class
         temp= ""
         content.css('h2 a').each do |a|
          para = rand(800)
@@ -51,12 +52,12 @@ IO.foreach("keyword") do |line|
     newhtml.gsub!(/'/,"")
     newhtml = "<?php $title='" + line + "'; $content='" + "<ul class=\"byul\">" + newhtml + "</ul>" +"'; include('head.php'); include('foot.php'); ?>"
     # line2 = line.split.join("-")
-    fh = File.open("ru/"+p.to_s+".php","w")
+    fh = File.open(p.to_s+".php","w")
     fh.puts(newhtml)
     fh.close
 
     title_output = '$_' + p.to_s + '= "'+ line +'";'
-    fi = File.open("ru/title_russia.php","a")
+    fi = File.open("title_russia.php","a")
     fi.puts(title_output)
     fi.close### output the titile
 

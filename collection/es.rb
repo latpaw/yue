@@ -9,7 +9,7 @@ class Spider
      @keyword = keyword
      a = Mechanize.new do |agent|
       agent.user_agent_alias = 'Mac Safari'
-      agent.set_proxy("172.16.2.139",8087)
+      # agent.set_proxy("172.16.2.139",8087)
      end
 
     a.get("http://search.lycos.es/web?q=#{keyword}&pn=#{page}") do |doc|

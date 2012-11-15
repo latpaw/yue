@@ -6,7 +6,7 @@ require 'mechanize'
 
 class Spider
   def main(page,keyword)
-     @keyword = keyword
+     # @keyword = keyword
      a = Mechanize.new { |agent|
       agent.user_agent_alias = 'Mac Safari'
      }
@@ -14,7 +14,7 @@ class Spider
     a.get("http://www.yandex.com/yandsearch?text=#{keyword}&p=#{page}") do |doc|
 
      vars = ""
-     doc.search('li.b-serp-item').each do |content|
+     doc.search('.b-serp-item').each do |content|
         content.search('h2 a').each do |a|
          para = a.content
          vars << '<h5><a href="#" title="' + a.content + '">' + a.content + '</a></h5>'
