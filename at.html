@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<input type="text" name="yue" id="yue">
+	<script type="text/javascript">
+   var yue =document.getElementById("yue");
+   yue.onfocus = function(){
+   	window.onkeyup=function(e){
+   		   	var content = yue.value || ""
+   		 
+   	if(content.indexOf("@")>0 && exsit == false){
+   		console.log("yes")
+   		var exsit = true
+   	}
+   	if(content.indexOf("@")<0){
+   		var exsit = false
+   	}
+     // console.log(e.keyCode)
+   	}
+   	}
+
+   
+	</script>
+</body>
+</html>

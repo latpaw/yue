@@ -1,0 +1,60 @@
+    <!DOCTYPE HTML>  
+    <html>  
+        <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+            <title>second</title>  
+            <script type="text/javascript" src="2013/jquery.js"></script>
+        </head>  
+        <body>  
+            <script>document.write(new Date());</script>  
+            <div id="cn">  
+                <a href="index.html">加载后</a>  
+            </div>  
+        </body>  
+    </html>  
+     <script type="text/javascript">
+
+    $(function(){  
+            var state = {  
+                        title: "index",  
+                        url: "index.html"  
+                    };  
+                    $("#cn").click(function(){  
+                        window.history.pushState(state, "index", "second.html");  
+                        var $self = $(this);  
+                        $.ajax({  
+                            url:"second.html",  
+                            dataType: "html",  
+                            complete: function(jqXHR, status, responseText){  
+                                responseText = jqXHR.responseText;  
+                                if (jqXHR.isResolved()) {  
+                                    jqXHR.done(function(r){  
+                                        responseText = r;  
+                                    });  
+                                    $self.html($("<div>").append(responseText.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")).find("#cn"));  
+                                }  
+                            }  
+                        });  
+                        document.title = "second";  
+                        return false;  
+                    });  
+                    $(window).bind('popstate', function(e){  
+                        var st = e.state;  
+                        //$("#cn").load(st.url + " #cn");  
+                        $.ajax({  
+                            url:"index.html",  
+                            dataType: "html",  
+                            complete: function(jqXHR, status, responseText){  
+                                responseText = jqXHR.responseText;  
+                                if (jqXHR.isResolved()) {  
+                                    jqXHR.done(function(r){  
+                                        responseText = r;  
+                                    });  
+                                    $("#cn").html($("<div>").append(responseText.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")).find("#cn"));  
+                                }  
+                            }  
+                        });  
+                        document.title = e.state.title;  
+                    });  
+    });  
+    </script>

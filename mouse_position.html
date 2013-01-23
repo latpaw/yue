@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+#asd{width:10px;height:10px;background:#0f0;position:absolute;}
+	</style>
+</head>
+<body>
+	<p id="p">this is a p</p>
+	<div id="asd"></div>
+	<script type="text/javascript">
+    var p =document.getElementById("p");
+    // window.onmousewheel=function(e){
+    // 	ev= e || window.event
+    // 	console.log(ev.wheelDelta)
+    // 	// console.log(ev.detail)
+    // 	if(ev.wheelDelta>=120){
+    // 	p.style.color="red"}else{
+    // 		p.style.color="green"
+    // 	}
+    // }
+window.addEventListener("DOMMouseScroll",abc,true)
+
+var len = 0
+function abc(event){
+	event = window.event || event
+p.style.fontSize= p.style.fontSize.replace("px","") + 1 
+	console.log(event.detail)
+
+}
+var asd = document.getElementById("asd")
+window.onmousemove = function(event){
+ // event = window.event||event
+ var x =event.clientX
+ var y = event.clinetY
+ asd.style.left = x +"px"
+ p.innerHTML = event.clientY + document.body.scrollTop - document.body.clientTop
+ asd.style.top = p.innerHTML + "px"
+}
+
+	</script>
+</body>
+</html>
