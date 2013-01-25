@@ -8,6 +8,7 @@
 <script type="text/javascript" src="backbonerisk.js"></script>
 </head>
 <body>
+	<a href="form.html">form test</a>
 <input type="text" id="pp" />
 <input type="button" value="submit" id="sub" />
 <ul>

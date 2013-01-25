@@ -22,7 +22,9 @@ geoip_close($geoData);
 <a href="geo.php">index</a>
 <script type="text/javascript" src="cookie.js"></script>
 
+
 <p id="cookie"></p>
 <script type="text/javascript">
-document.getElementById("cookie").innerHTML=document.cookie
+var s  = history.state ? history.state.foo : "no history"
+document.getElementById("cookie").innerHTML=document.cookie + s
 </script>

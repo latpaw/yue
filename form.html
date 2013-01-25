@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+ul{list-style-type: none;margin:0;padding:0}
+.input{width:500px;margin:10px;padding:0;height:30px;position:relative;border:1px #009900 solid;color:#999;padding-left:10px;}
+input{border:none;height:28px;}
+input:focus{outline:none;}
+#active{background:#009900}
+#emailp{position:absolute;top:10px;left:50px;width:200px;color:#333;z-index:1000;background: #fff}
+	</style>
+</head>
+<body>
+	<form action="">
+		<div class="input" id="name_out">name: <input type="text" name="name" id="name" ></div>
+		<div class="input" id="email_out">email: <input type="text" name="email" id="email" ></div>
+		<div class="input" id="country_out">country: <select type="text" name="country" id="country" disabled >
+
+		</select><b id="not">Not</b></div>
+		<div class="input" id="tel_out">telphone: <input type="text" name="tel" id="tel" ></div>
+		<div class="input" id="company_out">company: <input type="text" name="company" id="company" ></div>
+		<input type="hidden" name="visits" id="visits">
+	</form>
+
+	<script type="text/javascript" src="form.js"></script>
+<script type="text/javascript" src="geoip/cookie.js"></script>
+
+<script type="text/javascript">
+	var visit = document.getElementById("visits")
+	visit.value = cookie2obj().url
+
+
+	function auto_country(countryname){
+		document.getElementById("country").innerHTML='<option value="'+countryname+'">'+countryname+'</option>'
+       document.getElementById("country").value=countryname
+	}
+	var script = document.createElement("script")
+	script.type="text/javascript"
+	script.src="http://172.16.2.197:8081/geoip/geo.php?callback=auto_country"
+	document.head.appendChild(script)
+
+
+	function setoptions(options){
+		var options = options.split(",")
+       var c = document.getElementById("country")
+       var n = ""
+       for(i in options){
+       	var trim_option = options[i].replace('"','').replace('"','')
+       n += '<option value="'+trim_option+'">'+trim_option+'</option>'}
+       c.innerHTML = n
+	}
+
+
+	var not = document.getElementById("not")
+	not.onclick=function(){
+		document.getElementById("country").removeAttribute("disabled")
+
+	var script2 = document.createElement("script")
+	script2.type="text/javascript"
+	script2.src="http://172.16.2.197:8081/geoip/countries.php?callback=setoptions"
+	document.head.appendChild(script2)
+
+		not.parentNode.removeChild(not)
+
+
+	}
+</script>
+
+</body>
+</html>

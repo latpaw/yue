@@ -16,14 +16,8 @@ $countryName = geoip_country_name_by_addr($geoData, $ip);
  
 // 关闭本地数据库
 geoip_close($geoData);
- echo $countryName;
+
+$callback = $_GET['callback'];
+ echo $callback."('".$countryName."')";
 ?>
 
-<a href="abc.php">abc</a>
-
-<script type="text/javascript" src="cookie.js"></script>
-
-<p id="cookie"></p>
-<script type="text/javascript">
-document.getElementById("cookie").innerHTML=document.cookie
-</script>

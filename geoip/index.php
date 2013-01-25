@@ -2,6 +2,7 @@
 
 <p id="cookie"></p>
 <script type="text/javascript">
-document.getElementById("cookie").innerHTML=document.cookie
+var s  = history.state ? history.state.foo : "no history"
+document.getElementById("cookie").innerHTML=document.cookie + s
 </script>
 <a href="abc.php">abc</a>
