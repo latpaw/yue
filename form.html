@@ -5,43 +5,48 @@
 	<title></title>
 	<style type="text/css">
 ul{list-style-type: none;margin:0;padding:0}
-.input{width:500px;margin:10px;padding:0;height:30px;position:relative;border:1px #009900 solid;color:#999;padding-left:10px;}
-input{border:none;height:28px;}
+.input{width:500px;margin:10px;padding:0;height:30px;position:relative;border-bottom:1px #3EABFF solid;color:#999;padding-left:10px;}
+input{border:none;height:28px;width: 300px}
 input:focus{outline:none;}
 #active{background:#009900}
 #emailp{position:absolute;top:10px;left:50px;width:200px;color:#333;z-index:1000;background: #fff}
+select{border:none;width:300px;}
+button{border:none;border-radius:3px;padding:4px;background:url(a.png) no-repeat left top;background-position:-20px -20px}
 	</style>
 </head>
-<body>
-	<form action="">
+<body  onload="document.forms[0].reset()">
+<p id="result"></p>
+	<form action="" name="form" method="post">
 		<div class="input" id="name_out">name: <input type="text" name="name" id="name" ></div>
 		<div class="input" id="email_out">email: <input type="text" name="email" id="email" ></div>
-		<div class="input" id="country_out">country: <select type="text" name="country" id="country" disabled >
+		<div class="input" id="country_out">country: <select disabled type="text" name="country" id="country"  >
 
 		</select><b id="not">Not</b></div>
 		<div class="input" id="tel_out">telphone: <input type="text" name="tel" id="tel" ></div>
 		<div class="input" id="company_out">company: <input type="text" name="company" id="company" ></div>
 		<input type="hidden" name="visits" id="visits">
+		<button id="submit">Submit</button>
 	</form>
 
-	<script type="text/javascript" src="form.js"></script>
+	<script type="text/javascript" src="http://localhost/yue/form.js"></script>
 <script type="text/javascript" src="geoip/cookie.js"></script>
 
 <script type="text/javascript">
 	var visit = document.getElementById("visits")
-	visit.value = cookie2obj().url
+	visit.value = cookie2obj().url  //set visit track value
 
-
+{ /////////////////////////////////auto set country
 	function auto_country(countryname){
 		document.getElementById("country").innerHTML='<option value="'+countryname+'">'+countryname+'</option>'
        document.getElementById("country").value=countryname
 	}
 	var script = document.createElement("script")
 	script.type="text/javascript"
-	script.src="http://172.16.2.197:8081/geoip/geo.php?callback=auto_country"
+	script.src="http://127.0.0.1/yue/geoip/geo.php?callback=auto_country"
 	document.head.appendChild(script)
-
-
+ }///////////////////////////////////
+ 
+ { /////////////////////////////////// set options when wrong pick
 	function setoptions(options){
 		var options = options.split(",")
        var c = document.getElementById("country")
@@ -52,20 +57,40 @@ input:focus{outline:none;}
        c.innerHTML = n
 	}
 
-
 	var not = document.getElementById("not")
 	not.onclick=function(){
-		document.getElementById("country").removeAttribute("disabled")
-
+	document.getElementById("country").removeAttribute("disabled")
 	var script2 = document.createElement("script")
 	script2.type="text/javascript"
-	script2.src="http://172.16.2.197:8081/geoip/countries.php?callback=setoptions"
+	script2.src="http://127.0.0.1/yue/geoip/countries.php?callback=setoptions"
 	document.head.appendChild(script2)
-
-		not.parentNode.removeChild(not)
-
-
+	not.parentNode.removeChild(not)
 	}
+ } ///////////////////////////////
+
+var submit = document.getElementById("submit")
+submit.onclick=function(ev){
+
+ if(ev.preventDefault){
+
+ev.preventDefault();//or firefox not work
+
+}else{ev.returnValue=false;}
+
+ var xhr = new XMLHttpRequest();
+var url = "http://127.0.0.1/abc.php"
+var params = "name=abc"
+xhr.open("POST",url,true)
+xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset:UTF-8")
+xhr.onreadystatechange =  function(){
+	if(xhr.readyState == 4 && xhr.status == 200){
+		var b = xhr.responseText
+		console.log(b)
+		document.getElementById("result").innerHTML = b
+	}
+}
+xhr.send(params)
+}
 </script>
 
 </body>

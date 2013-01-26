@@ -4,11 +4,11 @@
    email.onfocus = function(){
      if(email.value.length == email.value.indexOf("@")+1 && email.value.length!=0){
       newul(email.value)
-     }
+     } // when the last letter is @
 
    	window.onkeyup=function(e){
          var content = email.value || ""
-var p = document.getElementById("emailp")
+         var p = document.getElementById("emailp")
          if(content.indexOf("@")>0 && exsit == "false"){ // when type in @
           console.log("yes")
           newul(content)
@@ -78,7 +78,7 @@ var liclick = function(email){ // when click on the li
 
    }
 }
-function insertAfter(newEl, targetEl){
+function insertAfter(newEl, targetEl){ //insert after function
    var parentEl = targetEl.parentNode;
    if(parentEl.lastChild == targetEl){
      parentEl.appendChild(newEl);

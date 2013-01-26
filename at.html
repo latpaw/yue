@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title></title>
    <style type="text/css">
+   body{height:2000px}
    #yue{width:200px;}
    #yuep ul{list-style:none;margin:0;padding:0;}
    #yuep li:hover{cursor:pointer;}
@@ -25,7 +26,7 @@
    yue.onfocus = function(){
    	window.onkeyup=function(e){
          var content = yue.value || ""
-
+         var p = document.getElementById("yuep")
          if(content.indexOf("@")>0 && exsit == "false"){ // when type in @
           console.log("yes")
           newul(content)
@@ -35,7 +36,6 @@
        if(content.indexOf("@")<0){ // delete to @ and more
          console.log("no")
          exsit = "false"
-         var p = document.getElementById("yuep")
          if(p){p.parentNode.removeChild(p)}
          }
          // console.log(e.keyCode)
