@@ -1,6 +1,9 @@
    var exsit //the @ symbol mark
    var email =document.getElementById("email");
    // var outer =document.getElementById("outer");
+
+
+
    email.onfocus = function(){
      if(email.value.length == email.value.indexOf("@")+1 && email.value.length!=0){
       newul(email.value)
@@ -9,6 +12,7 @@
    	window.onkeyup=function(e){
          var content = email.value || ""
          var p = document.getElementById("emailp")
+         var li = document.getElementById("active")
          if(content.indexOf("@")>0 && exsit == "false"){ // when type in @
           console.log("yes")
           newul(content)
@@ -22,7 +26,6 @@
          }
          // console.log(e.keyCode)
          if(e.keyCode=="40"){// down key
-           var li = document.getElementById("active")
            if(li && li.nextSibling && li.nextSibling.nodeName.toLowerCase() == "li"){
             li.removeAttribute("id")
             var active = li.nextSibling
@@ -31,7 +34,6 @@
          }
       }
       if(e.keyCode=="38"){// up key
-        var li = document.getElementById("active")
         if(li && li.previousSibling && li.previousSibling.nodeName.toLowerCase() =="li"){
            li.removeAttribute("id")
            var active = li.previousSibling
@@ -40,6 +42,7 @@
         }
      }
      if(e.keyCode=="13"){ //enter key
+      if(li){email.value=li.innerHTML}
       p.parentNode.removeChild(p)
    }
 
@@ -64,6 +67,7 @@ var newul = function(content){// build the p and ul for new options and set the 
    ul.style.width=email.style.width
    ul.style.border="1px #aaa solid"
    ul.firstChild.style.id="active"
+
 }
 
 var liclick = function(email){ // when click on the li
@@ -120,7 +124,7 @@ function insertAfter(newEl, targetEl){ //insert after function
   var script2 = document.createElement("script")
   script2.type="text/javascript"
   script2.src= path + "geoip/countries.php?callback=setoptions"
-  document.head.appendChild(script2)
+  document.getElementsByTagName("head")[0].appendChild(script2)
   not.parentNode.removeChild(not)
   }
  } ///////////////////////////////

@@ -5,6 +5,7 @@
 	<title></title>
 	<style type="text/css">
 ul{list-style-type: none;margin:0;padding:0}
+.dropdown:hover{cursor:pointer}
 .input{width:500px;margin:10px;padding:0;height:30px;position:relative;border-bottom:1px #3EABFF solid;color:#999;padding-left:10px;}
 input{border:none;height:28px;width: 300px}
 input:focus{outline:none;}
@@ -29,7 +30,7 @@ button{border:none;border-radius:3px;padding:4px;background:;background-position
 		<div class="input" id="tel_out">telphone: <input type="text" name="tel" id="tel" ></div>
 		<div class="input" id="company_out">company: <input type="text" name="company" id="company" ></div>
 		<input type="hidden" name="visits" id="visits" value="<?php echo $_GET['visits'];?>">
-		<button id="submit">Submit</button>
+		<input type="button" id="submit" value="Submit">
 	</form>
 	
 
