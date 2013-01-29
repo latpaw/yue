@@ -1,6 +1,5 @@
 <?php
-$countries = <<<EOF
-"Asia/Pacific Region","Europe","Andorra","United Arab Emirates",
+$countries = '"Asia/Pacific Region","Europe","Andorra","United Arab Emirates",
 "Afghanistan","Antigua and Barbuda","Anguilla","Albania","Armenia",
 "Netherlands Antilles","Angola","Antarctica","Argentina","American Samoa",
 "Austria","Australia","Aruba","Azerbaijan","Bosnia and Herzegovina",
@@ -51,7 +50,7 @@ $countries = <<<EOF
 "Serbia","South Africa","Zambia","Montenegro","Zimbabwe",
 "Anonymous Proxy","Satellite Provider","Other",
 "Aland Islands","Guernsey","Isle of Man","Jersey","Saint Barthelemy","Saint Martin"
-EOF;
+';
 
 
 
@@ -60,7 +59,7 @@ EOF;
 // 	$options = $options.$option;
 // }
 // echo $options;
-$countries = str_replace("\r\n","",$countries);
+$countries = str_replace("\n","",$countries);
 $callback = $_GET['callback'];
  echo $callback."('".$countries."')";
 ?>

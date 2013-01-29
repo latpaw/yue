@@ -127,11 +127,14 @@ function insertAfter(newEl, targetEl){ //insert after function
 
 var submit = document.getElementById("submit")
 submit.onclick=function(ev){
- if(ev.preventDefault){
-ev.preventDefault();//or firefox not work
-}else{ev.returnValue=false;}
-
- var xhr = new XMLHttpRequest();
+ var xrequest =function(){
+ if(this.XMLHttpRequest){
+   return new XMLHttpRequest(); 
+ }else{
+   return new ActiveXObject("Microsoft.XMLHTTP");
+ }
+}
+ var xhr = xrequest();
 var url = path + "recieve.php"
 var params = "visits="+document.getElementById("visits").value
 xhr.open("POST",url,true)
