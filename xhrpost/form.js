@@ -1,6 +1,9 @@
    var exsit //the @ symbol mark
    var email =document.getElementById("email");
    // var outer =document.getElementById("outer");
+
+
+
    email.onfocus = function(){
      if(email.value.length == email.value.indexOf("@")+1 && email.value.length!=0){
       newul(email.value)
@@ -9,6 +12,7 @@
    	window.onkeyup=function(e){
          var content = email.value || ""
          var p = document.getElementById("emailp")
+         var li = document.getElementById("active")
          if(content.indexOf("@")>0 && exsit == "false"){ // when type in @
           console.log("yes")
           newul(content)
@@ -22,7 +26,6 @@
          }
          // console.log(e.keyCode)
          if(e.keyCode=="40"){// down key
-           var li = document.getElementById("active")
            if(li && li.nextSibling && li.nextSibling.nodeName.toLowerCase() == "li"){
             li.removeAttribute("id")
             var active = li.nextSibling
@@ -31,7 +34,6 @@
          }
       }
       if(e.keyCode=="38"){// up key
-        var li = document.getElementById("active")
         if(li && li.previousSibling && li.previousSibling.nodeName.toLowerCase() =="li"){
            li.removeAttribute("id")
            var active = li.previousSibling
@@ -40,6 +42,7 @@
         }
      }
      if(e.keyCode=="13"){ //enter key
+      if(li){email.value=li.innerHTML}
       p.parentNode.removeChild(p)
    }
 
@@ -64,6 +67,7 @@ var newul = function(content){// build the p and ul for new options and set the 
    ul.style.width=email.style.width
    ul.style.border="1px #aaa solid"
    ul.firstChild.style.id="active"
+
 }
 
 var liclick = function(email){ // when click on the li
@@ -96,6 +100,14 @@ function insertAfter(newEl, targetEl){ //insert after function
   function auto_country(countryname){
     document.getElementById("country").innerHTML='<option value="'+countryname+'">'+countryname+'</option>'
        document.getElementById("country").value=countryname
+       if(navigator.appVersion.indexOf("MSIE") >=0){
+        var cout = document.getElementById("country_out")
+        cout.innerHTML= 'country: <select id="country" name="country" disabled >'+'<option value="'+countryname+'">'+countryname+'</option>'+'</select><b id="not">Not</b>'
+        var no = document.getElementById("not")
+        no.onclick= function(){
+          notclick()
+        }
+       }
   }
   var script = document.createElement("script")
   script.type="text/javascript"
@@ -105,23 +117,30 @@ function insertAfter(newEl, targetEl){ //insert after function
  
  { /////////////////////////////////// set options when wrong pick
   function setoptions(options){
-    var options = options.split(",")
-       var c = document.getElementById("country")
-       var n = ""
+    var options = options.split(","),
+        c = document.getElementById("country"),
+        n = "";
        for(i in options){
         var trim_option = options[i].replace('"','').replace('"','')
        n += '<option value="'+trim_option+'">'+trim_option+'</option>'}
        c.innerHTML = n
+       if(navigator.appVersion.indexOf("MSIE") >=0){
+        var cout = document.getElementById("country_out")
+        cout.innerHTML= 'country: <select id="country" name="country">'+n+'</select>'
+       }
   }
 
   var not = document.getElementById("not")
-  not.onclick=function(){
+  not.onclick= notclick
+  function notclick(){
   document.getElementById("country").removeAttribute("disabled")
   var script2 = document.createElement("script")
   script2.type="text/javascript"
   script2.src= path + "geoip/countries.php?callback=setoptions"
-  document.head.appendChild(script2)
-  not.parentNode.removeChild(not)
+  document.getElementsByTagName("head")[0].appendChild(script2)
+  if(navigator.appVersion.indexOf("MSIE") <0){
+  not.parentNode.removeChild(not)}
+
   }
  } ///////////////////////////////
 

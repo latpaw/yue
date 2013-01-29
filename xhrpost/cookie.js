@@ -13,7 +13,7 @@ if(!cookie2obj().url){document.cookie="url="+refer+"!"+url+"!"}
     var tmp = ob.split("!")
    
     for(i=0;i<tmp.length-1;i++){
-        console.log(tmp[i] == url)
+        // console.log(tmp[i] == url)
         if(tmp[i]==url){
             var mark = i 
             inhere = "true"
@@ -45,7 +45,7 @@ function cookie2obj(){
 	var obj={};
 	for(i in c){
 		_c = c[i].split("=")
-		key = _c[0].trim()
+		key = _c[0]//.trim()
         val = _c[1]
         obj[key] = val
 	}

@@ -5,6 +5,7 @@
 	<title></title>
 	<style type="text/css">
 ul{list-style-type: none;margin:0;padding:0}
+.dropdown:hover{cursor:pointer}
 .input{width:500px;margin:10px;padding:0;height:30px;position:relative;border-bottom:1px #3EABFF solid;color:#999;padding-left:10px;}
 input{border:none;height:28px;width: 300px}
 input:focus{outline:none;}
