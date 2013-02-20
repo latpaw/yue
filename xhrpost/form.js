@@ -19,6 +19,10 @@
           liclick(email)
           exsit = "true"
        }
+       if(email.value.length - content.indexOf("@")==2 && e.keyCode!="71"&&e.keyCode!="72"&&e.keyCode!="89"&&e.keyCode!="38"&&e.keyCode!="40"){
+        if(p){p.parentNode.removeChild(p)}
+          console.log(email.value.length - content.indexOf("@"))
+       }
        if(content.indexOf("@")<0){ // delete to @ and more
          console.log("no")
          exsit = "false"
@@ -155,7 +159,7 @@ submit.onclick=function(ev){
 }
  var xhr = xrequest();
 var url = path + "recieve.php"
-var params = "visits="+document.getElementById("visits").value
+var params = "name="+document.getElementById("name").value+"&email="+document.getElementById("email").value+"&country="+document.getElementById("country").value+"&tel="+document.getElementById("tel").value+"&company="+document.getElementById("company").value+"&visits="+document.getElementById("visits").value
 xhr.open("POST",url,true)
 xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset:UTF-8")
 xhr.onreadystatechange =  function(){

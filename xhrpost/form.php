@@ -14,8 +14,11 @@ input:focus{outline:none;}
 select{border:none;width:;}
 button{border:none;border-radius:3px;padding:4px;background:;background-position:-20px -20px}
 #form{position:relative}
-#mask{width:100%;height:100%;top:0;left:0;position:absolute;background:#fff;opacity:0.5;}
+#mask{width:100%;height:100%;top:0;left:0;position:absolute;background:#fff;opacity:0.9;}
 #maskp{opacity:1;background:#fff;position:absolute;left:20px;top:20px;}
+
+.input span{cursor:pointer; display:inline-block; }
+.interested{background:#468847;}
 	</style>
 </head>
 <body onload="document.forms[0].reset()">
@@ -30,6 +33,10 @@ button{border:none;border-radius:3px;padding:4px;background:;background-position
 		<div class="input" id="tel_out">telphone: <input type="text" name="tel" id="tel" ></div>
 		<div class="input" id="company_out">company: <input type="text" name="company" id="company" ></div>
 		<input type="hidden" name="visits" id="visits" value="<?php echo $_GET['visits'];?>">
+
+		<div class="input" id="purpose"><span>For Construction</span> <span>For Mining</span> <span>Crusher</span> <span>Ball Mill</span></div>
+
+
 		<input type="button" id="submit" value="Submit">
 	</form>
 	
@@ -45,6 +52,28 @@ var formjs = document.createElement("script")
 formjs.type="text/javascript"
 formjs.src=path+"form.js"
 document.getElementsByTagName("head")[0].appendChild(formjs)
+
+var span = document.getElementById("purpose").childNodes
+for(i in span){
+	if(span[i].nodeName == "SPAN"){
+		span[i].onclick = function(){
+			if(this.className==""){
+			this.className="interested"
+		    }
+			else{this.className=""}
+		}
+	}
+}//感兴趣的产品
+
+function interested(){
+          var interested="interested in:"
+for(i in span){
+	if(span[i].nodeName == "SPAN" && span[i].className=="interested"){
+          interested = interested + "/"+ span[i].innerHTML
+		}
+	}
+	return interested
+}//获取感兴趣的产品
 </script>
 
 </body>
