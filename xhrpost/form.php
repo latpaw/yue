@@ -17,8 +17,8 @@ button{border:none;border-radius:3px;padding:4px;background:;background-position
 #mask{width:100%;height:100%;top:0;left:0;position:absolute;background:#fff;opacity:0.9;}
 #maskp{opacity:1;background:#fff;position:absolute;left:20px;top:20px;}
 
-.input span{cursor:pointer; display:inline-block; }
-.interested{background:#468847;}
+.input span{cursor:pointer; display:inline-block;border-radius:2px;padding:2px; ;}
+.interested{background:#468847;color:#000}
 	</style>
 </head>
 <body onload="document.forms[0].reset()">
