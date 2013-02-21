@@ -150,6 +150,11 @@ function insertAfter(newEl, targetEl){ //insert after function
 
 var submit = document.getElementById("submit")
 submit.onclick=function(ev){
+
+    var textarea = document.getElementById("textarea")
+    var message = textarea.value + interested()
+    if(message==" "){textarea.style.display="block";return false;} //感兴趣的产品和inquiry必须填一个
+
  var xrequest =function(){
  if(this.XMLHttpRequest){
    return new XMLHttpRequest(); 
@@ -159,7 +164,7 @@ submit.onclick=function(ev){
 }
  var xhr = xrequest();
 var url = path + "recieve.php"
-var params = "name="+document.getElementById("name").value+"&email="+document.getElementById("email").value+"&country="+document.getElementById("country").value+"&tel="+document.getElementById("tel").value+"&company="+document.getElementById("company").value+"&visits="+document.getElementById("visits").value
+var params = "name="+document.getElementById("name").value+"&email="+document.getElementById("email").value+"&country="+document.getElementById("country").value+"&tel="+document.getElementById("tel").value+"&company="+document.getElementById("company").value+"&visits="+document.getElementById("visits").value+"&content="+message
 xhr.open("POST",url,true)
 xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset:UTF-8")
 xhr.onreadystatechange =  function(){

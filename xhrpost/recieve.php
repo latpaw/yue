@@ -5,6 +5,7 @@ if(isset($_POST['email'])){$email=$_POST["email"];}
 if(isset($_POST['company'])){$company=$_POST["company"];}
 if(isset($_POST['tel'])){$tel=$_POST["tel"];}
 if(isset($_POST['country'])){$country=$_POST["country"];}
+if(isset($_POST['content'])){$content=$_POST["content"];}
 $visits = explode("!",$_POST['visits']);
 
 	echo "提交成功! <br>";
@@ -19,5 +20,5 @@ $visits = explode("!",$_POST['visits']);
 	for($i=1;$i<count($visits);$i++){
 		echo $visits[$i]."<br />";
 	}
-
+    echo "you are interested in : ".$content;
 ?>
