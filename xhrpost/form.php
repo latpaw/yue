@@ -19,7 +19,7 @@ button{border:none;border-radius:3px;padding:4px;background:;background-position
 
 .input span{cursor:pointer; display:inline-block;border-radius:2px;padding:2px; ;}
 .interested{background:#468847;color:#000}
-#textarea{display:none;border:1px #3eabff dashed;width:500px;margin:10px;padding:0;}
+#textarea{display:none;border:1px #3eabff dashed;width:500px;margin:10px;padding:0;overflow-y:visible;}
 #message{display:none;}
 	</style>
 </head>
@@ -36,7 +36,7 @@ button{border:none;border-radius:3px;padding:4px;background:;background-position
 		<div class="input" id="company_out">company: <input type="text" name="company" id="company" ></div>
 		<input type="hidden" name="visits" id="visits" value="<?php echo $_GET['visits'];?>">
 
-		<div class="input" id="purpose">Interested: <span>Construction</span> <span>Mining</span> <span>Crusher</span> <span>Ball Mill</span> <a href="" onclick="event.preventDefault();document.getElementById('textarea').style.display=document.getElementById('textarea').style.display=='block'?'none':'block';document.getElementById('textarea').focus();document.getElementById('message').style.display=document.getElementById('textarea').style.display=='block'?'none':'block'" style="text-decoration:none;color:#999">↓</a></div>
+		<div class="input" id="purpose">Interested: <span>Construction</span> <span>Mining</span> <span>Crusher</span> <span>Ball Mill</span> <a href="" onclick="event.preventDefault();document.getElementById('textarea').style.display=document.getElementById('textarea').style.display=='block'?'none':'block';document.getElementById('textarea').focus();document.getElementById('message').style.display=document.getElementById('textarea').style.display=='block'?'none':'block';setHeight();" style="text-decoration:none;color:#999">↓</a></div>
 		<div class="input" id="message" onclick="this.style.display='none';document.getElementById('textarea').style.display='block';document.getElementById('textarea').focus()"></div>
         <div ><textarea id="textarea" onblur="this.style.display='none';if(document.getElementById('textarea').value!=''){document.getElementById('message').innerHTML='You say: '+ document.getElementById('textarea').value;document.getElementById('message').style.display='block'}"></textarea></div>
 
@@ -75,6 +75,11 @@ for(i in span){
 	}
 	return interested
 }//获取感兴趣的产品
+
+function setHeight(){
+ top.document.getElementsByTagName("iframe")[0].style.height = document.getElementById("form").offsetHeight+50+"px"
+}
+setHeight()
 </script>
 
 </body>

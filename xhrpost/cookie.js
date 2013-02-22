@@ -57,7 +57,7 @@ function cookie2obj(){
     var ifr = document.createElement("iframe")
     ifr.src= "http://172.16.2.197:8081/xhrpost/form.php?visits="+cookie2obj().url
     ifr.width="800"
-    ifr.height="800"
+    // ifr.height="800"
     ifr.frameBorder="none"
     document.getElementById("ifr").appendChild(ifr)
 }
