@@ -1,7 +1,6 @@
 var inhere = ""
-var url = window.location.href
-var refer = document.referrer || "direct_open"
-var url = url.split("/")
+var url = window.location.href.split("/")
+var refer = document.referrer || "direct_open!"+url[2]
 url.shift()
 url.shift()
 url.shift()
@@ -55,7 +54,10 @@ function cookie2obj(){
 
 {///////////// auto create the iframe
     var ifr = document.createElement("iframe")
-    ifr.src= "http://172.16.2.197:8081/xhrpost/form.php?visits="+cookie2obj().url
+    var ifrp = document.getElementById("ifr")
+    var lan = ifrp.getAttribute("lan")
+    var demo = ifrp.getAttribute("demo")
+    ifr.src= "http://172.16.2.197:8081/xhrpost/form.php?lan="+lan+"&demo="+demo+"&visits="+cookie2obj().url
     ifr.width="800"
     // ifr.height="800"
     ifr.frameBorder="none"
