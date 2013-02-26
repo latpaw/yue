@@ -8,7 +8,7 @@ include("lan.php");
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="<?php if($demo=='1'){echo 'css/demo1.css';} ?>">
+	<link rel="stylesheet" type="text/css" href="css/demo<?php echo $demo; ?>.css">
 	<style type="text/css" src=""></style>
 </head>
 <body onload="document.forms[0].reset()">
@@ -102,7 +102,9 @@ for(i in span){
 }//获取感兴趣的产品
 
 function setHeight(){
+	if(top!=self){
  top.document.getElementsByTagName("iframe")[0].style.height = byid("form").offsetHeight+50+"px"
+ }
 }
 setHeight()
 </script>
