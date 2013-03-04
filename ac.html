@@ -7,12 +7,23 @@
 	<script type="text/javascript">
 (function(){var path="";var pda_user_agent_list = new Array("Android","2.0 MMP", "240320", "AvantGo","BlackBerry", "Blazer","Cellphone", "Danger", "DoCoMo", "Elaine/3.0", "EudoraWeb", "hiptop", "IEMobile", "KYOCERA/WX310K", "LG/U990","MIDP-2.0", "MMEF20", "MOT-V", "NetFront", "Newt", "Nintendo Wii", "Nitro", "Nokia","Opera Mini", "Opera Mobi",	"Palm", "Playstation Portable", "portalmmm", "Proxinet", "ProxiNet","SHARP-TQ-GX10", "Small", "SonyEricsson", "Symbian OS", "SymbianOS", "TS21i-10", "UP.Browser", "UP.Link","Windows CE", "WinWAP", "iPhone", "iPod", /*"iPad","Mobile",*/ "Windows Phone", "HTC", "GTB");var user_agent = navigator.userAgent.toString();for (var i=0;i<pda_user_agent_list.length;i++){if(user_agent.indexOf(pda_user_agent_list[i])>=0){alert(user_agent);return true;}}console.log("no");return false;})()
 </script>
+<style type="text/css">  #source {
+       flow: "main-thread";
+    }
+    
+    .region {
+        content: from(main-thread);
+        background: #C5DFF0;
+    }</style>
 </head>
 <body>
 	<div id="abc">页面自动跳转</div>
-	<input type="text" id="in"/>
-	<script type="text/javascript">
-document.getElementById("in").oninput=function(){console.log(this.value)}
-	</script>
+  <div id="source">
+        <p>Lorem ipsum dolor This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:</p>
+    </div>
+
+    <div id="region1" class="region"></div>
+    <div id="region2" class="region"></div>
+    <div id="region3" class="region"></div>
 </body>
 </html>

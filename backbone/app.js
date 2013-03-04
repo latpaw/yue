@@ -1,16 +1,16 @@
 window.onload = function(){
 	Employee = Backbone.Model.extend({
 		// 模型值校验
-		/*validate:function(attrs){*/
-		/*for(var key in attrs){*/
-		/*if(attrs[key] == ''){*/
-		/*return key + "不能为空";*/
-		/*}*/
-		/*if(key == 'age' && isNaN(attrs.age)){*/
-		/*return "年龄必须是数字";*/
-		/*}*/
-		/*}*/
-		/*}*/
+		validate:function(attrs){
+			for(var key in attrs){
+				if(attrs[key] == ''){
+		           return key + "不能为空";
+	            }
+				if(key == 'age' && isNaN(attrs.age)){
+				   return "年龄必须是数字";
+			    }
+            }
+		}
 	});
 	EmployeeList = Backbone.Collection.extend({
 		model : Employee,
@@ -22,9 +22,9 @@ window.onload = function(){
 		tagName : 'tr',
 		template : _.template($('#item-template').html()),
 		events : {
-			/*"dblclick td" : "edit",*/
-			/*"blur input,select" : "close",*/
-			/*"click .del" : "clear",*/
+			"dblclick td" : "edit",
+			"blur input,select" : "close",
+			"click .del" : "clear",
 		},
 		initialize : function(){
 			// 每次更新模型后重新渲染
@@ -41,17 +41,17 @@ window.onload = function(){
 				input.val(model.get(input.attr("name")));
 			});
 		},
-		/*close: function(e) {*/
-		/*var input = $(e.currentTarget);*/
-		/*var obj = {};*/
-		/*obj[input.attr('name')] = input.val();*/
-		/*this.model.save(obj);*/
-		/*$(e.currentTarget).parent().parent().removeClass("editing");*/
-		/*},*/
-		/*edit : function(e){*/
-		/*// 给td加上editing样式*/
-		/*$(e.currentTarget).addClass('editing').find('input,select').focus();*/
-		/*},*/
+		close: function(e) {
+			var input = $(e.currentTarget);
+			var obj = {};
+			obj[input.attr('name')] = input.val();
+			this.model.save(obj);
+			$(e.currentTarget).parent().parent().removeClass("editing");
+		},
+		edit : function(e){
+			// 给td加上editing样式
+			$(e.currentTarget).addClass('editing').find('input,select').focus();
+		},
 		render: function() {
 		    $(this.el).html(this.template(this.model.toJSON()));
 		    // 把每个单元格的值赋予隐藏的输入框
@@ -61,9 +61,9 @@ window.onload = function(){
 	    remove: function() {
 	        $(this.el).remove();
 	    },
-		/*clear: function() {*/
-		/*this.model.destroy();*/
-		/*}*/
+		clear: function() {
+			this.model.destroy();
+		}
 	});
 	AppView = Backbone.View.extend({
 		el : $("#app"),
@@ -79,7 +79,7 @@ window.onload = function(){
 	    },
 	    createOnEnter : function(e) {
 	    	var employee = new Employee();
-			console.log(employee)
+			// console.log(employee)
 	    	var attr = {};
 	    	$('#emp-form input,#emp-form select').each(function(){
 	    		var input = $(this);
@@ -90,16 +90,16 @@ window.onload = function(){
 	    	});
     		// set方法中会自动调用model的validate方法进行校验，如果不通过则返回false
     		if(employee.set(attr)){
-				/*Employees.create(employee);*/
+				Employees.create(employee);
 				this.addOne.call(Employees,employee);
     		}
 	    },
         addOne : function(employee){
-			console.log(employee)
+			// console.log(employee)
         	employee.set({"eid":employee.get("eid")||Employees.length});
-			/*employee.bind('error',function(model,error){*/
-			/*alert(error);*/
-			/*});*/
+			employee.bind('error',function(model,error){
+					alert(error);
+				});
         	var view = new EmployeeView({model:employee});
         	$(".emp-table tbody").append(view.render().el);
         },

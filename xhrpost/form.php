@@ -43,6 +43,7 @@ include("lan.php");
 	</form>
 
 <script type="text/javascript">
+
 var byid=function(id){return document.getElementById(id)}
 
 byid("down").onclick=function(){
@@ -102,9 +103,11 @@ for(i in span){
 }//获取感兴趣的产品
 
 function setHeight(){
-	if(top!=self){
- top.document.getElementsByTagName("iframe")[0].style.height = byid("form").offsetHeight+50+"px"
- }
+ var height = byid("form").offsetHeight+50
+ var tmps = document.createElement("iframe")
+ tmps.src="http://latpaw.cn:8081/xhrpost/proxy.html#800|"+height
+ tmps.style.display="none"
+ document.getElementById("form").appendChild(tmps)
 }
 setHeight()
 </script>
