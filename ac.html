@@ -18,12 +18,27 @@
 </head>
 <body>
 	<div id="abc">页面自动跳转</div>
-  <div id="source">
-        <p>Lorem ipsum dolor This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:</p>
-    </div>
+   <input type="text" id="in">
+   <div id="chose"></div>
+   <script type="text/javascript">
+var ar = ["gmail","hotmail","yahoo"];
+var byid = function(id){return document.getElementById(id)}
 
-    <div id="region1" class="region"></div>
-    <div id="region2" class="region"></div>
-    <div id="region3" class="region"></div>
+var build = function(){
+    var now_value = byid("in").value
+        list = ""
+    for(i in ar){
+        var reg = new RegExp(now_value)
+        if(reg.test(ar[i])){
+          list = list + ar[i] +"<br/>";
+        }
+    }
+    return list
+}
+byid("in").oninput = function(){
+    byid("chose").innerHTML = build()
+}
+
+   </script>
 </body>
 </html>

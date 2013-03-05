@@ -1,81 +1,85 @@
-   var exsit //the @ symbol mark
    var email =byid("email");
-   // var outer =byid("outer");
-
-
 
    email.onfocus = function(){
      if(email.value.length == email.value.indexOf("@")+1 && email.value.length!=0){
       newul(email.value)
      } // when the last letter is @
 
-   	window.onkeyup=function(e){
+   	email.onkeyup=function(e){
          var content = email.value || ""
          var p = byid("emailp")
-         var li = byid("active")
-         if(content.indexOf("@")>0 && exsit == "false"){ // when type in @
-          console.log("yes")
+      if(content.indexOf("@")>0 && e.keyCode!="40" && e.keyCode!="38"){ // when type in @
           newul(content)
           liclick(email)
-          exsit = "true"
-       }
-       if(email.value.length - content.indexOf("@")==2 && e.keyCode!="71"&&e.keyCode!="72"&&e.keyCode!="89"&&e.keyCode!="38"&&e.keyCode!="40"){
-        if(p){p.parentNode.removeChild(p)}
-          console.log(email.value.length - content.indexOf("@"))
-       }
-       if(content.indexOf("@")<0){ // delete to @ and more
-         console.log("no")
-         exsit = "false"
+      }
+  
+      if(content.indexOf("@")<0){ // delete to @ and more
          if(p){p.parentNode.removeChild(p)}
          }
-         // console.log(e.keyCode)
-         if(e.keyCode=="40"){// down key
+
+      if(e.keyCode=="40"){// down key
+          var li = byid("active")
            if(li && li.nextSibling && li.nextSibling.nodeName.toLowerCase() == "li"){
             li.removeAttribute("id")
             var active = li.nextSibling
             active.id="active"
-            email.value=active.innerHTML
          }
       }
       if(e.keyCode=="38"){// up key
+        var li = byid("active")
         if(li && li.previousSibling && li.previousSibling.nodeName.toLowerCase() =="li"){
            li.removeAttribute("id")
            var active = li.previousSibling
            active.id="active"
-           email.value=active.innerHTML
         }
      }
      if(e.keyCode=="13"){ //enter key
+      var li = byid("active")
       if(li){email.value=li.innerHTML}
-      p.parentNode.removeChild(p)
+      if(p) p.parentNode.removeChild(p);
+   }
+   var ul = byid("emailist")
+   if(ul && ul.innerHTML=="" && p){
+    p.parentNode.removeChild(p)
    }
 
 }
 }
-// email.onblur=function(){
-//   var p = byid("emailp")
-//   if(p){
-//   p.parentNode.removeChild(p)}
-// }
 
 var newul = function(content){// build the p and ul for new options and set the first li with id "active"
+  var all = ["gmail.com","yahoo.com","hotmail.com"]
+  var split_content = content.split("@")
+  var reg = new RegExp("^"+(split_content[1] || ""))
+
+  if(!document.getElementById("emailp")&&reg.test(all.toString())){
    var p = document.createElement("p")
    p.id="emailp"
    var ul = document.createElement("ul")
-   ul.innerHTML="<li class='dropdown' id='active'>"+content+"gmail.com</li>"
-   ul.innerHTML+="<li class='dropdown'>"+content+"yahoo.com</li>"
-   ul.innerHTML+="<li class='dropdown'>"+content+"hotmail.com</li>"
-
+   ul.id="emailist"
    p.appendChild(ul)
    insertAfter(p,email)
    ul.style.width=email.style.width
    ul.style.border="1px #aaa solid"
-   ul.firstChild.style.id="active"
+  }else{
+    ul= byid("emailist")
+      }
 
+ if(ul){
+  ul.innerHTML=""
+  for(i in all){
+    if(reg.test(all[i])){
+      ul.innerHTML+= "<li class='dropdown'>"+split_content[0]+"@"+all[i]+"</li>"
+    }
+  }
+  if(ul.firstChild){
+    ul.firstChild.id="active"
+  }
+}
 }
 
 var liclick = function(email){ // when click on the li
-   var lis = document.getElementsByClassName("dropdown")
+  if(byid("emailist")){
+   var lis = byid("emailist").childNodes
    for(i=0;i<=lis.length-1;i++){
       lis[i].onclick=function(){
          email.value = this.innerHTML
@@ -83,8 +87,8 @@ var liclick = function(email){ // when click on the li
          p.parentNode.removeChild(p)
       }
       lis[i].onmouseover=function(e){byid("active").removeAttribute("id");this.id="active";}
-
    }
+ }
 }
 function insertAfter(newEl, targetEl){ //insert after function
    var parentEl = targetEl.parentNode;
@@ -170,9 +174,6 @@ xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset:U
 xhr.onreadystatechange =  function(){
   if(xhr.readyState == 4 && xhr.status == 200){
     var b = xhr.responseText
-    // console.log(b)
-    // byid("result").innerHTML = b
-
     if(b){// build the mask for form to show the message from server
       var mask = document.createElement("div")
       mask.id="mask"
