@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Backbone Demo</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="underscore-1.1.6.js"></script>
+<script type="text/javascript" src="backbone.js"></script>
+</head>
+<body>
+<div id="name"></div>
+	<script type="text/javascript" charset="utf-8">
+		var router = Backbone.Router.extend({
+routes:{"help":"help"},
+help:function(){
+$("#name").html("this is help")
+},
+page:function(){console.log("page is on")},
+initialize:function(){
+this.route("page","page");
+console.log("route on")}
+				})
+var ro = new router();
+Backbone.history.start()
+
+
+var View = Backbone.View.extend({
+tagName:"li",
+className:"class",
+events:{
+"click this":"open"
+},
+open:function(){console.log("#name clicked")},
+initialize:function(){this.render();console.log("view on")},
+render:function(){
+//$("#name").html("hello views is on")}
+//this.$el.html(this.template(this.model.attributes))		
+//return this
+console.log(this)
+  }
+})
+var view = new View()
+	console.log(view.el)
+	</script>
+</body>
+</html>
