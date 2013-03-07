@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel','jqm'], 
+define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel'/*,'jqm'*/], 
 	function($, _, Backbone,home,solutions,products,soluDetail,proDetail,proModel) {
 
     'use strict';
@@ -37,6 +37,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 	    	var promodel = new proModel()
 	    	var prodetail = new proDetail({model:promodel})
 	    	prodetail.bind('rendered:proDetail',this.changePage(prodetail),this);
+
 	    	promodel.fetch(id);
 	    	
            // this.changePage(prodetail,true)
@@ -57,19 +58,34 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 		 //render方法通过template生成page
 		 if(mark){page.render();}
                 //设定外层div容器的data-role为'page'，以支持jquery mobile
-			$(page.el).attr('data-role', 'page');   
+           if(window.localStorage.getItem("new")=="no"){
+			$(page.el).css({"position":"absolute","left":"1000px"}).animate({"left":"0"}); 
+			$(page.el).delegate("a","click",function(e){
+				$(page.el).animate({"left":"-1000px"},300,function(){this.remove()})
+			})
+		   }
+			  
+           // console.log($(page.el));
                 //插入dom
-      		$('body').append($(page.el));  
-			var transition = $.mobile.defaultPageTransition;  
-                /*
-                 如果不是第一个页面，那么调用enhance JQuery Mobile page,
-                 并且执行transition动画。
-                 如果是第一个页面，那么无需changePage。否则会出错。                
-                */
-			if(!this.firstPage){   
-				$.mobile.changePage($(page.el), {changeHash:false, transition: transition});
-			}else{   
-				this.firstPage = false;
+      		$('body').append($(page.el));
+      		if(!document.getElementById("foot")){
+      			$('body').append('<footer><section><p id="foot"><a href="">Home</a> <a href="">Navigate</a> <a href="">Inquiry</a> <a href="">Contact</a></p><script type="text/javascript">var height=window.innerHeight-50+"px"; $("#foot").css({"position":"absolute","top":height,"background":"#fff","z-index":"1000"});</script></section></footer>')  
+				window.localStorage.setItem("new","no")
+				var _hide;
+				var hide =function(){ 
+				    _hide = window.setTimeout(function(){
+					$("#foot").animate({"top":window.innerHeight+"px"})
+					},2000);
+					return _hide;
+				}
+				hide()
+				window.onclick=function(){
+					$("#foot").animate({"top":window.innerHeight-50+"px"});
+					hide();
+				}
+				$("#foot").hover(function(){
+					window.clearTimeout(_hide)
+				},function(){hide()})
 			}
 	     } 
     });

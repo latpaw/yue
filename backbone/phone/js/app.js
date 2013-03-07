@@ -1,7 +1,7 @@
 /* We define a global variable 'namespace' as module manager*/
 
 /* start application*/
-define(['jquery','underscore', 'backbone', 'router','jqmconfig'], 
+define(['jquery','underscore', 'backbone', 'router'/*,'jqmconfig'*/], 
 	function($, _, Backbone, Router) {
 
 	'use strict';

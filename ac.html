@@ -18,27 +18,24 @@
 </head>
 <body>
 	<div id="abc">页面自动跳转</div>
-   <input type="text" id="in">
-   <div id="chose"></div>
+<script type="text/javascript" src="lunr.js"></script>
    <script type="text/javascript">
-var ar = ["gmail","hotmail","yahoo"];
-var byid = function(id){return document.getElementById(id)}
+var index = lunr(function () {
+    this.field('title', {boost: 10})
+    this.field('body')
+    this.ref('id')
+  })
+index.add({
+    id: 1,
+    title: 'Foo',
+    body: 'Foo foo foo!'
+  })
 
-var build = function(){
-    var now_value = byid("in").value
-        list = ""
-    for(i in ar){
-        var reg = new RegExp(now_value)
-        if(reg.test(ar[i])){
-          list = list + ar[i] +"<br/>";
-        }
-    }
-    return list
-}
-byid("in").oninput = function(){
-    byid("chose").innerHTML = build()
-}
-
+  index.add({
+    id: 2,
+    title: 'Bar',
+    body: 'Bar bar bar!'
+  })
    </script>
 </body>
 </html>

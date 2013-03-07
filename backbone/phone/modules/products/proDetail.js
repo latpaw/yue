@@ -14,8 +14,10 @@ define(['jquery', 'underscore', 'backbone','text!modules/products/proDetail.html
     render: function(){
       console.log("model=" + this.model.toJSON());
       $(this.el).append(this.template(this.model.toJSON()));
-      console.log(this.el)
+      // $(this.el).find("a").bind("click",function(e){$(this.el).remove()})
+      // console.log("click a"+$(this.el))
       this.trigger("rendered:proDetail");
+      // console.log("show product"+$(this.el).html())
       return this;
     }
 
