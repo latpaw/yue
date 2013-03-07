@@ -20,9 +20,9 @@ define(['jquery'], function($){
 
 	/* For Test*/
 
-	       $(document).live('pagebeforeload pageload pageloadfailed pagebeforechange pagechange pagechangefailed pagebeforeshow pagebeforehide pageshow pagehide pagebeforecreate pagecreate pageinit pageremove', function (event,ui){
-				console.log('--------' + event.type);
-			});
+	  //      $(document).live('pagebeforeload pageload pageloadfailed pagebeforechange pagechange pagechangefailed pagebeforeshow pagebeforehide pageshow pagehide pagebeforecreate pagecreate pageinit pageremove', function (event,ui){
+			// 	console.log('--------' + event.type);
+			// });
 
 });
 

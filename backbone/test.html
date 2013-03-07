@@ -10,37 +10,25 @@
 <body>
 <div id="name"></div>
 	<script type="text/javascript" charset="utf-8">
-		var router = Backbone.Router.extend({
-routes:{"help":"help"},
-help:function(){
-$("#name").html("this is help")
-},
-page:function(){console.log("page is on")},
-initialize:function(){
-this.route("page","page");
-console.log("route on")}
-				})
-var ro = new router();
-Backbone.history.start()
 
+var view = Backbone.View.extend({
+   initialize:function(){
+   	this.bind("hello:what",this.render,this)
+   },
+   render:function(){
+   	console.log("initialize "+this.model.name)
+   }
+});
 
-var View = Backbone.View.extend({
-tagName:"li",
-className:"class",
-events:{
-"click this":"open"
-},
-open:function(){console.log("#name clicked")},
-initialize:function(){this.render();console.log("view on")},
-render:function(){
-//$("#name").html("hello views is on")}
-//this.$el.html(this.template(this.model.attributes))		
-//return this
-console.log(this)
-  }
-})
-var view = new View()
-	console.log(view.el)
+var v = new view()
+	var model = Backbone.Model.extend({
+		defaults:{name:"name"},
+		initialize:function(){this.set({name:"whatname"});v.trigger("hello")},
+		
+	})
+		var m = new model()
+// v.trigger("hello:what")
+
 	</script>
 </body>
 </html>

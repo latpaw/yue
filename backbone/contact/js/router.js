@@ -29,6 +29,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/list/con
 	    showHome:function(actions){
 	    	var homeView=new HomeView();
 	    	homeView.render();
+	    	console.log(homeView)
 	    	this.changePage(homeView);
 	    },
 

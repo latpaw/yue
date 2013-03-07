@@ -28,7 +28,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 	    },
 
 	    productList:function(actions){
-          this.changePage(new products())
+          this.changePage(new products(),true)
 	    },
 	    solutionList:function(actions){
            this.changePage(new solutions())
@@ -36,10 +36,10 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 	    showProduct:function(id){
 	    	var promodel = new proModel()
 	    	var prodetail = new proDetail({model:promodel})
-	    	// prodetail.bind('renderCompleted:proDetail',this.changePage,this);
-	    	this.changePage(prodetail)
+	    	prodetail.bind('rendered:proDetail',this.changePage(prodetail),this);
 	    	promodel.fetch(id);
-           // this.changePage(prodetail)
+	    	
+           // this.changePage(prodetail,true)
 	    },
 	    showSolution:function(actions){
 
@@ -53,9 +53,9 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
             /*
              changePage调用每个view模块的render方法来生成template内容，然后插入到dom中。最后调用
             */
-	    changePage:function (page) {
+	    changePage:function (page,mark) {
 		 //render方法通过template生成page
-            page.render(); 
+		 if(mark){page.render();}
                 //设定外层div容器的data-role为'page'，以支持jquery mobile
 			$(page.el).attr('data-role', 'page');   
                 //插入dom
