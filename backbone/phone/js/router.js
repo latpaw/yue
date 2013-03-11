@@ -59,9 +59,10 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 		 if(mark){page.render();}
                 //设定外层div容器的data-role为'page'，以支持jquery mobile
            if(window.localStorage.getItem("new")=="no"){
-			$(page.el).css({"position":"absolute","left":"1000px"}).animate({"left":"0"}); 
+           	var width = window.innerWidth+"px"
+			$(page.el).css({"position":"absolute","left":width}).animate({"left":"0"},500); 
 			$(page.el).delegate("a","click",function(e){
-				$(page.el).animate({"left":"-1000px"},300,function(){this.remove()})
+				$(page.el).animate({"left":"-"+width},500,function(){$(this).remove()})
 			})
 		   }
 			  
@@ -69,20 +70,23 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
                 //插入dom
       		$('body').append($(page.el));
       		if(!document.getElementById("foot")){
-      			$('body').append('<footer><section><p id="foot"><a href="">Home</a> <a href="">Navigate</a> <a href="">Inquiry</a> <a href="">Contact</a></p><script type="text/javascript">var height=window.innerHeight-50+"px"; $("#foot").css({"position":"absolute","top":height,"background":"#fff","z-index":"1000"});</script></section></footer>')  
+      			$('body').append('<footer style="position:fixed" id="foot"><section><p><a href="">Home</a> <a href="">Navigate</a> <a href="">Inquiry</a> <a href="">Contact</a></p><script type="text/javascript">$("#foot").css({"bottom":"10px","background":"#fff","z-index":"1000"});</script></section></footer>')  
 				window.localStorage.setItem("new","no")
 				var _hide;
 				var hide =function(){ 
 				    _hide = window.setTimeout(function(){
-					$("#foot").animate({"top":window.innerHeight+"px"})
+					$("#foot").animate({"bottom":"-40px"})
 					},2000);
 					return _hide;
 				}
 				hide()
-				window.onclick=function(){
-					$("#foot").animate({"top":window.innerHeight-50+"px"});
-					hide();
+				document.onclick=function(e){
+					if(e.target && e.target.nodeName!="A"){
+					 $("#foot").animate({"bottom":"10px"});
+					 hide();
+				    }
 				}
+
 				$("#foot").hover(function(){
 					window.clearTimeout(_hide)
 				},function(){hide()})
