@@ -1,2 +1,15 @@
-h1{font-size:15px;background:#333;}
+body{width:100%;overflow:hidden;height:100%;}
+#body{width:100%;}
+h1{font-size:15px;background:#333;width:100%;}
 a{text-decoration:none;color:#123456;}
+
+.wrapper{width:100%;position:relative;overflow:hidden;height:400px;}
+
+.pl{position:absolute;}
+.pl ul{list-style: none;margin:0;padding:0;}
+.pl li{border-bottom:1px solid #aaa;}
+
+#listleft{width:100%;left:0;border-right:1px #aaa solid;}
+#listright{/*overflow:scroll;*/width:70%;left:100%;}
+#listleft li{text-align:center;}
+.ulist{display:none;}

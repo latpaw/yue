@@ -1,13 +1,59 @@
-        <div data-role="header">
-            <h1>List View 2</h1>
-        </div><!-- /header -->
+<h1>Products List</h1>
+<div class="wrapper">
+  
+<div class="pl" id="listleft">
+    <ul>
+        <% for(i in left){%>
+        <li><%= left[i]%></li>
+        <% }%>
+    </ul>
+</div>
+<script type="text/javascript">
+window.ontouchmove=function(e){
+    e.preventDefault()
+}    
+
+    $("#listleft li").click(function(){
+        var index = $(this).index()+1
+        var ulist = "#ul_"+index
+        // $("#listleft").animate({"left":"-"+$("#listleft").width()*0.7+"px"})
+        $("#listleft").animate({"width":$("body").width()*0.3+"px"})
+        $("#listright").animate({"left":$("body").width()*0.3+"px"})
+        $(ulist).css({"display":"block"}).siblings().css({"display":"none"})
+    })
+    var startx;
+    document.getElementById("listleft").ontouchstart=function(e){
         
-        <div data-role="content">	
-            <p>This is list view. </p>		
-            <p>View internal page called 
-            <a href="#home" data-transition="slide">back</a></p>	
-        </div><!-- /content -->
+     startx = e.touches[0].clientX
+     starty = e.touches[0].clientY
+    }
+    document.getElementById("listleft").ontouchmove=function(e){
         
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
+      var x=e.touches[0].clientX
+      var y=e.touches[0].clientY
+      $("#listleft").animate({"left":"+="+(x-startx)})
+      $("#listleft").animate({"left":"+="+(x-startx)})
+      if(x- startx>50){//move right
+        $("#listleft").animate({"left":"0px"})
+        $("#listleft").animate({"left":"100%"})
+        // alert("right")
+      }
+      if(startx - x>50){
+        $("#listleft").animate({"left":"-"+$("#listleft").width()*0.7+"px"})
+        $("#listright").animate({"left":$("#listleft").width()*0.3+"px"})
+        // alert("left")
+      }
+    }
+</script>
+
+
+<div class="pl" id="listright">
+        <% for (i in right){ %>
+    <ul id="ul_<%= i %>" class="ulist">
+        <% for (s in right[i]){ %>
+        <li><%= right[i][s].name%></li>
+       <% } %>
+    </ul>
+       <% } %>
+</div>
+</div>

@@ -1,5 +1,5 @@
-define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel'/*,'jqm'*/], 
-	function($, _, Backbone,home,solutions,products,soluDetail,proDetail,proModel) {
+define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel','../model/proListModel'/*,'jqm'*/], 
+	function($, _, Backbone,home,products,solutions,soluDetail,proDetail,proModel,proListModel) {
 
     'use strict';
     var Router = Backbone.Router.extend({
@@ -28,7 +28,10 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 	    },
 
 	    productList:function(actions){
-          this.changePage(new products(),true)
+	    	var prolistmodel = new proListModel()
+	    	var productlist = new products({model:prolistmodel})
+            productlist.bind('rendered:productList',this.changePage(productlist),this)
+            prolistmodel.fetch()
 	    },
 	    solutionList:function(actions){
            this.changePage(new solutions())
@@ -66,9 +69,11 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 			})
 		   }
 			  
-           // console.log($(page.el));
+           console.log(window.location.href);
                 //插入dom
+                $(page.el)[0].id="body"
       		$('body').append($(page.el));
+      		// console.log($(page.el)[0])
       		if(!document.getElementById("foot")){
       			$('body').append('<footer style="position:fixed" id="foot"><section><p><a href="">Home</a> <a href="">Navigate</a> <a href="">Inquiry</a> <a href="">Contact</a></p><script type="text/javascript">$("#foot").css({"bottom":"10px","background":"#fff","z-index":"1000"});</script></section></footer>')  
 				window.localStorage.setItem("new","no")
@@ -91,7 +96,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 					window.clearTimeout(_hide)
 				},function(){hide()})
 			}
-	     } 
+	    } 
     });
 
     return Router;

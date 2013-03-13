@@ -17,25 +17,26 @@
     }</style>
 </head>
 <body>
-	<div id="abc">页面自动跳转</div>
+	<div id="abc" data-shit-id="132">页面自动跳转</div>
 <script type="text/javascript" src="lunr.js"></script>
    <script type="text/javascript">
-var index = lunr(function () {
-    this.field('title', {boost: 10})
-    this.field('body')
-    this.ref('id')
-  })
-index.add({
-    id: 1,
-    title: 'Foo',
-    body: 'Foo foo foo!'
-  })
+// var index = lunr(function () {
+//     this.field('title', {boost: 10})
+//     this.field('body')
+//     this.ref('id')
+//   })
+// index.add({
+//     id: 1,
+//     title: 'Foo',
+//     body: 'Foo foo foo!'
+//   })
 
-  index.add({
-    id: 2,
-    title: 'Bar',
-    body: 'Bar bar bar!'
-  })
+//   index.add({
+//     id: 2,
+//     title: 'Bar',
+//     body: 'Bar bar bar!'
+//   })
+console.log(window.location.href)
    </script>
 </body>
 </html>

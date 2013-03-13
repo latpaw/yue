@@ -1,0 +1,45 @@
+{
+	"left":{
+		"1":"what a title",
+		"2":"Crushing Plantsa",
+		"3":"Crushing Plantssds",
+		"4":"Crushing Plantsds",
+		"5":"Crushing Plantsas"
+	},
+	"right":{
+		"1":{
+			"1":{
+				"name":"this is jaw crusher",
+				"img":"jaw-crusher.jpg",
+				"descs":"desc"
+			},			
+			"2":{
+				"name":"this is impact crusher",
+				"img":"jaw-crusher.jpg",
+				"descs":"desc"
+			},			
+			"3":{
+				"name":"this is cone crusher",
+				"img":"jaw-crusher.jpg",
+				"descs":"desc"
+			}
+		},
+		"2":{
+			"1":{
+				"name":"2this is jaw crusher",
+				"img":"jaw-crusher.jpg",
+				"descs":"desc"
+			},			
+			"2":{
+				"name":"2this is impact crusher",
+				"img":"jaw-crusher.jpg",
+				"descs":"desc"
+			},			
+			"3":{
+				"name":"2this is cone crusher",
+				"img":"jaw-crusher.jpg",
+				"descs":"desc"
+			}
+		}
+	}
+}
