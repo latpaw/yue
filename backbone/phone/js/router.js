@@ -1,5 +1,5 @@
-define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel','../model/proListModel'/*,'jqm'*/], 
-	function($, _, Backbone,home,products,solutions,soluDetail,proDetail,proModel,proListModel) {
+define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/about','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel','../model/proListModel'/*,'jqm'*/], 
+	function($, _, Backbone,home,about,products,solutions,soluDetail,proDetail,proModel,proListModel) {
 
     'use strict';
     var Router = Backbone.Router.extend({
@@ -9,7 +9,8 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
        */
         routes: {
         	'':    'showHome',           //home view
-        	'home': 'showHome',         //home view as well
+        	'home': 'showHome', 
+        	'about': 'aboutUs',        //home view as well
 	        'products/:id': 'showProduct',
 	        'products': 'productList',
 	        'solutions': 'solutionList',
@@ -25,6 +26,10 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
 
 	    defaultAction: function(actions){
 
+	    },
+
+	    aboutUs: function(actions){
+	    	this.changePage(new about());
 	    },
 
 	    productList:function(actions){
@@ -58,6 +63,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
              changePage调用每个view模块的render方法来生成template内容，然后插入到dom中。最后调用
             */
 	    changePage:function (page,mark) {
+	    	
 		 //render方法通过template生成page
 		 if(mark){page.render();}
                 //设定外层div容器的data-role为'page'，以支持jquery mobile
@@ -73,29 +79,33 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/products
                 //插入dom
                 $(page.el)[0].id="body"
       		$('body').append($(page.el));
+      		$('#body').prepend('<header>    <p id="toptop"></p>    <div id="logo_search">        <p id="search"><img src="css/images/wap_05.png" alt=""><input type="text" placeholder="Search"></p>        <img src="css/images/wap_03.png" alt="" id="logo">    </div></header>');
+            $('#body').append('<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>');
       		// console.log($(page.el)[0])
       		if(!document.getElementById("foot")){
-      			$('body').append('<footer style="position:fixed" id="foot"><section><p><a href="">Home</a> <a href="">Navigate</a> <a href="">Inquiry</a> <a href="">Contact</a></p><script type="text/javascript">$("#foot").css({"bottom":"10px","background":"#fff","z-index":"1000"});</script></section></footer>')  
+      			$('body').append('<div id="foot" style="position:fixed;bottom:0;width:100%">   <p id="slideup"><img src="css/images/wap_38.png" alt=""></p>    <div id="hidden_parts">        <ul>            <li id="list_home"><img src="css/images/wap_42.png" alt="">Home</li>             <li><img src="css/images/wap_45.png" alt="">List</li>            <li><img src="css/images/wap_47.png" alt="">Inquiry</li>            <li><img src="css/images/wap_49.png" alt="">Chat Online</li>            <li><img src="css/images/wap_51.png" alt="">Email</li>        </ul>        <div class="clear"></div>    </div></div>')  
 				window.localStorage.setItem("new","no")
+				var height = $("#hidden_parts").height()+"px"
 				var _hide;
 				var hide =function(){ 
 				    _hide = window.setTimeout(function(){
-					$("#foot").animate({"bottom":"-40px"})
-					},2000);
-					return _hide;
+					$("#foot").stop().animate({"bottom":"-"+height})
+					},5000);
+					
 				}
-				hide()
-				document.onclick=function(e){
+				$(document).ready(hide)
+				$("#slideup>img").click(function(e){
 					if(e.target && e.target.nodeName!="A"){
-					 $("#foot").animate({"bottom":"10px"});
+					 $("#foot").stop().animate({"bottom":"0px"});
 					 hide();
 				    }
-				}
+				});
 
-				$("#foot").hover(function(){
+				$("#foot").hover(function(_hide){
 					window.clearTimeout(_hide)
 				},function(){hide()})
 			}
+		
 	    } 
     });
 

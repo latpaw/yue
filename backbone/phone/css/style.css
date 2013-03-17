@@ -1,5 +1,7 @@
-body{width:100%;overflow:hidden;height:100%;}
-#body{width:100%;}
+*{margin:0;padding:0;}
+.clear{clear:both;}
+body{overflow-x:hidden;background:#f4f4f4;margin:0;padding:0;font-size:12px;}
+#body{width:100%;min-width:320px;max-width:960px;}
 h1{font-size:15px;background:#333;width:100%;}
 a{text-decoration:none;color:#123456;}
 
@@ -13,3 +15,57 @@ a{text-decoration:none;color:#123456;}
 #listright{/*overflow:scroll;*/width:70%;left:100%;}
 #listleft li{text-align:center;}
 .ulist{display:none;}
+
+/*index*/
+#toptop{height:4px;width:100%;background:#173a81;}
+#logo_search{background:#f4f4f4;padding-top:1.5em;padding-bottom:1em;margin-right:1em;}
+#logo{margin-left:1em;display:inline;height:40px;}
+#search{display:inline;margin-right:1em;}
+#search input{height:40px;float:right;border:#e7e7e7 1px solid;padding-left:5px;width:20%;}
+#search img{float:right;height:40px;}
+
+#index_main{background: #f4f4f4}
+#slider img{width:100%;}/**/
+#index_c{padding-top: 1em}
+#elistul{}
+#elistul li{float:left;list-style:none;width:30%;margin-left:2%;margin-top:1em;text-align:center;color:#585858;border-bottom:1px #eee solid;}
+.elist{width:100%;}
+.elist img{width:100%;}
+.elist span{margin-top:-2em;display:block;margin-left:1em;}
+
+hr{border:none;border-bottom:1px dashed #aaa;margin:1em auto;width:95%;}
+
+#index_line img{width:60%;float:right;margin-right:1em;}
+#index_line_p{width:30%;float:left;background: #626262;position:relative;margin-left:1em;}
+#index_line_p img{width:35px;float:none;margin:0 1px 1px 0;position:absolute;right:0;bottom:0;}
+#index_line_p span{margin:1em;display:block;color:#fff;}
+
+aside{width:100%;background:#f4f4f4;padding-top:1em;}
+a.link{width:90%;margin:0.5em auto;display:block;line-height:69px;background:#fff;padding-left:1em;color:#585858;}
+a.link img{float:right;margin-right:1em;margin-top:20px;}
+
+.blue{color:#1c3376;}
+.gray{color:#a5a5a5;}
+
+#copy p{text-align:center;}
+#copy{margin-bottom:3em;}
+
+#slideup{width:86px;margin:0 auto;height:33px;}
+#hidden_parts{background:#1c3376;overflow:hidden;}
+#hidden_parts li{float:left;width:19%;list-style:none;padding-top:1em;text-align:center;color:#fff;
+margin-bottom:-10000px; padding-bottom:10000px; }
+#hidden_parts li img{display:block;margin:0 auto;}
+#hidden_parts li#list_home{border-right:1px #aaa solid;}
+
+#foot{min-width:320px;max-width:960px;}
+
+/*jiaohu*/
+.hidden{border-collapse:collapse;width:100%;margin-top:2em;}
+.hidden td{width:33%;background:#173a81;border:1px dashed #eee;border-top:none;z-index:1000;}
+.hidden a{margin:0;padding:0;line-height:70px;color:#fff;text-align:center;width:100%;display:block;}
+.float{margin-top:-12px;z-index:2000;position:absolute;}
+.float img{margin:0 auto;display:block;};
+
+
+/***********************width 100%***/
+.content{background:#fff;}
