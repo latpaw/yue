@@ -9,7 +9,8 @@ var proListModel = Backbone.Model.extend({
                   left:data.left,
                   right:data.right
                 });
-                // console.log("right"+data.right.a.a.name)
+
+                console.log(data.left)
                 self.trigger("fetched:productList");
               })
               .error(function() { alert("error"); })

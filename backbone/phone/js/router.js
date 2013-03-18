@@ -1,5 +1,5 @@
-define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/about','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel','../model/proListModel'/*,'jqm'*/], 
-	function($, _, Backbone,home,about,products,solutions,soluDetail,proDetail,proModel,proListModel) {
+define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/about','modules/home/contact','modules/home/inquiry','modules/products/products','modules/solutions/solutions','modules/solutions/soluDetail','modules/products/proDetail','../model/proModel','../model/proListModel'/*,'jqm'*/], 
+	function($, _, Backbone,home,about,contact,inquiry,products,solutions,soluDetail,proDetail,proModel,proListModel) {
 
     'use strict';
     var Router = Backbone.Router.extend({
@@ -10,7 +10,9 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
         routes: {
         	'':    'showHome',           //home view
         	'home': 'showHome', 
-        	'about': 'aboutUs',        //home view as well
+        	'about': 'aboutUs',
+        	'contact': 'contactUs',  
+        	'inquiry': 'inquiry',
 	        'products/:id': 'showProduct',
 	        'products': 'productList',
 	        'solutions': 'solutionList',
@@ -30,6 +32,12 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
 
 	    aboutUs: function(actions){
 	    	this.changePage(new about());
+	    },
+	    inquiry:function(actions){
+	    	this.changePage(new inquiry());
+	    },
+	    contactUs:function(actions){
+	    	this.changePage(new contact());
 	    },
 
 	    productList:function(actions){
@@ -78,9 +86,14 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
            console.log(window.location.href);
                 //插入dom
                 $(page.el)[0].id="body"
-      		$('body').append($(page.el));
+                var contentpart = $("<div>")
+                $(contentpart).attr("id","products")
+      		$('body').append(contentpart);
+      		contentpart.append($(page.el));
+      		// console.log($(page.el))
+
       		$('#body').prepend('<header>    <p id="toptop"></p>    <div id="logo_search">        <p id="search"><img src="css/images/wap_05.png" alt=""><input type="text" placeholder="Search"></p>        <img src="css/images/wap_03.png" alt="" id="logo">    </div></header>');
-            $('#body').append('<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>');
+            
       		// console.log($(page.el)[0])
       		if(!document.getElementById("foot")){
       			$('body').append('<div id="foot" style="position:fixed;bottom:0;width:100%">   <p id="slideup"><img src="css/images/wap_38.png" alt=""></p>    <div id="hidden_parts">        <ul>            <li id="list_home"><img src="css/images/wap_42.png" alt="">Home</li>             <li><img src="css/images/wap_45.png" alt="">List</li>            <li><img src="css/images/wap_47.png" alt="">Inquiry</li>            <li><img src="css/images/wap_49.png" alt="">Chat Online</li>            <li><img src="css/images/wap_51.png" alt="">Email</li>        </ul>        <div class="clear"></div>    </div></div>')  

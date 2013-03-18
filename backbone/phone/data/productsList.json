@@ -1,10 +1,13 @@
 {
 	"left":{
-		"1":"what a title",
-		"2":"Crushing Plantsa",
-		"3":"Crushing Plantssds",
-		"4":"Crushing Plantsds",
-		"5":"Crushing Plantsas"
+		"1":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"2":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"3":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"4":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"5":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"6":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"7":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"},
+		"8":{"name":"what a title","img":"jaw-crusher.png","desc":"thisis desc"}
 	},
 	"right":{
 		"1":{
