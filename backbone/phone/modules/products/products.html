@@ -1,4 +1,4 @@
-<p id="protwo"><span id="active">Products</span> <span>Product Line</span></p>
+<p id="protwo"><span id="active" >Products</span> <a  href="#solutions">Line</a></p>
 <div class="wrapper">
   
 <div class="pl" id="listleft">
@@ -8,6 +8,7 @@
           <img src="css/images/<%= left[i].img %>" alt="">
           <span><%= left[i].name %></span> 
           <span class="gray"><%= left[i].desc %></span>
+          <img src="css/images/wap_34.png" id="right_tri" alt="">
           </li>
         <% }%>
     </ul>
@@ -20,9 +21,15 @@ window.ontouchmove=function(e){
     $("#listleft li").click(function(){
         var index = $(this).index()+1
         var ulist = "#ul_"+index
+        $(this).css("color","#fd8a21").siblings().css("color","#333")
         // $("#listleft").animate({"left":"-"+$("#listleft").width()*0.7+"px"})
-        $("#listleft").animate({"width":$("body").width()*0.3+"px"})
-        $("#listright").animate({"left":$("body").width()*0.3+"px"})
+        $("#listleft").css({"border":"none"}).find("li").css({"border":"none","background":"#f4f4f4"})
+        $("#listleft").animate({"width":$("body").width()*0.25+"px"})
+        $("#listleft").find("img").hide()
+        // $("#listleft").find("span").animate({"paddingTop":"1em"})
+        $("#listleft").find(".gray").hide()
+        $(this).append("<img src='css/images/fdsf.png' style='float:right;z-index:2000;position:absolute;right:0;'>")
+        $("#listright").animate({"left":$("body").width()*0.25+"px"})
         $(ulist).css({"display":"block"}).siblings().css({"display":"none"})
     })
     var startx;
@@ -55,11 +62,16 @@ window.ontouchmove=function(e){
         <% for (i in right){ %>
     <ul id="ul_<%= i %>" class="ulist">
         <% for (s in right[i]){ %>
-        <li><%= right[i][s].name%></li>
+        <li>
+          <img src="css/images/<%= right[i][s].img %>" alt="">
+          <span><a href="#products/<%= right[i][s].href %>"><%= right[i][s].name%></a></span>
+          <span class="gray"><%= right[i][s].descs %></span>
+        </li>
        <% } %>
     </ul>
        <% } %>
 </div>
 </div>
 <div class="clear"></div>
+<p class="contact_foot"> <a href="">About Us</a> <a href="">Contact Us</a></p>
 <div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>

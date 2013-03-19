@@ -7,9 +7,9 @@ var proModel = Backbone.Model.extend({
             var jqxhr = $.getJSON("data/" + id + ".json")
               .success(function(data, status, xhr) { 
                 self.set({
-                  product:data
+                  solution:data
                 });
-                self.trigger("fetched:proDetail");
+                self.trigger("fetched:solDetail");
               })
               .error(function() { alert("error"); })
               .complete(function() {

@@ -1,0 +1,27 @@
+<section id="prodetail">
+<p id="bimg">
+    <img src="css/images/<%= solution.bimg %>" alt="">
+</p>
+<h1><%= solution.h1 %></h1>
+<hr>
+<h3>Introduction</h3>
+<div class="detail"><%= solution.introduction %></div>
+<h3 class="equipment">Processing Equipment</h3>
+<div class="detail related" id="">
+<ul>
+    <% for( i in solution.equipment){ %>
+    <li>
+        <img src="css/images/<%= solution.equipment[i][0]%>" alt="">
+      <%= solution.equipment[i][1]%>
+    </li>
+    <% } %>
+    </ul>
+
+ </div>
+<h3 class="flow">working flow </h3>
+<div class="detail" id=""><%= solution.flow %></div>
+<button class="inquiry_button">Free Enquiry</button>
+<hr>
+</section>
+<p class="about_foot"><a href="">solutions</a> <a href="">solutions Line</a> <a href="">About Us</a> <a href="">Contact Us</a></p>
+<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>

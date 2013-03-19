@@ -1,0 +1,12 @@
+{
+	"name":"Basalt",
+	"h1":"Basalt stone processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"Jaw crushers are mostly used in primary cruhsing, crushign raw stones & rocks to small ones. It can aslso used in tertiary crushing. it depends on the models. SBM design & produce series of jaw crusher and they well meet customers' different requirements.",
+	"equipment":{
+		"jaw":["jaw-crusher.png","jaw-crusher.html"],
+		"cone":["jaw-crusher.png","jaw-crusher.html"],
+		"impact":["jaw-crusher.png","jaw-crusher.html"]
+	},
+	"flow":"<ul><li>The basalt stones of various sizes are fed into the jaw crushers for size reduction.</li><li>Next, depending on the desired output size of the crushed stone, the raw material may be fed to one or two jaw crushers in a sequence. Then these crushed stones re passed on to the rotary screen for size gradation. Last, material is handled through a belt conveyor to the different places of operation i.e from jaw crusher to the rotary screen.</li><li>Last, material is handled through a belt conveyor to the different places of operation i.e from jaw crusher to the rotary screen.</li></ul>"
+}

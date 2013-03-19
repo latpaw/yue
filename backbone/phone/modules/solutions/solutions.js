@@ -1,15 +1,19 @@
-// Filename: store/vew/list.js
 define(['jquery', 'underscore', 'backbone','text!modules/solutions/solutions.html'], 
-function($, _, Backbone, solutionT){
+function($, _, Backbone, productT){
 
-  var solutionView = Backbone.View.extend({
+  var productList = Backbone.View.extend({
 
-    template: _.template(solutionT),
+    template: _.template(productT),
+    initialize:function(){
+      console.log("new view")
+      this.model.bind("fetched:solutionList",this.render,this);
+    },
     render: function(){
       console.log("list render");
-      $(this.el).append(this.template());
+      $(this.el).append(this.template(this.model.toJSON()));
+      this.trigger("rendered:solutionList")
       return this;
     }
   });
-  return solutionView;
+  return productList;
 });

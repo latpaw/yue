@@ -1,79 +1,50 @@
-        <div data-role="header">
-            <h1>Products Details</h1>
-        </div><!-- /header -->
-        
-        <div data-role="content">	
-            <p>This is product detail view. </p>		
-            <p>View internal page called  <%= name %> <br>
-            <a href="#home" data-transition="slide"><%=tt%></a></p>	
-        </div><!-- /content -->
-        
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-<div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-        <div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer --><div data-role="footer">
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
+<section id="prodetail">
+<p id="bimg">
+    <img src="css/images/<%= product.bimg %>" alt="">
+</p>
+<h1><%= product.h1 %></h1>
+<hr>
+<h3>Overview</h3>
+<div class="detail"><%= product.overview %></div>
+<h3 class="feature">Feature <img src="css/images/ten.png" style="float:right;margin-right:1em" alt=""></h3>
+<div class="detail" id="feature_detail"><%= product.feature %> </div>
+<h3 class="technical">Tecnical Data <img src="css/images/ten.png" style="float:right;margin-right:1em" alt=""></h3>
+<div class="detail" id="technical_detail"><%= product.technical %></div>
+<h3 class="application">Application</h3>
+<div class="detail"><%= product.application %></div>
+<button class="inquiry_button">Free Enquiry</button>
+<hr>
+<h3>Related Products</h3>
+<div class="related">
+    <ul>
+    <% for( i in product.related){ %>
+    <li>
+        <img src="css/images/<%= product.related[i][0]%>" alt="">
+      <%= product.related[i][1]%>
+    </li>
+    <% } %>
+    </ul>
+</div>
+</section>
+<p class="about_foot"><a href="">Products</a> <a href="">Products Line</a> <a href="">About Us</a> <a href="">Contact Us</a></p>
+<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>
+<script type="text/javascript">
+    $(".feature>img").click(function(){
+        if($(".feature").next().css("display")!="block"){
+        $(this).attr("src","css/images/one.png")
+        $(".feature").next().css("display","block")
+    }else{
+       $(this).attr("src","css/images/ten.png")
+        $(".feature").next().css("display","none") 
+    }
+    })
+    $(".technical>img").click(function(){
+        if($(".technical").next().css("display")!="block"){
+        $(this).attr("src","css/images/one.png")
+        $(".technical").next().css("display","block")
+    }else{
+       $(this).attr("src","css/images/ten.png")
+        $(".technical").next().css("display","none") 
+    }
+    })
+</script>

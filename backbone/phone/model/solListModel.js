@@ -1,15 +1,17 @@
 define(function(){
-var proModel = Backbone.Model.extend({
-// defaults:{name:"name",tt:"tt"},
-     fetch:function(id){
+var proListModel = Backbone.Model.extend({
+     fetch:function(){
        var self=this;
             var tmpContact;
-            var jqxhr = $.getJSON("data/" + id + ".json")
+            var jqxhr = $.getJSON("data/solutionList.json")
               .success(function(data, status, xhr) { 
                 self.set({
-                  product:data
+                  left:data.left,
+                  right:data.right
                 });
-                self.trigger("fetched:proDetail");
+
+                console.log(data.left)
+                self.trigger("fetched:solutionList");
               })
               .error(function() { alert("error"); })
               .complete(function() {
@@ -17,5 +19,6 @@ var proModel = Backbone.Model.extend({
               });
           }
 });
-return proModel
+console.log("new model")
+return proListModel
 });

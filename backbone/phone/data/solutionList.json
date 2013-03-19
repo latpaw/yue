@@ -1,0 +1,51 @@
+{
+	"left":{
+		"1":{"name":"Construction","img":"jaw-crusher.png","desc":"thisis desc"},
+		"2":{"name":"Mining","img":"jaw-crusher.png","desc":"thisis desc"},
+		"3":{"name":"Milling","img":"jaw-crusher.png","desc":"thisis desc"},
+		"4":{"name":"Sand making plant","img":"jaw-crusher.png","desc":"thisis desc"},
+		"5":{"name":"Project","img":"jaw-crusher.png","desc":"thisis desc"}
+	},
+	"right":{
+		"1":{
+			"1":{
+				"name":"this is jaw crusher",
+				"img":"jaw-crusher.png",
+				"descs":"desc",
+				"href":"basalt"
+			},			
+			"2":{
+				"name":"this is impact crusher",
+				"img":"jaw-crusher.png",
+				"descs":"desc",
+				"href":"basalt"
+			},			
+			"3":{
+				"name":"this is cone crusher",
+				"img":"jaw-crusher.png",
+				"descs":"desc",
+				"href":"basalt"
+			}
+		},
+		"2":{
+			"1":{
+				"name":"2this is jaw crusher",
+				"img":"jaw-crusher.png",
+				"descs":"desc",
+				"href":"basalt"
+			},			
+			"2":{
+				"name":"2this is impact crusher",
+				"img":"jaw-crusher.png",
+				"descs":"desc",
+				"href":"basalt"
+			},			
+			"3":{
+				"name":"2this is cone crusher",
+				"img":"jaw-crusher.png",
+				"descs":"desc",
+				"href":"basalt"
+			}
+		}
+	}
+}

@@ -1,4 +1,14 @@
 {
 	"name":"jaw crusher",
-	"tt":"this is title"
+	"h1":"PEW Jaw Crusher",
+	"bimg":"bjaw.png",
+	"overview":"Jaw crushers are mostly used in primary cruhsing, crushign raw stones & rocks to small ones. It can aslso used in tertiary crushing. it depends on the models. SBM design & produce series of jaw crusher and they well meet customers' different requirements.",
+	"feature":"<ul><li>First</li><li>Second</li><li>Third</li><li>Four</li></ul>",
+	"technical":"technical",
+	"application":"Jaw crusher is widely used in various mining &construction materials processing industries, such as granite, marble, basalt, limestone, quartz, cobble, iron ore, copper ore, and some other mineral &rocks.",
+	"related":{
+		"jaw":["jaw-crusher.png","jaw-crusher.html"],
+		"cone":["jaw-crusher.png","jaw-crusher.html"],
+		"impact":["jaw-crusher.png","jaw-crusher.html"]
+	}
 }
