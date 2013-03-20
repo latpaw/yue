@@ -5,18 +5,20 @@
     <ul>
         <% for(i in left){%>
         <li>
-          <img src="css/images/<%= left[i].img %>" alt="">
-          <span><%= left[i].name %></span> 
-          <span class="gray"><%= left[i].desc %></span>
+          <img src="css/pics/<%= left[i].img %>" alt="">
           <img src="css/images/wap_34.png" id="right_tri" alt="">
+          <p><b><%= left[i].name %></b><br>
+        <span class="gray"><%= left[i].desc %></span>
+          </p> 
+          
           </li>
         <% }%>
     </ul>
 </div>
 <script type="text/javascript">
-window.ontouchmove=function(e){
-    e.preventDefault()
-}    
+// window.ontouchmove=function(e){
+//     e.preventDefault()
+// }    
 
     $("#listleft li").click(function(){
         var index = $(this).index()+1
@@ -28,33 +30,34 @@ window.ontouchmove=function(e){
         $("#listleft").find("img").hide()
         // $("#listleft").find("span").animate({"paddingTop":"1em"})
         $("#listleft").find(".gray").hide()
-        $(this).append("<img src='css/images/fdsf.png' style='float:right;z-index:2000;position:absolute;right:0;'>")
+        $(this).css({"background":"#fff","border-right":"1px #ebebeb solid","border-bottom":"1px #ebebeb solid","border-left":"4px #fd8a21 solid"})
+        // $(this).append("<img src='css/images/fdsf.png' style='float:right;z-index:2000;position:absolute;right:0;'>")
         $("#listright").animate({"left":$("body").width()*0.25+"px"})
         $(ulist).css({"display":"block"}).siblings().css({"display":"none"})
     })
-    var startx;
-    document.getElementById("listleft").ontouchstart=function(e){
+    // var startx;
+    // document.getElementById("listleft").ontouchstart=function(e){
         
-     startx = e.touches[0].clientX
-     starty = e.touches[0].clientY
-    }
-    document.getElementById("listleft").ontouchmove=function(e){
+    //  startx = e.touches[0].clientX
+    //  starty = e.touches[0].clientY
+    // }
+    // document.getElementById("listleft").ontouchmove=function(e){
         
-      var x=e.touches[0].clientX
-      var y=e.touches[0].clientY
-      $("#listleft").animate({"left":"+="+(x-startx)})
-      $("#listleft").animate({"left":"+="+(x-startx)})
-      if(x- startx>50){//move right
-        $("#listleft").animate({"left":"0px"})
-        $("#listleft").animate({"left":"100%"})
-        // alert("right")
-      }
-      if(startx - x>50){
-        $("#listleft").animate({"left":"-"+$("#listleft").width()*0.7+"px"})
-        $("#listright").animate({"left":$("#listleft").width()*0.3+"px"})
-        // alert("left")
-      }
-    }
+    //   var x=e.touches[0].clientX
+    //   var y=e.touches[0].clientY
+    //   $("#listleft").animate({"left":"+="+(x-startx)})
+    //   $("#listleft").animate({"left":"+="+(x-startx)})
+    //   if(x- startx>50){//move right
+    //     $("#listleft").animate({"left":"0px"})
+    //     $("#listleft").animate({"left":"100%"})
+    //     // alert("right")
+    //   }
+    //   if(startx - x>50){
+    //     $("#listleft").animate({"left":"-"+$("#listleft").width()*0.7+"px"})
+    //     $("#listright").animate({"left":$("#listleft").width()*0.3+"px"})
+    //     // alert("left")
+    //   }
+    // }
 </script>
 
 
@@ -64,8 +67,9 @@ window.ontouchmove=function(e){
         <% for (s in right[i]){ %>
         <li>
           <img src="css/images/<%= right[i][s].img %>" alt="">
-          <span><a href="#products/<%= right[i][s].href %>"><%= right[i][s].name%></a></span>
+          <p><b><a href="#products/<%= right[i][s].href %>"><%= right[i][s].name%></a></b> <br>
           <span class="gray"><%= right[i][s].descs %></span>
+          </p>
         </li>
        <% } %>
     </ul>

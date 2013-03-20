@@ -7,20 +7,26 @@
 <h3>Overview</h3>
 <div class="detail"><%= product.overview %></div>
 <h3 class="feature">Feature <img src="css/images/ten.png" style="float:right;margin-right:1em" alt=""></h3>
-<div class="detail" id="feature_detail"><%= product.feature %> </div>
+<div class="detail" id="feature_detail">
+    <ul>
+    <% for(i in product.feature){%>
+    <li><%= product.feature[i] %></li> 
+    <%}%>
+    </ul>
+</div>
 <h3 class="technical">Tecnical Data <img src="css/images/ten.png" style="float:right;margin-right:1em" alt=""></h3>
 <div class="detail" id="technical_detail"><%= product.technical %></div>
 <h3 class="application">Application</h3>
 <div class="detail"><%= product.application %></div>
 <button class="inquiry_button">Free Enquiry</button>
 <hr>
-<h3>Related Products</h3>
+<h3>Related Products <span><img src="css/images/leftgray.png" alt="" id="prev"> <img src="css/images/rightgray.png" id="next" alt=""></span></h3>
 <div class="related">
     <ul>
     <% for( i in product.related){ %>
     <li>
         <img src="css/images/<%= product.related[i][0]%>" alt="">
-      <%= product.related[i][1]%>
+      <a href="<%= product.related[i][1]%>"><%= i %></a>
     </li>
     <% } %>
     </ul>

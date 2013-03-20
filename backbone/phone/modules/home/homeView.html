@@ -60,9 +60,13 @@
         <p id="index_line_p"><span>Product <br> Line </span><a href="#solutions"><img src="css/images/wap_29.png" alt=""></a></p>
         <img src="css/images/wap_27.png" alt="">
         <script type="text/javascript">
+        $("#index_line_p").next().load(function(){
+           $("#index_line_p").height(function(){return $("#index_line_p").next().height()+"px"}) 
+        })
+            
+
            $(document).ready(function(){
             $(".float").each(function(){$(this).width(function(){return $(this).parent().width()})})
-            $("#index_line_p").height(function(){return $("#index_line_p").next().height()+"px"})
             //up there
             $("#elistul").on("click","li",function(){
                 var index = $(this).index()+1
@@ -81,9 +85,9 @@
     <div class="clear"></div>
 </section>
 <aside>
-    <a href="" class="link">About Us <img src="css/images/wap_34.png" alt=""></a>
-    <a href="" class="link">Contact Us <img src="css/images/wap_34.png" alt=""></a>
-    <a href="" class="link">Inquiry <img src="css/images/wap_34.png" alt=""></a>
+    <a href="#about" class="link">About Us <img src="css/images/wap_34.png" alt=""></a>
+    <a href="#contact" class="link">Contact Us <img src="css/images/wap_34.png" alt=""></a>
+    <a href="#inquiry" class="link">Inquiry <img src="css/images/wap_34.png" alt=""></a>
 
 </aside>
 <div id="copy">
