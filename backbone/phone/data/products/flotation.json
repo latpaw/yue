@@ -1,0 +1,16 @@
+{
+	"name":"Flotation Machine ",
+	"h1":"Flotation Machine ",
+	"bimg":" ",
+	"overview":"Flotation machine is indispensable machine in many mineral dressing plants. Agitator flotation machine, pneumatic flotation machine and pneumatic- agitator flotation machine are produced for differents projects. ",
+	"feature":["Large air-absorption capacity and low energy consumption","Optimistic structure design & Excellent performance","Reasonable circulation of mineral slurry","Automatic control Easy to adjust"],
+	"technical":"technical",
+	"application":"Flotation machine are mainly used in mineral ore dressing plants. It is applicable for the separation of numerous of mineral ores, such as fluorite and talc, gold ore, copper ore, iron ore and zinc ore, etc. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

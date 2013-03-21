@@ -18,24 +18,42 @@
 <div class="detail" id="technical_detail"><%= product.technical %></div>
 <h3 class="application">Application</h3>
 <div class="detail"><%= product.application %></div>
-<button class="inquiry_button">Free Enquiry</button>
+<button class="inquiry_button" onclick="window.location.href='#inquiry'">Free Enquiry</button>
 <hr>
 <h3>Related Products <span><img src="css/images/leftgray.png" alt="" id="prev"> <img src="css/images/rightgray.png" id="next" alt=""></span></h3>
 <div class="related">
+    <div class="relain">
     <ul>
     <% for( i in product.related){ %>
     <li>
-        <img src="css/images/<%= product.related[i][0]%>" alt="">
+        <img src="css/images/<%= product.related[i][0]%>" alt=""><br>
       <a href="<%= product.related[i][1]%>"><%= i %></a>
     </li>
     <% } %>
     </ul>
+    </div>
 </div>
 </section>
 <p class="about_foot"><a href="">Products</a> <a href="">Products Line</a> <a href="">About Us</a> <a href="">Contact Us</a></p>
 <div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>
 <script type="text/javascript">
-    $(".feature>img").click(function(){
+    var num = Math.floor($("body").width()/150)
+    var lgth = $(".related li").length
+    var now = 1
+$(".related").width(num*150)
+$("#next").click(function(){
+    if(now+num>lgth){
+        $(".related ul").stop().animate({"marginLeft":"0"})
+        now = 1
+    }else
+    {
+        $(".related ul").stop().animate({"marginLeft":"-="+num*150+"px"})
+        now = now + num
+    }
+})
+setInterval(function(){$("#next").stop().trigger("click")},5000)
+
+    $(".feature").click(function(){
         if($(".feature").next().css("display")!="block"){
         $(this).attr("src","css/images/one.png")
         $(".feature").next().css("display","block")
@@ -44,7 +62,7 @@
         $(".feature").next().css("display","none") 
     }
     })
-    $(".technical>img").click(function(){
+    $(".technical").click(function(){
         if($(".technical").next().css("display")!="block"){
         $(this).attr("src","css/images/one.png")
         $(".technical").next().css("display","block")

@@ -1,0 +1,16 @@
+{
+	"name":"Impact Crusher ",
+	"h1":"Impact Crusher ",
+	"bimg":" ",
+	"overview":"SBM impact crusher involve many models, they run through the whole crushing plant, the primary crushing, secondary crushing and tertiary crushing. With good plant design &combination, they are able to meet numerous crushing requirements. ",
+	"feature":["Steady performance &High handling capacity","Easy to operate and maintain with the autonomic hydraulic device","Discharging port is adjustable, well meet customers’ different business-demand","Lower noise &Good dustproof design reach to international environment protection standard"],
+	"technical":"technical",
+	"application":"Impact crushers well fit for crushing numerous medium and soft mineral &rock materials, such as limestone, feldspar, calcite, talc, barite, clay, tombar thite, kaolin, gypsum, and graphite, etc. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

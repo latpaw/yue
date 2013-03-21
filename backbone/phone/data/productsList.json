@@ -9,19 +9,19 @@
 	"right":{
 		"1":{
 			"1":{
-				"name":"this is jaw crusher",
+				"name":"PE Jaw Crusher",
 				"img":"jaw-crusher.png",
 				"descs":"desc",
 				"href":"jaw"
 			},			
 			"2":{
-				"name":"this is impact crusher",
+				"name":"PEW Jaw Crusher",
 				"img":"jaw-crusher.png",
 				"descs":"desc",
 				"href":"jaw"
 			},			
 			"3":{
-				"name":"this is cone crusher",
+				"name":"Impact Crusher",
 				"img":"jaw-crusher.png",
 				"descs":"desc",
 				"href":"jaw"

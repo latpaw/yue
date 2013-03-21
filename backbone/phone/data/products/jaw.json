@@ -9,6 +9,8 @@
 	"related":{
 		"jaw crusher":["jaw-crusher.png","#jaw"],
 		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"]
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
 	}
 }

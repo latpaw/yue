@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Coal beneficiation plant",
+	"bimg":"bjaw.png",
+	"introduction":"SBM Machinery is a specialist manufacturer of Coal beneficiation plant. It supplies a variety crusher equipments and also design complete pair of Coal beneficiation plant in line with the requirements of consumers.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"About Coal Beneficiation, there are three kinds of processes may be performed at the plants: <br /> (1) Sizing, controlled by a crushing and screening process.<br /> (2)Increasing heating value, by removing noncombustible ash and rock by gravity separation.<br />Removing or controlling undesirable mineral and chemical components by a combination of gravity separation and blending. "
+}

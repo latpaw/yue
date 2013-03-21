@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Gold ore concentration plant",
+	"bimg":"bjaw.png",
+	"introduction":"The gold ore processing plant alternates between treating ore from the mine open pit and from the underground mine. SBM Machinery is one of world leading suppliers of complete gold ore concentration plant.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"Broken process is generally used to provide the right from the feed mill. Crushing process is the mostly small-scale plant using the process. Sections broken process is the basic form of the process open and three sections of three sections of a closed two. When the feeding of the mud (-3mm) of more than 5% to 10% and water content greater than 5% to 8%, should add the washing operation in the crushing process."
+}

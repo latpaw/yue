@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Silver mining plant",
+	"bimg":"bjaw.png",
+	"introduction":"Silver is a soft, white, lustrous transition metal, it has the highest electrical conductivity of any element and the highest thermal conductivity of any metal. SBM crushers have a very important role in silver ores mining, especially in silver ores’ crushing process.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"Silver is commonly extracted from ore by crushing, grinding, smelting or chemical leaching. Jaw Crusher is commonly used as the primary crusher and Impact Crusher, Cone Crusher are used as secondary crusher. The Ball Mill, Raymond Mill or High Pressure Mill is often used as grinding machine to grind silver ores to final size. The crushed silver ores will be smelted to get the final product – silver."
+}

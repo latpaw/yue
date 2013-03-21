@@ -1,0 +1,16 @@
+{
+	"name":"Belt Conveyor ",
+	"h1":"Belt Conveyor ",
+	"bimg":" ",
+	"overview":"Belt conveyors is widely used in various industries. SBM designed the unique belts and belt systems to meet specific end-user requirements for high performance and cost-efficiency, especially in the mining and construction industry. ",
+	"feature":["High carrying capacity and the length is customized","Anti-skidding design ensure that it works very well even in severe environment","Easy to operate and easy to maintain ","Different models for choice"],
+	"technical":"technical",
+	"application":"Belt conveyor is used for transferring lump materials or manufactured products in quarry, mining, construction, metallurgical industries and other industries. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Basalt stone processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"Basalt is the ideal materials to mix asphalt mixture. Basalt is largely applied to constructions of railway, highway, and airfield runway. To one complete basalt production line,it may contain many processing machines.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"The basalt stones of various sizes are fed into the jaw crushers for size reduction. Next, depending on the desired output size of the crushed stone, the raw material may be fed to one or two jaw crushers in a sequence. Then these crushed stones re passed on to the rotary screen for size gradation. Last, material is handled through a belt conveyor to the different places of operation i.e from jaw crusher to the rotary screen."
+}

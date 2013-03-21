@@ -1,0 +1,16 @@
+{
+	"name":"Hydrocyclone ",
+	"h1":"Hydrocyclone ",
+	"bimg":" ",
+	"overview":"Hydrocyclone is extensively used for closed circuit grinding and classification system , thickening, des, dewatering , tailings filling, damming, recovery processes in ferrous, nonferrous metal and nonmetal mine industries. ",
+	"feature":["High capacity & High classifying efficient","Easy to disassembly & Easy to maintain","Low investment cost & Taking little space","Simple structure and there is no moving parts"],
+	"technical":"technical",
+	"application":"Hydrocyclone has wide application in metal ore and nonmetal ore processing plants, such as iron ore dressing, manganese ore beneficiation, coal processing, environmental power and alumina industry. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

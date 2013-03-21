@@ -1,0 +1,16 @@
+{
+	"name":"Magnetic Separator ",
+	"h1":"Magnetic Separator ",
+	"bimg":" ",
+	"overview":"Magnetic separator is one of the most important sperating machine in mineral beneficiation industry. Due to the physical-property difference, magnetic separator include many kinds models, such as high intensity separator, low intensity separator and some other models. ",
+	"feature":["High capacity &Excellent performance","Easily installed &Extremely easy to clean","Simple structure &Saving downtime","Key parts are well prevent from being corroded through optimized design"],
+	"technical":"technical",
+	"application":"Magnetic separator is suitable for wet separating of magnetite, magnetic pyrite, baking ore, and limonite, etc.It also can be used for removing Fe procession of coal, nonmetallic mineral and construction materials. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

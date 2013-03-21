@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Feldspar stone processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"Feldspar is the most common ore in the earth crust and it even appears on the moon and in the aerolite. Feldspar is the main component of igneous and is also common in metamorphic rock and sedimentary rock. ",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"The process of feldspar crushing is consisted of primary crushing and secondary crushing. After the two stages of feldspar crushing, large feldspar whose diameter is approximately 1.5 meters has changed into feldspar particle, and the size of feldspar particles can achieve to 25mm or less. In the grinding process, crushed feldspar particles is grinded into powder with the fineness requirement of 200 mesh by grinding mill."
+}

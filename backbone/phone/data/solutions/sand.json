@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Sand making plant",
+	"bimg":"bjaw.png",
+	"introduction":"Sand is widely used in road construction, real estate development, concrete making etc. With the rapid development of construction industry, the amount of the natural sand failed to keep pace with the various sectors of modern world development needs.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"The raw material is transferred to jaw crusher for primary crushing by vibrating feeder, then the crushed materials whose size is larger than 40 mm are transferred to VSI crusher through belt conveyor for secondary crushing. The materials crushed will be transferred to the vibrating screen. The materials with suitable size will be transferred to VSI crusher, after being washed by sand washers, then clean final products will be discharged."
+}

@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Gypsum processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"Gypsum is a very useful processed material. Raw gypsum ore is processed into a variety of products such as a portland cement additive, soil conditioner, industrial and building plasters and gypsum wallboard, etc.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"After being shipped from the mining site, the raw gypsum mine should be first through the Vibrating Feeder to Jaw Crusher, the raw gypsum is fed and crushed to less than 8cm. Then through the secondary step, the mineral is crushed to less than 2cm. The end products will be transported to calcining kiln through bucket elevator. We can change the temperature of the calcining kiln to produce β-type hemihydrate gypsum, anhydrite and over gypsum."
+}

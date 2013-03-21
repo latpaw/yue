@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Barite Processing Plant",
+	"bimg":"bjaw.png",
+	"introduction":"Baryte, or barite, is a mineral consisting of barium sulfate. Baryte itself is generally white or colorless, and is the main source of barium. Shibang can supply you baryte crusher or barite crusher in barite mining industry.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"First, the barite will be evenly entered the coarse crushing machine for primary crushing. And then the coarse barite will be entered the Impact Crusher by Belt Conveyor for secondary crushing. And the fine stone materials will be entered the Vibrating Screen to produce various stone specification. And particle size which have not satisfied the requirements will receive the repeated crushing. "
+}

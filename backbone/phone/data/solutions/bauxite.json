@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Bauxite processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"Bauxite mine is a kind of ore minerals collectively formed mainly by gibbsite. Bauxite is widely applied in both metal field and nonmetal field. In nonmetal field, bauxite is mainly used as refractories, abrasives, and the raw materials for high alumina cement.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"Large raw bauxite are fed to Jaw Crusher evenly and gradually by Vibrating Feeder through a hopper for primary crushing. After first step, the material will be transferred to Impact Crusher by Belt Conveyor for secondary crushing; the crushed bauxite stone will be transferred to Vibrating Screen for separating. The parts that meet standard will be transferred away as final products, while the other parts will be returned to Impact Crusher."
+}

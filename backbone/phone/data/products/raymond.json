@@ -1,0 +1,16 @@
+{
+	"name":"Raymond Mill ",
+	"h1":"Raymond Mill ",
+	"bimg":" ",
+	"overview":"The Raymond grinding mill was ever popular in mining, building materials, chemical engineering and metallurgy industries for size reduction, dispersion，etc. Now it is replaced by SBM new style mills like MTM, MTW series grinding mills. ",
+	"feature":["Take little working spaces","Closed system and steady performance","Durable and long service life","It can be controlled intensively and high automation"],
+	"technical":"technical",
+	"application":"Raymond mill was designed to grind non-flammable and non-explosive materials. It ever is the mainstream grinding machine in powder making industry. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

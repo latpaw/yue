@@ -1,0 +1,16 @@
+{
+	"name":"Vibrating Screen ",
+	"h1":"Vibrating Screen ",
+	"bimg":" ",
+	"overview":"The vibrating screen is sieving equipment used in numerous industries, such as mining, construction, mineral beneficiation, chemical, metallurgy, etc. With the vibrating screen, operators can separate products into different specifications. ",
+	"feature":["Strong violent vibrating force & High screening efficiency","Small vibrating noises &Firm and durable construction","Convenient maintenance &Safe operation","It is customizable for special industries"],
+	"technical":"technical",
+	"application":"Vibrating Screen is used for grading and screening materials in the following fields: minerals, quarry, building materials, water conservancy and hydropower, transportation, chemical industry, smelting and so on. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

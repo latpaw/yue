@@ -1,0 +1,12 @@
+{
+	"type":"project",
+	"h1":"Ultrafine Powder Milling Plant in India ",
+	"bimg":"india.jpg",
+	"introduction":"Early of 2009, one customer from India told us that he was working in one mining company and his boss had one milling plant made up of Raymond Mill and one primary 16\"×10\" Jaw Crusher, but the final products can not meet their demand. They hoped that the final product size should be reach 5-10 micron and the capacity should be about 1tons per hour.  ",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/cone"],
+		"impact crusher":["jaw-crusher.png","#products/impact"]
+	},
+	"flow":"According to the customers requirement, our engineer suggest them adopting SBM SCM221 Ultrafine mill. Raw materials of 12\"-14\" size are firstly crushed by the client's Jaw Crusher down to 2\" and then enter into our Hammer Crusher PC400×300. Crushed to less than 0.4\", the materials will be fed to the SCM221 milling machine. When powders discharged from the milling machine, they meet customers’ requirements well. The mill was installed since 2009 and it is running perfect in India now. "
+}

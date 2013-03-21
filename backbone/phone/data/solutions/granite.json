@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Granite stone processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"Granite is the hardest ore in all minerals, especially broken granite, it can be used in various fields. SBM Mining Machinery provides granite crushing machine, and our product plays an important role in the mining of granite. ",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":" Big granite materials are fed to Jaw Crusher evenly and gradually by Vibrating Feeder through a hopper for primary crushing. After first step, the material will be transferred to Cone Crusher by belt conveyor for secondary crushing; the crushed granite materials will then transferred to Vibrating Screen for separating. After separating, the parts that can meet standard will be transferred away as final products, while the other parts will be returned to cone crusher."
+}

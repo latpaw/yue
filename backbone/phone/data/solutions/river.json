@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"River stone processing plant",
+	"bimg":"bjaw.png",
+	"introduction":"River stones are mainly river red stones or materials. River stone crushing plant is the major crushing unit to process river stones like cobble rocks, pebble, sand & gravel, silica etc. It calls for crushing, screening and washing process.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"At the plant, raw river stone will be fed into Jaw Crusher for primary crushing by Vibrating Feeder. Then, the material will be transferred to Impact Crusher for secondary crushing. Then the screening process will begin. The vibrating screen is a key equipment to sieve the crushed stones into different grades. The crushed stone meet the demands will be transported to the stockpile, the other will be sent to cone crusher or impact crusher for fineness crushing. "
+}

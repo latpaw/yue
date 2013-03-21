@@ -91,6 +91,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
 		   if(window.localStorage.getItem("location")&&window.localStorage.getItem("location")!=window.location.href){
 					console.log("url chanegd")
 					$("#body").animate({"left":"-"+width},500,function(){$(this).remove()})
+
 				}
 				window.localStorage.setItem("location",window.location.href)
 			  
@@ -109,33 +110,39 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
             
       		// console.log($(page.el)[0])
       		if(!document.getElementById("foot")){
-      			$('body').append('<div id="foot" style="position:fixed;bottom:0;width:100%;z-index:1000">   <p id="slideup"><img src="css/images/wap_38.png" alt=""></p>    <div id="hidden_parts">        <ul>            <li id="list_home"><a href=""><img src="css/images/wap_42.png" alt="">Home</a></li>             <li><a href="#products"><img src="css/images/wap_45.png" alt="">List</a></li>            <li><a href="#inquiry"><img src="css/images/wap_47.png" alt="">Inquiry</a></li>            <li><a href=""><img src="css/images/wap_49.png" alt="">Chat Online</a></li>            <li><a href="mailto:"><img src="css/images/wap_51.png" alt="">Email</a></li>        </ul>        <div class="clear"></div>    </div></div>')  
+      			$('body').append('<div id="foot" style="position:fixed;bottom:0;width:100%;z-index:1000">   <p id="slideup"><img src="css/images/wap_386.png" alt=""></p>    <div id="hidden_parts">        <ul>            <li id="list_home"><a href=""><img src="css/images/wap_42.png" alt="">Home</a></li>             <li><a href="#products"><img src="css/images/wap_45.png" alt="">List</a></li>            <li><a href="#inquiry"><img src="css/images/wap_47.png" alt="">Inquiry</a></li>            <li><a href="https://server.iad.liveperson.net/hc/61309585/?cmd=file&file=chatFrame&site=61309585&byhref=1&sessionid=15569041"><img src="css/images/wap_49.png" alt="">Chat Online</a></li>            <li><a href="mailto:sbm@sbmchina.com"><img src="css/images/wap_51.png" alt="">Email</a></li>        </ul>        <div class="clear"></div>    </div></div>')  
 				window.localStorage.setItem("new","no")
 				var height = $("#hidden_parts").height()+"px"
 				var _hide;
-				var hide =function(){ 
+				var hide_mark;
+				var hide =function(time){ 
 				    _hide = window.setTimeout(function(){
 					$("#foot").stop().animate({"bottom":"-"+height})
-					},5000);
+					$("#slideup>img").attr("src","css/images/wap_38.png")
+					hide_mark=true;
+					},time);
 					
 				}
-				$(document).ready(hide)
+				$(document).ready(function(){hide(5000)})
 				$("#slideup>img").click(function(e){
 					if(e.target && e.target.nodeName!="A"){
+						if(hide_mark){
+					 if(_hide){window.clearTimeout(_hide)}
 					 $("#foot").stop().animate({"bottom":"0px"});
-					 hide();
+					 $(this).attr("src","css/images/wap_386.png");
+					 hide_mark=false
+					 hide(5000);}else{
+					 	if(_hide){window.clearTimeout(_hide)}
+					 	hide(0)
+					 	hide_mark=true
+					 }
 				    }
 				});
 
 				$("#foot").hover(function(_hide){
 					window.clearTimeout(_hide)
-				},function(){hide()})
+				},function(){hide(5000)})
 			}
-			$('body').delegate("a","click",function(e){
-				$(page.el).animate({"left":"-"+width},500,function(){$(this).remove()})
-			})
-
-
 	    } 
     });
 

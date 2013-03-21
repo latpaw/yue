@@ -1,0 +1,12 @@
+{
+	"type":"material",
+	"h1":"Iron ore beneficiation plant",
+	"bimg":"bjaw.png",
+	"introduction":"The iron contains impurities of phosphorus, sulphur and high alkali as well as impregnations of waste rock. To produce a metallurgy treatable concentrate the ore has to be grind for mineral liberation, enriched for concentration and dewatered for transportation.",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#products/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/jaw"],
+		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	},
+	"flow":"Almost all of the iron ore that is mined is used for making steel. So we need the extraction of a pure metal from its ore. The method used depending upon chemical properties and nature of the ore from which it is to be extracted. It involves four main steps, namely crushing and grinding, concentration or dressing, reduction, and purification or refining."
+}

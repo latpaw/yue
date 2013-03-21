@@ -1,0 +1,16 @@
+{
+	"name":"Cone Crusher ",
+	"h1":"Cone Crusher ",
+	"bimg":" ",
+	"overview":"Cone crushers is the mainstream machines used as middle&fine crushing machines in mining&construction industries. To meet clients’ requirements, SBM produce series of cone crushers, such as CS cone crusher, HPC cone crusher, HCS cone crusher, PY spring cone crusher.  ",
+	"feature":["Large capacity &High crushing ratio","Good final products shape & Excellent performance","Different crushing cavities design well meet different requirements &Easy to adjust","Autonomic Hydraulic control is optional &Low operating-costs"],
+	"technical":"technical",
+	"application":"Cone crushers are used in cement mill, mining, building construction, road &bridge construction, railway construction and metallurgy, etc. Common mineral&rocks are easily crushed by it.",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

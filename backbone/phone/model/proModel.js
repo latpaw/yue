@@ -4,7 +4,7 @@ var proModel = Backbone.Model.extend({
      fetch:function(id){
        var self=this;
             var tmpContact;
-            var jqxhr = $.getJSON("data/" + id + ".json")
+            var jqxhr = $.getJSON("data/products/" + id + ".json")
               .success(function(data, status, xhr) { 
                 self.set({
                   product:data

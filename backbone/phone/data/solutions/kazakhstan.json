@@ -1,0 +1,12 @@
+{
+	"type":"project",
+	"h1":"Tungsten Crusher In Kazakhstan ",
+	"bimg":"kazakhstan.jpg",
+	"introduction":"In December, 2008, IDCO group Co., Ltd and the Ministry of Infrastructure of Kazakhstan signed a contract to mine tungsten in eastern Kazakhstan. The project is the largest contract projects received by Chinese company from Kazakhstan and is of great significance to the promotion of cooperation between China and Kazakhstan. ",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/cone"],
+		"impact crusher":["jaw-crusher.png","#products/impact"]
+	},
+	"flow":"When the project leader consulted with us and introduced the problems, we set up one specialist sub-group and discussed how to solve all problems. At last, the leader and our engineer found the best solution that fit for their requirements. In the crushing process, we adopted Jaw Crusher, Cone Crushers and in the grinding process, we adopted Ball Mill."
+}

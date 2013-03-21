@@ -1,0 +1,16 @@
+{
+	"name":"Ball Mill ",
+	"h1":"Ball Mill ",
+	"bimg":" ",
+	"overview":"Ball mills are used primary for single stage fine grinding, regrinding, and as the second stage in two stage grinding circuits. The final products size can be reached to 0.074 mm~0.4 mm in diameter.  ",
+	"feature":["Being able to grind very hard materials and the final products sharp well meet standard","The capacity and fineness can be adjusted by adjusting the diameter of the ball.","Stable performance &Easy installation","No pollution for the powder with ceramic ball"],
+	"technical":"technical",
+	"application":"Ball mill is key equipment in mineral ore dressing plants and it is widely used in the cement, the silicate product, new type building material, fire-proof material, chemical fertilizer, black and non-ferrous metal, glass, ceramics and other industries. ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}

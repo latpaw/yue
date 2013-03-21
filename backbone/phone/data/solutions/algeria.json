@@ -1,0 +1,12 @@
+{
+	"type":"project",
+	"h1":"Limestone Crushing Line in Algeria ",
+	"bimg":"algeria.jpg",
+	"introduction":"In 2010, the customer contacts with the sales in SBM headquarter, stating that they need to set up a big limestone crushing line. Their requirements are as follows:<br />Material: Limestone <br />Max. Size of the material：800mm <br />Final products sizes：0-3mm，3-8mm，8-15mm，15-25mm，0-25mm<br />Capacity：200-250TPH  ",
+	"equipment":{
+		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
+		"cone crusher":["jaw-crusher.png","#products/cone"],
+		"impact crusher":["jaw-crusher.png","#products/impact"]
+	},
+	"flow":"According to the customers requirements, our sales contacts with our engineer in SBM headquarter immediately. We advise the customer to install Vibrating Feeder, Jaw Crusher, Impact Crusher, Vibrating Screen and Belt Conveyor. The customer agrees with all the design and signed the contract with us. We sent our technician to help the installation of the crushing line. Now the whole crushing line is in a very good state and this wins high praise from the customer. "
+}

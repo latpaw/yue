@@ -1,0 +1,16 @@
+{
+	"name":"Hammer crusher ",
+	"h1":"Hammer crusher ",
+	"bimg":" ",
+	"overview":"Hammer crusher designed by SBM fits for producing 0-3MM coarse powder products. This machine adopts theories of traditional crushing machines and grinding mills. It makes up the shortage of common mills and it is the best choice to produce coarse powder at big capacity. ",
+	"feature":["High production and high crushing ratio.","Low power consumption, homogeneous particle size.","Simple, compact and light mechanical structure.","Low investment cost, easy management."],
+	"technical":"technical",
+	"application":"Hammer crusher is mainly suitable for crushing soft and medium-hard ore, whose compression strength is not higher than 320MPa, such as coal, salt, chalk, gypsum, blocks, limestone, glasses, and phosphate, etc ",
+	"related":{
+		"jaw crusher":["jaw-crusher.png","#jaw"],
+		"cone crusher":["jaw-crusher.png","#cone"],
+		"impact crusher":["jaw-crusher.png","#impact"],
+		"impact crushers":["jaw-crusher.png","#impacts"],
+		"impact crushersd":["jaw-crusher.png","#impactss"]
+	}
+}
