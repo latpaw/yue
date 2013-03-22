@@ -4,47 +4,176 @@
 		"2":{"name":"Grinding Equipment","img":"mill.png","desc":"MTW Trapezium Grinding Mill, LM series Vertical Grinding Mill, T130X Reinforced Ultrafine Grinding Mill"},
 		"3":{"name":"Feeding & Conveying","img":"conveyor.png","desc":"Vibrating Feeder, Belt Conveyor "},
 		"4":{"name":"Screening & Washing","img":"screen.png","desc":"Vibrating Screen, XSD series Sand Washer, LSX Sand Washer"},
-		"5":{"name":"Beneficiation Equipment","img":"benefication.png","desc":"Spiral Classifier, High-frequency Screen, Flotation Machine. "}
+		"5":{"name":"Beneficiation Equipment","img":"benefication.png","desc":"Spiral Classifier, High-frequency Screen, Flotation Machine. "},
+		"6":{"name":"Mobile Equipment","img":"mobile.png","desc":"Tracked Mobile Equipment, Rubber Mobile Equipment"}
 	},
 	"right":{
 		"1":{
 			"1":{
 				"name":"PE Jaw Crusher",
-				"img":"jaw-crusher.png",
+				"img":"jaw.jpg",
 				"descs":"desc",
 				"href":"jaw"
 			},			
 			"2":{
 				"name":"PEW Jaw Crusher",
-				"img":"jaw-crusher.png",
+				"img":"jaw.jpg",
 				"descs":"desc",
 				"href":"jaw"
 			},			
 			"3":{
 				"name":"Impact Crusher",
-				"img":"jaw-crusher.png",
+				"img":"impact.jpg",
 				"descs":"desc",
 				"href":"jaw"
+			},			
+			"4":{
+				"name":"PFW Impact Crusher ",
+				"img":"impact.jpg",
+				"descs":"impact crusher",
+				"href":"impact"
+			},			
+			"5":{
+				"name":"Cone Crusher",
+				"img":"spring.jpg",
+				"descs":"",
+				"href":"cone"
+			},			
+			"6":{
+				"name":"HP Cone Crusher",
+				"img":"hpc.jpg",
+				"descs":"",
+				"href":"cone"
+			},			
+			"7":{
+				"name":"Sand Making Plant",
+				"img":"vsi.jpg",
+				"descs":"",
+				"href":"sand"
+			},			
+			"8":{
+				"name":"Hammer Crusher",
+				"img":"hammer.jpg",
+				"descs":"",
+				"href":"hammer"
 			}
 		},
 		"2":{
 			"1":{
-				"name":"2this is jaw crusher",
-				"img":"jaw-crusher.png",
+				"name":"Ball Mill",
+				"img":"ball.jpg",
 				"descs":"desc",
-				"href":"jaw"
+				"href":"ball"
 			},			
 			"2":{
-				"name":"2this is impact crusher",
-				"img":"jaw-crusher.png",
+				"name":"LM Vertical Grinding Mills",
+				"img":"lm.jpg",
 				"descs":"desc",
-				"href":"jaw"
+				"href":"lm"
 			},			
 			"3":{
-				"name":"2this is cone crusher",
-				"img":"jaw-crusher.png",
+				"name":"MTM Medium Speed Trapezium Grinding Machine",
+				"img":"mtm.jpg",
 				"descs":"desc",
-				"href":"jaw"
+				"href":"mtm"
+			},			
+			"4":{
+				"name":"MTW Series Milling Machine",
+				"img":"mtw.jpg",
+				"descs":"desc",
+				"href":"mtw"
+			},			
+			"5":{
+				"name":"SCM Series Ultrafine Mill",
+				"img":"scm.jpg",
+				"descs":"desc",
+				"href":"scm"
+			},			
+			"6":{
+				"name":"Raymond Mill",
+				"img":"raymond.jpg",
+				"descs":"desc",
+				"href":"raymond"
+			},			
+			"7":{
+				"name":"T130X Reinforced ultrafine Mill",
+				"img":"t130x.jpg",
+				"descs":"desc",
+				"href":"t130x"
+			}	
+		},
+		"3":{
+			"1":{
+				"name":"Vibrating Feeder",
+				"img":"feeder.jpg",
+				"descs":"desc",
+				"href":"feeder"
+			},
+			"2":{
+				"name":"Belt Conveyor",
+				"img":"belt.jpg",
+				"descs":"desc",
+				"href":"belt"
+			}
+		},
+		"4":{
+			"1":{
+				"name":"Vibrating Screen",
+				"img":"screen.jpg",
+				"descs":"desc",
+				"href":"screen"
+			},
+			"2":{
+				"name":"Sand Washing Machine",
+				"img":"washing.jpg",
+				"descs":"desc",
+				"href":"washing"
+			}
+		},
+		"5":{
+			"1":{
+				"name":"Flotation Machine",
+				"img":"flotation.jpg",
+				"descs":"desc",
+				"href":"flotation"
+			},
+			"2":{
+				"name":"High Frequency Screen",
+				"img":"hfscreen.jpg",
+				"descs":"desc",
+				"href":"hfscreen"
+			},
+			"3":{
+				"name":"Hydrocyclone",
+				"img":"hydrocyclone.jpg",
+				"descs":"desc",
+				"href":"hydrocyclone"
+			},
+			"4":{
+				"name":"Magnetic Separator",
+				"img":"magnetic.jpg",
+				"descs":"desc",
+				"href":"magnetic"
+			},
+			"5":{
+				"name":"Spiral Classifier",
+				"img":"spiral.jpg",
+				"descs":"desc",
+				"href":"spiral"
+			}
+		},
+		"6":{
+			"1":{
+				"name":"Hydraulic-driven Track Mobile Plant",
+				"img":"hydraulic.jpg",
+				"descs":"desc",
+				"href":"hydraulic"
+			},
+			"2":{
+				"name":"Rubber-tyred Series Mobile Crusher",
+				"img":"rubber.jpg",
+				"descs":"desc",
+				"href":"rubber"
 			}
 		}
 	}

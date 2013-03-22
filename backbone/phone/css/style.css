@@ -7,7 +7,7 @@ a{text-decoration:none;color:#123456;}
 
 
 
-.wrapper{width:100%;position:relative;overflow:hidden;height:1200px;z-index:0;}
+.wrapper{width:100%;position:relative;overflow:hidden;z-index:0;}
 
 .pl{position:absolute;}
 .pl ul{list-style: none;margin:0;padding:0;}

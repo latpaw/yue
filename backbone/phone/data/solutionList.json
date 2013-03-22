@@ -1,49 +1,167 @@
 {
 	"left":{
 		"1":{"name":"Construction","img":"jaw-crusher.png","desc":"thisis desc"},
-		"2":{"name":"Mining","img":"jaw-crusher.png","desc":"thisis desc"},
-		"3":{"name":"Milling","img":"jaw-crusher.png","desc":"thisis desc"},
+		"2":{"name":"Construction Recycle Plant","img":"jaw-crusher.png","desc":"thisis desc"},
+		"3":{"name":"Mining","img":"jaw-crusher.png","desc":"thisis desc"},
 		"4":{"name":"Sand making plant","img":"jaw-crusher.png","desc":"thisis desc"}
 	},
 	"right":{
 		"1":{
 			"1":{
-				"name":"this is jaw crusher",
-				"img":"jaw-crusher.png",
+				"name":"Basalt stone processing plant",
+				"img":"basalt.jpg",
 				"descs":"desc",
 				"href":"basalt"
 			},			
 			"2":{
-				"name":"this is impact crusher",
-				"img":"jaw-crusher.png",
+				"name":"Feldspar Stone Processing Plant",
+				"img":"feldspar.jpg",
 				"descs":"desc",
-				"href":"basalt"
+				"href":"feldspar"
 			},			
 			"3":{
-				"name":"this is cone crusher",
-				"img":"jaw-crusher.png",
+				"name":"Granite Stone Crushing Plant",
+				"img":"granite.jpg",
 				"descs":"desc",
-				"href":"basalt"
+				"href":"granite"
+			},
+			"4":{
+				"name":"Limestone Processing Plant",
+				"img":"limestone.jpg",
+				"descs":"desc",
+				"href":"limestone"
+			},
+			"5":{
+				"name":"River Stone processing Plant",
+				"img":"river.jpg",
+				"descs":"desc",
+				"href":"river"
 			}
 		},
 		"2":{
 			"1":{
-				"name":"2this is jaw crusher",
-				"img":"jaw-crusher.png",
+				"name":"Construction recycle plant",
+				"img":"recycle.jpg",
 				"descs":"desc",
-				"href":"basalt"
-			},			
+				"href":"recycle"
+			}
+		},
+		"3":{
+			"1":{
+				"name":"Barite Processing Plant",
+				"img":"barite.jpg",
+				"descs":"desc",
+				"href":"barite"
+			},
 			"2":{
-				"name":"2this is impact crusher",
-				"img":"jaw-crusher.png",
+				"name":"Bauxite Processing Plant",
+				"img":"bauxite.jpg",
 				"descs":"desc",
-				"href":"basalt"
-			},			
+				"href":"bauxite"
+			},
 			"3":{
-				"name":"2this is cone crusher",
-				"img":"jaw-crusher.png",
+				"name":"Calcite Processing Plant",
+				"img":"calcite.jpg",
 				"descs":"desc",
-				"href":"basalt"
+				"href":"calcite"
+			},
+			"4":{
+				"name":"Carbon Grinding Plant",
+				"img":"carbon.jpg",
+				"descs":"desc",
+				"href":"carbon"
+			},
+			"5":{
+				"name":"Clay Processing Plant",
+				"img":"clay.jpg",
+				"descs":"desc",
+				"href":"clay"
+			},
+			"6":{
+				"name":"Coal Beneficiation Plant",
+				"img":"coal.jpg",
+				"descs":"desc",
+				"href":"coal"
+			},
+			"7":{
+				"name":"Copper Ore Beneficiation Plant",
+				"img":"copper.jpg",
+				"descs":"desc",
+				"href":"copper"
+			},
+			"8":{
+				"name":"Dolomite Stone Crushing Plant",
+				"img":"dolomite.jpg",
+				"descs":"desc",
+				"href":"dolomite"
+			},
+			"9":{
+				"name":"Feldspar Processing Plant",
+				"img":"feldspar.jpg",
+				"descs":"desc",
+				"href":"feldspar"
+			},
+			"10":{
+				"name":"Gold Ore Concentration Plant",
+				"img":"gold.jpg",
+				"descs":"desc",
+				"href":"gold"
+			},
+			"11":{
+				"name":"Gypsum Processing Plant",
+				"img":"gypsum.jpg",
+				"descs":"desc",
+				"href":"gypsum"
+			},
+			"12":{
+				"name":"Iron Ore Beneficiation Plant",
+				"img":"iron.jpg",
+				"descs":"desc",
+				"href":"iron"
+			},
+			"13":{
+				"name":"Kaolin Processing Plant",
+				"img":"kaolin.jpg",
+				"descs":"desc",
+				"href":"kaolin"
+			},
+			"14":{
+				"name":"Limestone Processing Plant",
+				"img":"limestone.jpg",
+				"descs":"desc",
+				"href":"limestone"
+			},
+			"15":{
+				"name":"Manganese Processing Plant",
+				"img":"manganese.jpg",
+				"descs":"desc",
+				"href":"manganese"
+			},
+			"16":{
+				"name":"Silica Processing Plant",
+				"img":"silica.jpg",
+				"descs":"desc",
+				"href":"silica"
+			},
+			"17":{
+				"name":"Silver Processing Plant",
+				"img":"silver.jpg",
+				"descs":"desc",
+				"href":"silver"
+			},
+			"18":{
+				"name":"Talc Processing Plant",
+				"img":"talc.jpg",
+				"descs":"desc",
+				"href":"talc"
+			}
+		},
+		"4":{
+			"1":{
+				"name":"Sand Making Plant",
+				"img":"sand.jpg",
+				"descs":"desc",
+				"href":"sand"
 			}
 		}
 	}

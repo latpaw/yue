@@ -21,12 +21,19 @@
 #focus .btn span.on {background:#ff9900;}
 </style>
         <script type="text/javascript">
-        $(function() {
+        $(document).ready(function(){
+            $("#slideimg").attr("src","css/images/wap_09.png")
             $("#slideimg").load(function(){
-                var slideheight = $("#slideimg").height()
-                $("#focus").height(slideheight)
-                $("#focus li").height(slideheight)  
-            })
+                    var slideheight = $("#slideimg").height()
+                    $("#focus").height(slideheight)
+                    $("#focus li").height(slideheight)  
+                })
+
+        })
+
+        $(function() {
+                
+            
             
             var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
             var len = $("#focus ul li").length; //获取焦点图个数
@@ -69,6 +76,30 @@
                 if(index == len) {index = 0;}
                 showPics(index);
             });
+            var x,changed;
+            document.getElementById("focus").ontouchstart=function(e){
+                x = e.touches[0].clientX
+                changed=false
+                // alert(x)
+            }
+            document.getElementById("focus").ontouchmove=function(e){
+                xnew = e.touches[0].clientX
+                // alert(x)
+                // alert(xnew)
+                if(changed==true){
+                    return false
+                }else{
+                    if(x-xnew>100){
+                        // alert(x-xnew)
+                        $("#focus .next").click()
+                        changed=true
+                        }
+                    if(xnew-x>100){
+                        $("#focus .pre").click()
+                        changed=true
+                    }
+                }
+            }
         
             //本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
             $("#focus ul").css("width",sWidth * (len));
