@@ -4,9 +4,15 @@
 	"bimg":"bjaw.png",
 	"introduction":"Kaolin is one of the most common minerals. Kaolin powder is used in ceramics, medicine, coated paper, toothpaste, as a light diffusing material in white incandescent light bulbs, and in cosmetics. It is generally the main component in porcelain.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"]
 	},
 	"flow":"Wet process concludes mineral preparation, mineral dressing and processing, products processing three stages. Dry process is mainly crushing the mined raw ore to around 25mm, then the ore goes into Cone Crusher for further crushing in order to make the size reach to around 6mm. The crushed ore will have a further grinding process by Raymond Mill which is equipped with centrifugal separator and cyclone dust extractor."
 }

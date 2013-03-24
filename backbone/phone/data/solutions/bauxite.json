@@ -4,9 +4,17 @@
 	"bimg":"bjaw.png",
 	"introduction":"Bauxite mine is a kind of ore minerals collectively formed mainly by gibbsite. Bauxite is widely applied in both metal field and nonmetal field. In nonmetal field, bauxite is mainly used as refractories, abrasives, and the raw materials for high alumina cement.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"],
+		"T130x Mill":["t130x.jpg","#products/t130x"],
+		"Spiral Classifier":["spiral.jpg","#products/spiral"]
 	},
 	"flow":"Large raw bauxite are fed to Jaw Crusher evenly and gradually by Vibrating Feeder through a hopper for primary crushing. After first step, the material will be transferred to Impact Crusher by Belt Conveyor for secondary crushing; the crushed bauxite stone will be transferred to Vibrating Screen for separating. The parts that meet standard will be transferred away as final products, while the other parts will be returned to Impact Crusher."
 }

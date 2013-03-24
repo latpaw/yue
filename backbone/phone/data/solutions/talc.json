@@ -4,9 +4,15 @@
 	"bimg":"bjaw.png",
 	"introduction":"Talc is a common metamorphic mineral in metamorphic belts which contain ultramafic rocks. Talc powder is widely used in agriculture and food, ceramics, coating, paper, personal care, plastic, rubber, wastewater treatment industries.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"]
 	},
 	"flow":"Talc rock is mined by giant shovels. The different ore types are sorted as they are extracted from the seam. The large talc rocks will be fed into crushing plant for small particles. Then the talc ores will be sorted according to their talc content and brightness. From talc rock to talc powder, the talc processing plant involves crushing, washing, sorting, analysis, milling (grinding, pulverizing) and packing etc."
 }

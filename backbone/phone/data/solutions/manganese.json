@@ -4,9 +4,10 @@
 	"bimg":"bjaw.png",
 	"introduction":"Manganese is essential to iron and steel production by virtue of its sulfur-fixing, deoxidizing, and alloying properties. Among a variety of other uses, manganese is a key component of low-cost stainless steel formulations. ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"The manganese testing is the first step of mining manganese. After manganese tested is manganese mechanical separation, which includes ore crushing, washing, screening, gravity separation, high-intensity magnetic separation and flotation separation, pyrometallurgy enrichment and chemical mineral processing method and so on. "
 }

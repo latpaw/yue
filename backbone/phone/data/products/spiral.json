@@ -1,7 +1,7 @@
 {
 	"name":"Spiral Classifier ",
 	"h1":"Spiral Classifier ",
-	"bimg":"spiral.jpg",
+	"bimg":["spiral.jpg"],
 	"overview":"Spiral classifiers are designed to provide the most effective pool area and overflow velocity requirements. Actually, the spiral classifier is not only able to clean the ground mineral ore, but also separate the particles briefly. ",
 	"feature":["Energy saving","Heavy duty, rugged construction","Powerful self-contained spiral lifting device","Continuous spiral raking"],
 	"technical":"technical",

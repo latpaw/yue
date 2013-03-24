@@ -4,9 +4,17 @@
 	"bimg":"bjaw.png",
 	"introduction":"SBM Machinery is professional manufacturer which can supply all kinds calcite crushing and grinding equipment and design calcite production line according to the requirements of customers.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"],
+		"T130x Mill":["t130x.jpg","#products/t130x"],
+		"Spiral Classifier":["spiral.jpg","#products/spiral"]
 	},
 	"flow":"Raw calcite first enter calcite crushing plant to be crushed to smaller size. Then they are lifted to storage room by elevator. Vibrating feeder will feed materials into calcite grinding mill evenly and gradually. After being grinded, the calcite powder will be blowed to cyclone by blower. Then the calcite powder will be transferred to storage room through pipes, and then will be discharged as final products."
 }

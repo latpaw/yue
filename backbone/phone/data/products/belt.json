@@ -1,7 +1,7 @@
 {
 	"name":"Belt Conveyor ",
 	"h1":"Belt Conveyor ",
-	"bimg":"belt.jpg",
+	"bimg":["belt.jpg"],
 	"overview":"Belt conveyors is widely used in various industries. SBM designed the unique belts and belt systems to meet specific end-user requirements for high performance and cost-efficiency, especially in the mining and construction industry. ",
 	"feature":["High carrying capacity and the length is customized","Anti-skidding design ensure that it works very well even in severe environment","Easy to operate and easy to maintain ","Different models for choice"],
 	"technical":"technical",

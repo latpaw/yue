@@ -4,9 +4,10 @@
 	"bimg":"mali.jpg",
 	"introduction":"A trading company contact with our Beijing branch office.Our salesmen there offered a proposal according to the client's requirements: <br />Raw material:limestone<br />Max. Feeding size:500mm<br />Final product size:0-6mm,6-10mm,10-14mm<br />Capacity:50-60 TPH ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"Branch office get contact with SBM senior engineer and made the design of project. We proposed the following equipments to our client: Vibrating Feeder, Jaw Crusher, Impact Crusher, Vibrating Screen and Belt Conveyor. Our engineer spent one month on installation and test run of the whole crushing plant. Now the crushing plant is working with good performance. "
 }

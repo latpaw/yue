@@ -4,9 +4,10 @@
 	"bimg":"sirilanka.jpg",
 	"introduction":"The customer started contact with SBM in 2011 and said they would like to set up a granite crushing plant in Sri Lanka in 2011 urgently.<br>Raw material: granite<br>Max. Feeding size: 500-600mm<br>Output size: 0-6mm,6-12mm,12-19mm,19-37.5mm<br>Capacity: 120-150tph",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"As per their specification requirements and the original unflat ground drawings, we designed a perfect flow chart to meet their request very well. SBM sent out one or two engineers to their work site to help them installing, commissioning as well as training their employees how to operate and so on. Nowadays the crushing plant is working very well."
 }

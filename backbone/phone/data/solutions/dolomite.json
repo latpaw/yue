@@ -4,9 +4,15 @@
 	"bimg":"bjaw.png",
 	"introduction":"Dolomite is kind of carbonate mineral which includes iron dolomite and manganese dolomite. Calcined dolomite can be processed to make dolomitic limestone which is of good White, strong adhesion, coagulation power, Fire-resistant, heat insulation.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"]
 	},
 	"flow":"Big Dolomite materials are fed to Jaw Crusher evenly and gradually by Vibrating Feeder for primary crushing. After first step, the material will transferred to Impact Crusher by Belt Conveyor for secondary crushing. The crushed dolomite materials will be transferred to Vibrating Screen for separating. After separating, the parts that can meet standard will be transferred away as final products, while the other parts will be returned to impact crusher."
 }

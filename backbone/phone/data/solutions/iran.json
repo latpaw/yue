@@ -4,9 +4,10 @@
 	"bimg":"iran.jpg",
 	"introduction":"The customers contacted the professional sales man of SBM. He is planning to start a limestone <br>rushing plant, and the requirements are as follows:<br>Raw material: limestone, granite <br>Max. feeding size: 250mm<br>Output size: 0-10mm<br>Capacity: 40-50 TPH ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"VSI Crusher":["vsi.jpg","#products/sand"]
 	},
 	"flow":" According to the customer's requirements, our sales man discussed and confirmed the design with senior engineers in the first time. The technicians we sent to Iran spent one month finishing the installation and test of the crush plant and training the local workers of the operation of machines. Now that crush plant is working very well."
 }

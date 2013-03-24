@@ -1,5 +1,5 @@
 <section id="prodetail">
-<p id="<% if(solution.type=="material"){%>bimg<%}else{%>fullimg<%}%>">
+<p id="<% if(solution.type=="material"){%>mimg<%}else{%>fullimg<%}%>">
     <img src="css/pics/<%= img %>.jpg" alt="">
 </p>
 <h1><%= solution.h1 %></h1>
@@ -12,7 +12,7 @@
 	<ul>
     <% for( i in solution.equipment){ %>
     <li>
-        <img src="css/images/<%= solution.equipment[i][0]%>" alt="">
+        <img src="css/pics/<%= solution.equipment[i][0]%>" alt="">
       <a href="<%= solution.equipment[i][1]%>"><%= i %></a>
     </li>
     <% } %>

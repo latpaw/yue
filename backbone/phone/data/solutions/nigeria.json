@@ -4,9 +4,11 @@
 	"bimg":"nigeria.jpg",
 	"introduction":"One Nigeria customer want to produce granite-aggregates for road construction, concrete and asphalt industry. He just has one 24×36\"Jaw Crusher and two 12×51\" finer Jaw Crusher, but the required size in local market is 0~3/16\" (stone dust), 3/16~1/2\", 1/2~3/4\" and 3/4~1\". Also, the capacity of existing plant is only 60~70 tons per hour, it was far from the customer’s requirements. ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"We consulted the customer's new requirements and draft one design for him. The new design consists a primary (900×1200mm) 36×48\" Jaw Crusher, one secondary S51\" Cone Crusher and one S51\" Cone Crusher in the tertiary section. With the three stages crushing process, the final products are easy to meet the requirements and the capacity is able to reach 200-250 tons per hour."
 }

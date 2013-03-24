@@ -4,9 +4,10 @@
 	"bimg":"uae.jpg",
 	"introduction":"A quarry operator in the UAE needed to expand their crushing and screening plant. Though they already have one primary and a secondary crusher, material comes out from the secondary crusher are mostly above 20mm. While, the new demand of customers is 0-5mm; 5-10mm; 10-20mm, the existing plants can not meet the newest requirements well. ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Sand Making Machine":["vsi.jpg","#products/sand"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"After consulting with SBM engineer, they accepted our suggestion and add SBM VSI-7611 Sand Making Machine in the existing plant. This machine was to crush 20-35mm materials to 0-5mm; 5-10mm; 10-20mm directly. After commissioning, both the capacity and the final product quality exactly meet the quarry owner's initial plan."
 }

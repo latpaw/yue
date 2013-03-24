@@ -4,9 +4,11 @@
 	"bimg":"bjaw.png",
 	"introduction":"Silica is the most abundant mineral found in the crust of the earth. With local teams of application engineers and technology specialists, SBM is dedicated to supporting its technology and providing the design-in expertise for customers to compete successfully.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"VSI Crusher":["vsi.jpg","#products/sand"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"In the silica powder making process, Jaw Crusher is used as primary crushing machine.The sand particles that meet the requirements enter into the VSI Sand Making Machine for making fine sand, while the others enter into the tertiary crushing plant for fine crushing, then go for sand making. The fine sand from the sand making machine must be washed by sand washer. Then we need silica sand milling machine, it can grind silica sand into powder."
 }

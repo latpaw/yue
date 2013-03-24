@@ -1,7 +1,64 @@
 <section id="prodetail">
-<p id="bimg">
-    <img src="css/bimg/<%= product.bimg %>" alt="">
-</p>
+<div id="bimg">
+    
+    <ul id="bimgin">
+        <% for(i in product.bimg){%>
+        <li>
+            <img src="css/bimg/<%= product.bimg[i] %>" alt="">
+        </li>
+        <% }%>
+    </ul>
+    <script type="text/javascript">
+     var p = document.createElement("p"),
+        len = $("#bimgin li").length,
+        btn="";
+        p.id="whatid";
+        for(var i=0;i<len;i++){
+            btn += "<span class='pro_btn'></span>"
+        }
+        p.innerHTML=btn
+        document.getElementById("bimg").appendChild(p)
+
+    var indexs= 2;
+    $("#whatid").children().eq(0).css("background","#FE7B01")
+        var change = function(){
+            $("#bimgin img").animate({"opacity":"0"},1000)
+            window.setTimeout(function(){$("#bimgin").append($("#bimgin li:first"))},1000)
+            $("#whatid").children().eq(indexs-1).css("background","#FE7B01").siblings().css("background","#aaa")
+            $("#bimgin img").animate({"opacity":"1"},1000)
+            if(indexs==3){
+                indexs = 1
+            }else{
+            indexs += 1
+            }
+            // $("#bimgin li").eq(1).animate({"opcity":"1"},100)
+        }
+        window.setInterval(change,3000)
+
+var x,changed;
+            document.getElementById("bimg").ontouchstart=function(e){
+                x = e.touches[0].clientX
+                changed=false
+                // alert(x)
+            }
+            document.getElementById("bimg").ontouchmove=function(e){
+                xnew = e.touches[0].clientX
+                // alert(x)
+                // alert(xnew)
+                if(changed==true){
+                    return false
+                }else{
+                    if(x-xnew>100){
+                        // alert(x-xnew)
+                        chang()
+                        changed=true
+                        }
+                }
+            }
+
+    </script>
+
+</div>
 <h1><%= product.h1 %></h1>
 <hr>
 <h3>Overview</h3>

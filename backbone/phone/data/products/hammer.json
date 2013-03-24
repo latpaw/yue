@@ -1,7 +1,7 @@
 {
 	"name":"Hammer crusher ",
 	"h1":"Hammer crusher ",
-	"bimg":"hammer.jpg",
+	"bimg":["hammer.jpg"],
 	"overview":"Hammer crusher designed by SBM fits for producing 0-3MM coarse powder products. This machine adopts theories of traditional crushing machines and grinding mills. It makes up the shortage of common mills and it is the best choice to produce coarse powder at big capacity. ",
 	"feature":["High production and high crushing ratio.","Low power consumption, homogeneous particle size.","Simple, compact and light mechanical structure.","Low investment cost, easy management."],
 	"technical":"technical",

@@ -4,9 +4,16 @@
 	"bimg":"bjaw.png",
 	"introduction":"Copper ore is an ore which can produce copper metal by crushing in ore crushing plant, grinding in Ball mill and smelting in a furnace along with a piece of tin ore. SBM is a professional manufacturer of copper ore processing equipment.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+	"equipment":{
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"]
 	},
 	"flow":"First the copper ore is transported into the primary crusher which reduces the ores to 8 inches or smaller. After crushing process, the copper ore is send to ball mill for grinding to about 0.2 mm with 3-inch steel balls. This copper ore slurry is finally pumped to the flotation deck. This copper ore slurry is finally pumped to the flotation deck with the fine sulfide ore (~-0.5 mm) going to froth flotation cells for recovery of copper."
 }

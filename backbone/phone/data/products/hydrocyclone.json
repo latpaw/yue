@@ -1,7 +1,7 @@
 {
 	"name":"Hydrocyclone ",
 	"h1":"Hydrocyclone ",
-	"bimg":"hydrocyclone.jpg",
+	"bimg":["hydrocyclone.jpg"],
 	"overview":"Hydrocyclone is extensively used for closed circuit grinding and classification system , thickening, des, dewatering , tailings filling, damming, recovery processes in ferrous, nonferrous metal and nonmetal mine industries. ",
 	"feature":["High capacity & High classifying efficient","Easy to disassembly & Easy to maintain","Low investment cost & Taking little space","Simple structure and there is no moving parts"],
 	"technical":"technical",

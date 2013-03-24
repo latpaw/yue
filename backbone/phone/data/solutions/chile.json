@@ -4,9 +4,10 @@
 	"bimg":"chile.jpg",
 	"introduction":"In 2011, the clients contacted our sales person in Chile branch office. The clients wanted to set up a copper ore crushing plant with the following requirements:<br>Material: copper ore <br>Max. feed size: 900mm<br>Final product size: 0-6mm<br>Capacity: 100-120tph ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"Our sales person paid a visit to our clients immediately after receiving their inquiry about the running condition of their current production line. After discussion, we suggest  them to use the following equipments: Vibrating Feeder, Jaw Crusher, CS series Cone Crusher, Vibrating Screen and Belt Conveyors. SBM’s professional approach has convinced the clients on our design. We provided our clients with a high rate of return on investment. "
 }

@@ -4,9 +4,10 @@
 	"bimg":"bjaw.png",
 	"introduction":"The micro ground calcium carbonate powder plays an important role in many industries from agriculture to light and heavy industries. We can manufacture and install complete grinding line for obtaining micro Calcite powder making.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"LM Vertical Mill":["lm.jpg","#products/lm"],
+		"MTM series Mill":["mtm.jpg","#products/mtm"],
+		"T130x Mill":["t130x.jpg","#products/t130x"]
 	},
 	"flow":"When the large calcium carbonate is fed into Ball Mill, it will be ground and the grain size is between 0.074mm and 0.4mm. Then the ground materials will be collected and transferred to MTM Trapezium Mill or MTW Trapezium Mill for further grinding. Then the grain size will meet most of the application. But for some extreme application, the grain size of 0.04mm is still larger, the ultrafine mill can grind the grain size into particles between 325 meshes to 2500 mesh."
 }

@@ -4,9 +4,11 @@
 	"bimg":"bjaw.png",
 	"introduction":"SBM crushing machine are usually used to crush concrete, glass, porcelain, marble, granite, bricks, blocks, asphalt and reinforced concrete. Recycling concrete &building rubble is not only able to bring profit to investors, but also good for environment protection.",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Portable Mobile Plant":["hydraulic.jpg","#products/hydraulic"]
 	},
 	"flow":"Construction wastes are firstly be transported to the crushing plant by trucks or by excavators. Then Jaw Crusher crush big lumps to small ones. When the crushed lumps discharged from jaw crusher, the secondary crusher will crush them again until they meet the requirements. "
 }

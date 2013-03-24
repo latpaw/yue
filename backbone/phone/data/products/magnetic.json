@@ -1,7 +1,7 @@
 {
 	"name":"Magnetic Separator ",
 	"h1":"Magnetic Separator ",
-	"bimg":"magnetic.jpg",
+	"bimg":["magnetic.jpg"],
 	"overview":"Magnetic separator is one of the most important sperating machine in mineral beneficiation industry. Due to the physical-property difference, magnetic separator include many kinds models, such as high intensity separator, low intensity separator and some other models. ",
 	"feature":["High capacity &Excellent performance","Easily installed &Extremely easy to clean","Simple structure &Saving downtime","Key parts are well prevent from being corroded through optimized design"],
 	"technical":"technical",

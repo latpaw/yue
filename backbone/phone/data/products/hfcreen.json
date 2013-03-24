@@ -1,7 +1,7 @@
 {
 	"name":"High-frequency Screen ",
 	"h1":"High-frequency Screen ",
-	"bimg":"hfscreen.jpg",
+	"bimg":["hfscreen.jpg"],
 	"overview":"High-frequency screen is able to damage tension force of the pulp surface. Also the fine particles are able to oscillate speedily on the surface of the screen because of the high frequency, and the big expecting minerals are isolated from the pulp easily.  ",
 	"feature":["Adopt the most advanced theory and new structure.","High vibrating frequency leads to high screen efficiency and big capacity.","Controlled by computer, every exciter specification is adjustable.","Low powder consumption"],
 	"technical":"technical",

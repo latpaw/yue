@@ -1,7 +1,7 @@
 {
 	"name":"Flotation Machine ",
 	"h1":"Flotation Machine ",
-	"bimg":"flotation.jpg",
+	"bimg":["flotation.jpg"],
 	"overview":"Flotation machine is indispensable machine in many mineral dressing plants. Agitator flotation machine, pneumatic flotation machine and pneumatic- agitator flotation machine are produced for differents projects. ",
 	"feature":["Large air-absorption capacity and low energy consumption","Optimistic structure design & Excellent performance","Reasonable circulation of mineral slurry","Automatic control Easy to adjust"],
 	"technical":"technical",

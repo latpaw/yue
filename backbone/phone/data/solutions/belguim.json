@@ -4,9 +4,8 @@
 	"bimg":"belgium.jpg",
 	"introduction":"A material supplier from Belgium would like to produce limestone powder for his customer, one paper making company. The capacity of the milling plant should be able to reach 3-5 tons per hour, and the final powder size should be as D90=105μm. ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"MTM Series Grinding Mill":["mtm.jpg","#products/mtm"]
 	},
 	"flow":"Since the client just needs medium output size, our MTM Medium Speed Trapezium Mill will be suitable for him. Under guidance of our engineer, they have finished the installation and commissioning. The classifier is adjusted for required size and the capacity has reach to more than 4t/h. "
 }

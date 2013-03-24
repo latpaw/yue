@@ -4,9 +4,10 @@
 	"bimg":"bjaw.png",
 	"introduction":"Clay mine’s crushing and grinding is extremely important in the whole clay mining processing plant. With the ability to maximize product output, our clay processing equipment features high production rates, low operating costs and simplified state of the art mainframe. ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#products/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/jaw"],
-		"impact crusher":["jaw-crusher.png","#products/jaw"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"For most applications, clays are processed by mechanical methods, such as crushing, grinding, and screening, that do not appreciably alter the chemical or mineralogical properties of the material. However, because clays are used in such a wide range of applications, it is often necessary to use other mechanical and chemical processes, such as drying, calcining, bleaching, blunging, and extruding to prepare the material for use."
 }

@@ -4,9 +4,10 @@
 	"bimg":"panama.jpg",
 	"introduction":"In 2011, the customer got contact sales person in Shanghai head office, inquiring about a crushing plant for pebble and basalt, and a mobile crusher station. <br>The requirements is as follows:<br>Raw material: pebble, basalt <br>Max feeding size: 800mm<br>Output size: 0-13mm, 13-20mm, 20-40mm <br>Capacity: 200-250TPH ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Mobile Crushing Plant":["hydraulic.jpg","#products/hydraulic"],
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"It is the second time the customer bought our Mobile Crusher Station. Based on the customer’s requirement, our sales person suggested him the Tyre-type Mobile Crusher Station. Finally, our customer agreed with this plan and concluded the business. Now, this plant runs very well and we have won good reputation from the customer. Recently, the customer bought the third Mobile Crusher Station from our company. "
 }

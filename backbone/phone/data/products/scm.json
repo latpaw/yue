@@ -1,7 +1,7 @@
 {
 	"name":"SCM Series Ultrafine Mill ",
 	"h1":"SCM Series Ultrafine Mill ",
-	"bimg":"scm.jpg",
+	"bimg":["scm.jpg"],
 	"overview":"SCM series ultrafine mill is specially designed for super fine powder grinding,such as 325-2500 mesh. Now it's growing more and more popular with its reliable technology and perfect after-sale services. ",
 	"feature":["High Output and low energy consumption","High fineness and flexible adjustment","Safe and Reliable","Clean and environmental friendly"],
 	"technical":"technical",

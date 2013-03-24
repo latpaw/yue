@@ -4,9 +4,10 @@
 	"bimg":"indonesia.jpg",
 	"introduction":"The year before last year, one customer from Bandung, Indonesia planned to build one andesite stone crushing plant and the requirements are generally as follows: The max feeding size should be about 400mm.<br>The output size were three kinds: 0-10,10-20,20-30mm. <br>The capacity of the plant should reach 50-70TPH (tons per hour). ",
 	"equipment":{
-		"jaw crusher":["jaw-crusher.png","#prducts/jaw"],
-		"cone crusher":["jaw-crusher.png","#products/cone"],
-		"impact crusher":["jaw-crusher.png","#products/impact"]
+		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Vibrating Screen":["screen.jpg","#products/screen"]
 	},
 	"flow":"When we got the customer's demands and known all details, we suggested him using Hydraulic Hammer break big rocks to small one firstly and then feed them to the crushing plant that consist of Jaw Crusher, Cone Crusher, Vibrating Feeder, Vibrating Screen and Belt Conveyors. Now the customer have used the machines for one and a half year, the machines running very well. "
 }

@@ -1,7 +1,7 @@
 {
 	"name":"Sand Washing Machine ",
 	"h1":"Sand Washing Machine ",
-	"bimg":"washing.jpg",
+	"bimg":["washing.jpg"],
 	"overview":"Sand washing machine can also be called sand washer. They are designed& produced to clean sand particles and improve the quality or grade of particles. SBM ‘s XSD series sand washing machine and LSX series sand washing machine fully satisfy the marketing demands. ",
 	"feature":["High capacity and less of fine products &High washing-cleanliness","Easy to operate & Easy to maintain for its simple structure","Transmission bearings depart from water and material, avoiding being eroded","Low investment costs and operating-costs"],
 	"technical":"technical",
