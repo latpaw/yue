@@ -1,16 +1,19 @@
 {
 	"name":"LM Vertical Grinding Mills ",
 	"h1":"LM Vertical Grinding Mills ",
-	"bimg":["lm.jpg"],
+	"bimg":["lm.jpg","lm2.jpg","lm3.jpg"],
 	"overview":"SBM success in absorbing foreign experience and producing our vertical grinding mill. Now it has wide application in metallurgy, construction, chemical and mining industries, being the preferred equipments in grinding industry. ",
 	"feature":["Low operation cost and long service life","Excellent drying function","Good final products quality","Environmentally friendly"],
 	"technical":"technical",
 	"application":"LM series vertical grinding mills are widely used in grinding non-flammable and non-explosive materials under 9.3(the Moh's hardness), such as grinding quartz, feldspar, calcite, etc. ",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Cone Crusher":["jaw.jpg","#products/cone"],
+		"LM Mill":["lm.jpg","#products/lm"],
+		"MTM Mill":["mtm.jpg","#products/mtm"],
+		"MTW Mill":["mtw.jpg","#products/mtw"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"SCM Mill":["scm.jpg","#products/scm"]
 	}
 }

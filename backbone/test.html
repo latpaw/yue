@@ -10,25 +10,34 @@
 <body>
 <div id="name"></div>
 	<script type="text/javascript" charset="utf-8">
+	var param = window.localStorage.param || "crusher"
+	console.log(param)
+	var result=[];
+	$.ajax({
+		dataType:"json",
+		url:"search.json",
+		success:function(data){
+			for(i in data["products"]){
+      		if(data["products"][i].indexOf(param)>0){
+      			// console.log(i)
+      			result.push(i)
+      		}
+      	}
+      	for(i in data["projects"]){
+      		if(data["projects"][i].indexOf(param)>0){
+      			// console.log(i)
+      			result.push(i)
+      		}
+      	}
 
-var view = Backbone.View.extend({
-   initialize:function(){
-   	this.bind("hello:what",this.render,this)
-   },
-   render:function(){
-   	console.log("initialize "+this.model.name)
-   }
-});
-
-var v = new view()
-	var model = Backbone.Model.extend({
-		defaults:{name:"name"},
-		initialize:function(){this.set({name:"whatname"});v.trigger("hello")},
-		
+		},
+		error:function(){
+			console.log("error")
+		}
+	}).done(function(data){
+      	console.log(result)
 	})
-		var m = new model()
-// v.trigger("hello:what")
-
+	
 	</script>
 </body>
 </html>

@@ -7,10 +7,13 @@
 	"technical":"technical",
 	"application":"High-frequency screen is a good choice for screening and grading the fine particles of mineral ores. Such as iron ore, tin ore, tungsten ore, tantalum ore and dolomite sand, etc. ",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Cone Crusher":["jaw.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"LM Mill":["lm.jpg","#products/lm"],
+		"MTM Mill":["mtm.jpg","#products/mtm"],
+		"MTW Mill":["mtw.jpg","#products/mtw"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"SCM Mill":["scm.jpg","#products/scm"]
 	}
 }

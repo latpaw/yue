@@ -1,7 +1,7 @@
 {
 	"left":{
 		"1":{"name":"Crushing Equipment","img":"crusher.png","desc":"Jaw Crusher, Cone Crusher, Impact Crusher..."},
-		"2":{"name":"Grinding Equipment","img":"mill.png","desc":"MTW Trapezium Grinding Mill, LM series Vertical Grinding Mill, T130X Reinforced Ultrafine Grinding Mill"},
+		"2":{"name":"Grinding Equipment","img":"mill.png","desc":"MTW Grinding Mill, LM Grinding Machine, T130X Reinforced Ultrafine Grinding Mill"},
 		"3":{"name":"Feeding & Conveying","img":"conveyor.png","desc":"Vibrating Feeder, Belt Conveyor "},
 		"4":{"name":"Screening & Washing","img":"screen.png","desc":"Vibrating Screen, XSD series Sand Washer, LSX Sand Washer"},
 		"5":{"name":"Beneficiation Equipment","img":"benefication.png","desc":"Spiral Classifier, High-frequency Screen, Flotation Machine. "},
@@ -11,168 +11,168 @@
 		"1":{
 			"1":{
 				"name":"PE Jaw Crusher",
-				"img":"jaw.jpg",
-				"descs":"desc",
+				"img":"pe.png",
+				"descs":"Jaw crushers are mostly used in primary crushing, crushing raw stones&rocks to small ones.",
 				"href":"jaw"
 			},			
 			"2":{
 				"name":"PEW Jaw Crusher",
-				"img":"jaw.jpg",
-				"descs":"desc",
+				"img":"pew.png",
+				"descs":"Jaw crushers are mostly used in primary crushing, crushing raw stones&rocks to small ones.",
 				"href":"jaw"
 			},			
 			"3":{
 				"name":"Impact Crusher",
-				"img":"impact.jpg",
-				"descs":"desc",
+				"img":"pf.png",
+				"descs":"SBM impact crusher involve many models, they run through the whole crushing plant, the primary crushing, secondary crushing and tertiary crushing.",
 				"href":"jaw"
 			},			
 			"4":{
 				"name":"PFW Impact Crusher ",
-				"img":"impact.jpg",
-				"descs":"impact crusher",
+				"img":"pfw.png",
+				"descs":"SBM impact crusher involve many models, they run through the whole crushing plant, the primary crushing, secondary crushing and tertiary crushing.",
 				"href":"impact"
 			},			
 			"5":{
 				"name":"Cone Crusher",
-				"img":"spring.jpg",
-				"descs":"",
+				"img":"spring.png",
+				"descs":"Cone crushers is the mainstream machines used as middle&fine crushing machines in mining&construction industries.",
 				"href":"cone"
 			},			
 			"6":{
 				"name":"HP Cone Crusher",
-				"img":"hpc.jpg",
-				"descs":"",
+				"img":"hpc.png",
+				"descs":"Cone crushers is the mainstream machines used as middle&fine crushing machines in mining&construction industries.",
 				"href":"cone"
 			},			
 			"7":{
 				"name":"Sand Making Plant",
-				"img":"vsi.jpg",
-				"descs":"",
+				"img":"vsi.png",
+				"descs":"Sand making machine can also be called vertical shaft impact crusher, it is the indispensable machine in manufactured sand production &truing.",
 				"href":"sand"
 			},			
 			"8":{
 				"name":"Hammer Crusher",
-				"img":"hammer.jpg",
-				"descs":"",
+				"img":"hammer.png",
+				"descs":"Hammer crusher designed by SBM fits for producing 0-3MM coarse powder products.",
 				"href":"hammer"
 			}
 		},
 		"2":{
 			"1":{
 				"name":"Ball Mill",
-				"img":"ball.jpg",
-				"descs":"desc",
+				"img":"ball.png",
+				"descs":"Ball mills are used primary for single stage fine grinding, regrinding, and as the second stage in two stage grinding circuits.",
 				"href":"ball"
 			},			
 			"2":{
 				"name":"LM Vertical Grinding Mills",
-				"img":"lm.jpg",
-				"descs":"desc",
+				"img":"lm.png",
+				"descs":"SBM success in absorbing foreign experience and producing our vertical grinding mill.",
 				"href":"lm"
 			},			
 			"3":{
 				"name":"MTM Medium Speed Trapezium Grinding Machine",
-				"img":"mtm.jpg",
-				"descs":"desc",
+				"img":"mtm.png",
+				"descs":"MTM Medium Speed Trapezium grinder is a kind of leading-world-level industrial milling machinery, designed according to many years’ research and the world-leading-powder processing technology.",
 				"href":"mtm"
 			},			
 			"4":{
 				"name":"MTW Series Milling Machine",
-				"img":"mtw.jpg",
-				"descs":"desc",
+				"img":"mtw.png",
+				"descs":"This MTW series milling machine is designed by our experts, according to collected advices from customers' long-term experiences.",
 				"href":"mtw"
 			},			
 			"5":{
 				"name":"SCM Series Ultrafine Mill",
-				"img":"scm.jpg",
-				"descs":"desc",
+				"img":"scm.png",
+				"descs":"SCM series ultrafine mill is specially designed for super fine powder grinding,such as 325-2500 mesh.",
 				"href":"scm"
 			},			
 			"6":{
 				"name":"Raymond Mill",
-				"img":"raymond.jpg",
-				"descs":"desc",
+				"img":"raymond.png",
+				"descs":"The Raymond grinding mill was ever popular in mining, building materials, chemical engineering and metallurgy industries for size reduction, dispersion，etc.",
 				"href":"raymond"
 			},			
 			"7":{
 				"name":"T130X Reinforced ultrafine Mill",
-				"img":"t130x.jpg",
-				"descs":"desc",
+				"img":"t130x.png",
+				"descs":"T130X reinforced ultrafine mill is a new facility designed basing on statistical analysis&a large number of suggestions from users.",
 				"href":"t130x"
 			}	
 		},
 		"3":{
 			"1":{
 				"name":"Vibrating Feeder",
-				"img":"feeder.jpg",
-				"descs":"desc",
+				"img":"feeder.png",
+				"descs":"Vibrating Feeder belongs linear-direction feeding equipment.",
 				"href":"feeder"
 			},
 			"2":{
 				"name":"Belt Conveyor",
-				"img":"belt.jpg",
-				"descs":"desc",
+				"img":"belt.png",
+				"descs":"Belt conveyors is widely used in various industries.",
 				"href":"belt"
 			}
 		},
 		"4":{
 			"1":{
 				"name":"Vibrating Screen",
-				"img":"screen.jpg",
-				"descs":"desc",
+				"img":"screen.png",
+				"descs":"The vibrating screen is sieving equipment used in numerous industries, such as mining, construction, mineral beneficiation, chemical, metallurgy, etc.",
 				"href":"screen"
 			},
 			"2":{
 				"name":"Sand Washing Machine",
-				"img":"washing.jpg",
-				"descs":"desc",
+				"img":"washing.png",
+				"descs":"Sand washing machine can also be called sand washer.",
 				"href":"washing"
 			}
 		},
 		"5":{
 			"1":{
 				"name":"Flotation Machine",
-				"img":"flotation.jpg",
-				"descs":"desc",
+				"img":"flotation.png",
+				"descs":"Flotation machine is indispensable machine in many mineral dressing plants.",
 				"href":"flotation"
 			},
 			"2":{
 				"name":"High Frequency Screen",
-				"img":"hfscreen.jpg",
-				"descs":"desc",
+				"img":"hfscreen.png",
+				"descs":"High-frequency screen is able to damage tension force of the pulp surface.",
 				"href":"hfscreen"
 			},
 			"3":{
 				"name":"Hydrocyclone",
-				"img":"hydrocyclone.jpg",
-				"descs":"desc",
+				"img":"hydrocyclone.png",
+				"descs":"Hydrocyclone is extensively used for closed circuit grinding and classification system , thickening, des, dewatering;.",
 				"href":"hydrocyclone"
 			},
 			"4":{
 				"name":"Magnetic Separator",
-				"img":"magnetic.jpg",
-				"descs":"desc",
+				"img":"magnetic.png",
+				"descs":"Magnetic separator is one of the most important sperating machine in mineral beneficiation industry.",
 				"href":"magnetic"
 			},
 			"5":{
 				"name":"Spiral Classifier",
-				"img":"spiral.jpg",
-				"descs":"desc",
+				"img":"spiral.png",
+				"descs":"Spiral classifiers are designed to provide the most effective pool area and overflow velocity requirements.",
 				"href":"spiral"
 			}
 		},
 		"6":{
 			"1":{
 				"name":"Hydraulic-driven Track Mobile Plant",
-				"img":"hydraulic.jpg",
-				"descs":"desc",
+				"img":"hydraulic.png",
+				"descs":"Hydraulic-driven track mobile plant is another masterwork of SBM.",
 				"href":"hydraulic"
 			},
 			"2":{
 				"name":"Rubber-tyred Series Mobile Crusher",
-				"img":"rubber.jpg",
-				"descs":"desc",
+				"img":"rubber.png",
+				"descs":"According to customers’ requirements of improving crushing plants mobility, SBM developed Rubber-tyred series Mobile Crusher.",
 				"href":"rubber"
 			}
 		}

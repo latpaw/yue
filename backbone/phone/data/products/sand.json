@@ -1,16 +1,16 @@
 {
 	"name":"Sand making machine ",
 	"h1":"Sand making machine ",
-	"bimg":["vsi.jpg"],
+	"bimg":["vsi.jpg","vsi2.jpg","vsi3.jpg"],
 	"overview":"Sand making machine can also be called vertical shaft impact crusher, it is the indispensable machine in manufactured sand production &truing. SBM developed series of sand making crusher, like VSI sand making machine and VSI5X sand making machine.  ",
 	"feature":["Perfect final products shape greatly improve the sand grade, increasing the additional value","Large handling capacity &Adjustable feedstock modes modes","Crushing cavity is optimized, greatly reduce the operating-costs &the abrade of wear-parts","Easy to operate &maintain with the hydraulic system"],
-	"technical":"technical",
+	"technical":"<table class='dataintable'> <tbody><tr> <td rowspan='2' > Model</td> <td > Feed at center&amp;sides</td> <td > Feed at center</td> <td > Soft Material</td> <td > Hard Material</td> </tr> <tr> <td colspan='2'> Capacity(t/h)</td> <td colspan='2'> Max.Feeding(mm)</td> </tr> <tr> <td >VSI7611</td> <td >120-180</td> <td >60-90</td> <td >35</td> <td >30</td> </tr> <tr> <td >VSI8518</td> <td >200-260</td> <td >100-130</td> <td >40</td> <td >35</td> </tr> <tr> <td >VSI9526</td> <td >300-380</td> <td >150-190</td> <td >45</td> <td >40</td> </tr> <tr> <td >VSI1140</td> <td >450-520</td> <td >225-260</td> <td >50</td> <td >45</td> </tr> </tbody></table>",
 	"application":"Sand making machine is the indispensable machine in sand making industry and it is also the most ideal truing machine for mining and construction industries. ",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Jaw Crusher":["jaw.jpg","#products/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"]
 	}
 }

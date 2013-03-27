@@ -1,55 +1,6 @@
 <p style="width:100%;background:#173a81;height:3em;text-align:center;color:#fff;font-size:30px;padding-top:1em"><b style="display:block">Inquiry</b></p>
-<form action="" style="width:95%;margin:0 auto;background:#f4f4f4;margin-bottom:3em">
-	<p style="margin:2em" id="info">Simply complete the form below, click submit, we will contact you within one business day.</p>
-	<div style="width:95%;border:1px #ddd solid;border-bottom:none;padding-left:2em;background:#fff;"><input type="text" placeholder="Name" id="name" style="width:100%;display:block;margin:0 auto;height:3em;border:none"></div>
-	<div style="width:95%;border:1px #ddd solid;border-bottom:none;padding-left:2em;background:#fff;"><input type="text" placeholder="Email" id="email" style="width:100%;display:block;margin:0 auto;height:3em;border:none"></div>
-	<div style="background:#fff;border:1px #ddd solid;width:95%;display:block;padding-left:2em;padding-top:1em;padding-bottom:1em;color:#666">
-		<p>Application</p>
-		<input type="checkbox" name="application" value="Construction" style="margin-top:1em;margin-right:1em;">For Construction <br>
-		<input type="checkbox" name="application" value="Mining" style="margin-top:1em;margin-right:1em;">For Construction <br>
-		<hr>
-		<p>Equipment</p>
-		<input type="checkbox" name="equipment" value="crusher" style="margin-top:1em;margin-right:1em;">Crusher &nbsp;&nbsp;&nbsp;<input type="checkbox" name="equipment" value="mill" style="margin-top:1em;margin-right:1em;">Crusher  &nbsp;&nbsp;&nbsp;<input type="checkbox" name="equipment" value="washing" style="margin-top:1em;margin-right:1em;">Crusher
+<iframe src="http://inquiry.sbmchina.com/wap_iframe.html" frameborder="0" width="100%" height="700px"></iframe>
 
-	</div>
-
-	<div style="width:95%;display:block;border:1px #ddd solid;padding-left:2em;margin-top:1em;background:#fff;"><textarea name="message" id="message" cols="30" rows="10" style="display:block;height:5em;width:100%;border:none" placeholder="Message"></textarea></div>
-
-	<button class="inquiry_button">Send</button>
-</form>
-
-<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">2001-2013 SBMCHINA.com Copyrights</p></div>
-
-<script type="text/javascript">
-var country;
-$.ajax({type:"GET",url:"http://172.16.2.197:8081/xhrpost/geoip/geo.php?callback=yes"}).done(function(data){
-country = data.split("'")[1]
-})
-	$(".inquiry_button").click(function(e){
-		if(window.localStorage.sent=="true"){
-			 var sentmore = confirm("Your message has been sent,do you want sent more")
-			 if(sentmore){
-			 	window.localStorage.sent="false"
-			 }else{
-			 	return false
-			 }
-		}
-e.preventDefault();
-		var application = "";
-		$("input[type='checkbox']").each(function(){if(this.checked){application+=this.value+"/"}})
-		data={
-			name:$("#name").val(),
-			email:$("#email").val(),
-			application:application,
-			message:$("#message").val(),
-			country:country
-		}
-		// console.log(data)
-		$.post("http://172.16.2.197:8081/xhrpost/geoip/geo.php",data).done(function(){
-			console.log("yes")
-			$("#info").before($("<p></p>").attr("id","info1").html("Your Message Has been sent to our sales successfully! Thanks.").css({"border":"1px #ff8a00 solid","background":"#ff8a00","color":"#000","line-height":"2em","margin-top":"1em","border-radius":"1em","text-align":"center","overflow":"hidden"}))
-			window.setTimeout(function(){$("#info1").animate({"opacity":"0","height":"0"},500,function(){$(this).remove()})},2000)
-			window.localStorage.setItem("sent","true")
-		})
-	})
-</script>
+<div id="copy">
+    <p><a href="" class="blue" id="pc">Computer version </a>| <a href="" class="blue" id="phone">Stantard Edition</a></p>
+   <p class="gray">2001-2013 SBMCHINA.com Copyrights</p></div>

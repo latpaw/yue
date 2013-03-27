@@ -1,16 +1,16 @@
 {
 	"name":"Cone Crusher ",
 	"h1":"Cone Crusher ",
-	"bimg":["hpc.jpg"],
+	"bimg":["hpc.jpg","hpc2.jpg","hpc3.jpg"],
 	"overview":"Cone crushers is the mainstream machines used as middle&fine crushing machines in mining&construction industries. To meet clients’ requirements, SBM produce series of cone crushers, such as CS cone crusher, HPC cone crusher, HCS cone crusher, PY spring cone crusher.  ",
 	"feature":["Large capacity &High crushing ratio","Good final products shape & Excellent performance","Different crushing cavities design well meet different requirements &Easy to adjust","Autonomic Hydraulic control is optional &Low operating-costs"],
-	"technical":"technical",
+	"technical":"<table class='dataintable'> <tbody><tr> <td > Model</td> <td width='102'> Movable Cone Diameter (mm)</td> <td > Chamber Style</td> <td width='102'> Min. Discharging (mm)</td> <td > Max. Feeding (mm)</td> <td width='111'>&nbsp;Capacity (t/h)</td> </tr> <tr> <td rowspan='2' >HPC220</td> <td rowspan='2' width='102'>1220</td> <td >Coarse</td> <td width='102'>19</td> <td >210</td> <td width='111'>185-300</td> </tr> <tr> <td >Fine</td> <td width='102'>13</td> <td >105</td> <td width='111'>150-210</td> </tr> <tr> <td rowspan='2' >HPC400</td> <td rowspan='2' width='102'>1570</td> <td >Coarse</td> <td width='102'>30</td> <td >290</td> <td width='111'>400-500</td> </tr> <tr> <td >Fine</td> <td width='102'>16</td> <td >135</td> <td width='111'>260-400</td> </tr> </tbody></table>",
 	"application":"Cone crushers are used in cement mill, mining, building construction, road &bridge construction, railway construction and metallurgy, etc. Common mineral&rocks are easily crushed by it.",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Jaw Crusher":["jaw.jpg","#products/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"LM Mill":["lm.jpg","#products/lm"],
+		"MTM Mill":["mtm.jpg","#products/mtm"]
 	}
 }

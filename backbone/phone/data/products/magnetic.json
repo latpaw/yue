@@ -7,10 +7,12 @@
 	"technical":"technical",
 	"application":"Magnetic separator is suitable for wet separating of magnetite, magnetic pyrite, baking ore, and limonite, etc.It also can be used for removing Fe procession of coal, nonmetallic mineral and construction materials. ",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Jaw Crusher":["jaw.jpg","#products/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"LM Mill":["lm.jpg","#products/lm"],
+		"MTM Mill":["mtm.jpg","#products/mtm"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"SCM Mill":["scm.jpg","#products/scm"]
 	}
 }

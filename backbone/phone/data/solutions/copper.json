@@ -4,7 +4,6 @@
 	"bimg":"bjaw.png",
 	"introduction":"Copper ore is an ore which can produce copper metal by crushing in ore crushing plant, grinding in Ball mill and smelting in a furnace along with a piece of tin ore. SBM is a professional manufacturer of copper ore processing equipment.",
 	"equipment":{
-	"equipment":{
 		"Jaw Crusher":["jaw.jpg","#prducts/jaw"],
 		"Impact Crusher":["impact.jpg","#products/impact"],
 		"Cone Crusher":["cone.jpg","#products/cone"],

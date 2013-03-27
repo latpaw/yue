@@ -13,6 +13,13 @@
         len = $("#bimgin li").length,
         btn="";
         p.id="whatid";
+
+		if(len==1){
+
+			$("#bimgin").css({"width":"100%","margin-left":"0"}).find("li").css({"width":"40%","margin-left":"30%"})	
+
+		}else{
+
         for(var i=0;i<len;i++){
             btn += "<span class='pro_btn'></span>"
         }
@@ -55,7 +62,7 @@ var x,changed;
                         }
                 }
             }
-
+		}
     </script>
 
 </div>
@@ -83,7 +90,7 @@ var x,changed;
     <ul>
     <% for( i in product.related){ %>
     <li>
-        <img src="css/images/<%= product.related[i][0]%>" alt=""><br>
+        <img src="css/pics/<%= product.related[i][0]%>" alt=""><br>
       <a href="<%= product.related[i][1]%>"><%= i %></a>
     </li>
     <% } %>
@@ -92,28 +99,36 @@ var x,changed;
 </div>
 </section>
 <p class="about_foot"><a href="#products">Products</a> <a href="#solutions">Products Line</a> <a href="#about">About Us</a> <a href="#contact">Contact Us</a></p>
-<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>
+<div id="copy">
+    <p><a href="" class="blue" id="pc">Computer version </a>| <a href="" class="blue" id="phone">Stantard Edition</a></p>
+    <p class="gray">200-2013 SBMCHINA.com Copyrights</p>
+</div>
 <script type="text/javascript">
-    var num = Math.floor($("body").width()/150)
+	var liwidth = ($("body").width()-60)/3
+	$(".related li").width(liwidth)
+	var width = liwidth+20
+    var num = 3
     var lgth = $(".related li").length
+    $(".relain").width(liwidth*lgth+1000)
     var now = 1
-$(".related").width(num*150)
+// $(".related").width(num*width)
 $("#next").click(function(){
     if(now+num>lgth){
         $(".related ul").stop().animate({"marginLeft":"0"})
         now = 1
     }else
     {
-        $(".related ul").stop().animate({"marginLeft":"-="+num*150+"px"})
+        $(".related ul").stop().animate({"marginLeft":"-="+num*width+"px"})
         now = now + num
     }
 })
-setInterval(function(){$("#next").stop().trigger("click")},5000)
+setInterval(function(){$("#next").stop().trigger("click")},8000)
 
     $(".feature").click(function(){
         if($(".feature").next().css("display")!="block"){
         $(this).find("img").attr("src","css/images/one.png")
         $(".feature").next().css("display","block")
+        $(".technical").next().css("display","none")
     }else{
        $(this).find("img").attr("src","css/images/ten.png")
         $(".feature").next().css("display","none") 
@@ -123,6 +138,7 @@ setInterval(function(){$("#next").stop().trigger("click")},5000)
         if($(".technical").next().css("display")!="block"){
         $(this).find("img").attr("src","css/images/one.png")
         $(".technical").next().css("display","block")
+        $(".feature").next().css("display","none") 
     }else{
        $(this).find("img").attr("src","css/images/ten.png")
         $(".technical").next().css("display","none") 

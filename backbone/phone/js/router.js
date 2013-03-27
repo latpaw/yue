@@ -1,5 +1,5 @@
-define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/about','modules/home/contact','modules/home/inquiry','modules/products/products','modules/solutions/solutions','modules/solutions/solDetail','modules/products/proDetail','../model/proModel','../model/proListModel','../model/solModel','../model/solListModel'/*,'jqm'*/], 
-	function($, _, Backbone,home,about,contact,inquiry,products,solutions,solDetail,proDetail,proModel,proListModel,solModel,solListModel) {
+define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/about','modules/home/contact','modules/home/inquiry','modules/products/products','modules/solutions/solutions','modules/solutions/solDetail','modules/products/proDetail','../model/proModel','../model/proListModel','../model/solModel','../model/solListModel','../modules/home/search'/*,'jqm'*/], 
+	function($, _, Backbone,home,about,contact,inquiry,products,solutions,solDetail,proDetail,proModel,proListModel,solModel,solListModel,search) {
 
     'use strict';
     var Router = Backbone.Router.extend({
@@ -10,6 +10,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
         routes: {
         	'':    'showHome',           //home view
         	'home': 'showHome', 
+	        'search': 'search',
         	'about': 'aboutUs',
         	'contact': 'contactUs',  
         	'inquiry': 'inquiry',
@@ -29,7 +30,9 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
 	    defaultAction: function(actions){
 
 	    },
-
+	    search:function(actions){
+	    	this.changePage(new search())
+	    },
 	    aboutUs: function(actions){
 	    	this.changePage(new about());
 	    },
@@ -92,9 +95,10 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
 					console.log("url chanegd")
 					$("#body").animate({"left":"-"+width},500,function(){$(this).remove()})
 
-				}
+		   }
 				window.localStorage.setItem("location",window.location.href)
 			  
+
            console.log(window.location.href);
                 //插入dom
                 $(page.el)[0].id="body"
@@ -105,26 +109,27 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
       		// console.log($(page.el))
 
       		if(document.getElementById("toptop")==null){
-      			$('body').prepend('<header>    <p id="toptop"></p>    <div id="logo_search">        <p id="search"><img src="css/images/wap_05.png" alt=""><input type="text" placeholder="Search"></p>        <a href=""><img src="css/images/wap_03.png" alt="" id="logo"></a>    </div></header>');
+      			$('body').prepend('<header>    <p id="toptop"></p>    <div id="logo_search">        <p id="search"><img src="css/images/wap_05.png" alt="" id="searchbutton"><input type="text" id="searchinput" placeholder="Search"></p>        <a href=""><img src="css/images/wap_03.png" alt="" id="logo"></a>    </div></header>');
       		}
             
       		// console.log($(page.el)[0])
       		if(!document.getElementById("foot")){
-      			$('body').append('<div id="foot" style="position:fixed;bottom:0;width:100%;z-index:1000">   <p id="slideup"><img src="css/images/wap_386.png" alt=""></p>    <div id="hidden_parts">        <ul>            <li id="list_home"><a href=""><img src="css/images/wap_42.png" alt="">Home</a></li>             <li><a href="#products"><img src="css/images/wap_45.png" alt="">List</a></li>            <li><a href="#inquiry"><img src="css/images/wap_47.png" alt="">Inquiry</a></li>            <li><a href="https://server.iad.liveperson.net/hc/61309585/?cmd=file&file=chatFrame&site=61309585&byhref=1&sessionid=15569041"><img src="css/images/wap_49.png" alt="">Chat Online</a></li>            <li><a href="mailto:sbm@sbmchina.com"><img src="css/images/wap_51.png" alt="">Email</a></li>        </ul>        <div class="clear"></div>    </div></div>')  
+      			$('body').append('<div id="foot" style="position:fixed;bottom:0;width:100%;z-index:1000"><img src="css/images/wap_386.png" id="slideup">    <div id="hidden_parts">        <ul>            <li id="list_home"><a href=""><img src="css/images/wap_42.png" alt="">Home</a></li>             <li><a href="#products"><img src="css/images/wap_45.png" alt="">List</a></li>            <li><a href="#inquiry"><img src="css/images/wap_47.png" alt="">Inquiry</a></li>            <li><a href="https://server.iad.liveperson.net/hc/61309585/?cmd=file&file=visitorWantsToChat&site=61309585&byhref=1"><img src="css/images/wap_49.png" alt="">Chat</a></li> </ul> <div class="clear"></div>    </div></div>')  
 				window.localStorage.setItem("new","no")
-				var height = $("#hidden_parts").height()+"px"
+				var height = $("#hidden_parts").width()*0.06+35+"px"
+				// var height = $("#hidden_parts").height()+"px"
 				var _hide;
 				var hide_mark;
 				var hide =function(time){ 
 				    _hide = window.setTimeout(function(){
 					$("#foot").stop().animate({"bottom":"-"+height})
-					$("#slideup>img").attr("src","css/images/wap_38.png")
+					$("#slideup").attr("src","css/images/wap_38.png")
 					hide_mark=true;
 					},time);
 					
 				}
 				$(document).ready(function(){hide(5000)})
-				$("#slideup>img").click(function(e){
+				$("#slideup").click(function(e){
 					if(e.target && e.target.nodeName!="A"){
 						if(hide_mark){
 					 if(_hide){window.clearTimeout(_hide)}
@@ -143,6 +148,32 @@ define(['jquery', 'underscore', 'backbone','modules/home/home','modules/home/abo
 					window.clearTimeout(_hide)
 				},function(){hide(5000)})
 			}
+
+	       document.cookie="visitor_type=phone;path=/;domain=sbmchina.com"
+		    $("#pc").on("click",function(e){
+					e.preventDefault()
+					document.cookie="visitor_type=pc;path=/;domain=sbmchina.com";
+			   window.location.href="http://www.sbmchina.com"
+		   })
+
+		    $("#searchbutton").click(function(){
+		    	if($("#searchinput").val()!=""&&window.location.href.indexOf("search")<0){
+		    		window.localStorage.param=$("#searchinput").val()
+		    		window.location.href="#search"
+		    	}
+		    	if($("#searchinput").val()!=""&&window.location.href.indexOf("search")>0){
+		    		window.localStorage.param=$("#searchinput").val()
+		    		window.location.reload()
+		    	}
+		    })
+
+		    $("#searchinput").focus(function(){
+		    	window.onkeyup=function(e){
+		    		if(e.keyCode=="13"){
+		    			$("#searchbutton").click()
+		    		}
+		    	}
+		    })
 	    } 
     });
 

@@ -28,12 +28,12 @@ $(document).ready(function(){
         $(this).css("color","#fd8a21").siblings().css("color","#333")
         // $("#listleft").animate({"left":"-"+$("#listleft").width()*0.7+"px"})
         $("#listleft").css({"border":"none"}).find("li").css({"border":"none","background":"#f4f4f4"})
-        $("#listleft").animate({"width":$("body").width()*0.25+"px"})
+        $("#listleft").animate({"width":$("body").width()*0.3+"px"})
         $("#listleft").find("img").hide()
         // $("#listleft").find("span").animate({"paddingTop":"1em"})
         $("#listleft").find(".gray").hide()
-        $(this).append("<img src='css/images/fdsf.png' style='float:right;z-index:2000;position:absolute;right:0;width:28px'>")
-        $("#listright").animate({"left":$("body").width()*0.25+"px"})
+        $(this).css({"background":"#fff","border-right":"1px #ebebeb solid","border-bottom":"1px #ebebeb solid","border-left":"4px #fd8a21 solid"})
+        $("#listright").animate({"left":$("body").width()*0.3+"px"})
         $(ulist).css({"display":"block"}).siblings().css({"display":"none"})
         
         $(".wrapper").height(function(){
@@ -90,4 +90,7 @@ $(document).ready(function(){
 </div>
 <div class="clear"></div>
 <p class="contact_foot"> <a href="#about">About Us</a> <a href="#contact">Contact Us</a></p>
-<div id="copy">    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>    <p class="gray">200-2013 SBMCHINA.com Copyrights</p></div>
+<div id="copy">
+    <p><a href="" class="blue" id="pc">Computer version </a>| <a href="" class="blue" id="phone">Stantard Edition</a></p>
+    <p class="gray">200-2013 SBMCHINA.com Copyrights</p>
+</div>

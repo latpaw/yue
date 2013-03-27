@@ -1,41 +1,40 @@
-<!-- <header>
-    <p id="toptop"></p>
-    <div id="logo_search">
-        <p id="search"><img src="css/images/wap_05.png" alt=""><input type="text" placeholder="Search"></p>
-        <img src="css/images/wap_03.png" alt="" id="logo">
-    </div>
-</header> -->
 <section id="index_main">
     <style type="text/css">
 /* qqshop focus */
-#focus {width:100%; /*height:445px;*/ overflow:hidden; position:relative;}
+#focus {width:100%; /*height:445px;*/;max-height:490px; overflow:hidden; position:relative;}
 #focus ul { position:absolute;}
 #focus ul li {float:left; /*height:445px;*/ overflow:hidden; position:relative; background:#000;}
 #focus ul li img{width:100%;}
 #focus ul li div {position:absolute; overflow:hidden;}
 #focus .btnBg {position:absolute; width:100%; height:20px; left:0; bottom:0; /*background:#000;*/}
-#focus .btn {position:absolute; width:97%; height:6px; padding:0px 13px; right:0; bottom:5px; text-align:center;}
-#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:20%; height:6px; _font-size:0; border-right:1px #FFF solid; margin-left:0px; cursor:pointer; background:#a6a6a6;}
+#focus .btn {position:absolute; width:100%; height:6px; padding:0; right:0; bottom:5px; text-align:center;}
+#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:33%; height:6px; _font-size:0; border-right:1px #FFF solid; margin-left:0px; cursor:pointer; background:#a6a6a6;}
 #focus .btn span a{background:#a6a6a6;}
 #focus .btn span a:hover{background:#ff9900;}
 #focus .btn span.on {background:#ff9900;}
 </style>
         <script type="text/javascript">
-        $(document).ready(function(){
-            $("#slideimg").attr("src","css/images/wap_09.png")
-            $("#slideimg").load(function(){
-                    var slideheight = $("#slideimg").height()
-                    $("#focus").height(slideheight)
-                    console.log("height set")
-                    $("#focus li").height(slideheight)  
-                })
-
+			$(document).ready(function(){
+					var height = $("body").width()*0.5
+				$("#focus").height(height)
+				$("#focus").height(height)
         })
 
         $(function() {            
             var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
             var len = $("#focus ul li").length; //获取焦点图个数
             $("#focus ul li").width(sWidth);
+
+            window.onresize=function(){ // resize 窗口的时候
+                sWidth = $("#focus").width(); 
+                len = $("#focus ul li").length; 
+                $("#focus ul li").width(sWidth); 
+                var height = $("body").width()*0.5
+                $("#focus").height(height)
+                $("#focus").height(height)
+                $("#index_line_p").height(function(){return $("#index_line_p").next().height()+"px"}) 
+            }
+
             var index = 0;
             var picTimer;
             
@@ -125,9 +124,9 @@
         </script>
         <div id="focus">
         <ul>
-            <li><a href="" target="_blank"><img src="css/images/wap_09.png" alt="" id="slideimg"/></a></li>
-            <li><a href="" target="_blank"><img src="css/images/wap_09.png" alt="" /></a></li>
-            <li><a href="" target="_blank"><img src="css/images/wap_09.png" /></a></li>
+            <li><a href="" target="_blank"><img src="css/images/banner.jpg" alt="" id="slideimg"/></a></li>
+            <li><a href="" target="_blank"><img src="css/images/banner2.jpg" alt="" /></a></li>
+            <li><a href="" target="_blank"><img src="css/images/banner3.jpg" /></a></li>
         </ul>
         </div>
 
@@ -151,9 +150,9 @@
                     <tr><td><a href="#products/t130x">T130X Mill</a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist3">
-                    <tr class="bupno"><td><a href="#products/screen">Vibrating Screen</a></td><td><a href=""></a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
+                    <tr class="bupno"><td><a href="#products/screen">Vibrating Screen</a></td><td><a href=""></a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="">&nbsp;</a></td></tr>
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
             </div>
             <li class="lifirst"><p class="elist"><img src="css/images/wap_21.png" alt=""><span>Washing </span></p></li>
@@ -163,18 +162,18 @@
                 <div class="clear"></div>  
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist4">
                     <tr class="bupno"><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/washing">Sand Washing Machine</a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist5">
                     <tr class="bupno"><td><a href="#products/belt">Belt Conveyor</a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/feeder">Vibrating Feeder</a></td><td><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist6">
-                    <tr class="bupno"><td><a href="#products/hydraulic">Traked Mobile Plant</a></td><td><a href="#products/rubber">Rubber Mobile Crusher</a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
-                    <tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
+                    <tr class="bupno"><td><a href="#products/hydraulic">Traked Mobile Plant</a></td><td><a href="#products/rubber">Rubber Mobile Crusher</a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="">&nbsp;</a></td></tr>
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
+					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
             </div>
             <li class="clear"></li>
@@ -189,6 +188,7 @@
         $("#index_line_p").next().load(function(){
            $("#index_line_p").height(function(){return $("#index_line_p").next().height()+"px"}) 
         })
+
             
 
            $(document).ready(function(){
@@ -218,20 +218,6 @@
 
 </aside>
 <div id="copy">
-    <p><a href="" class="blue">Computer version </a>| <a href="" class="blue">Stantard Edition</a></p>
+    <p><a href="" class="blue" id="pc">Computer version </a>| <a href="" class="blue" id="phone">Stantard Edition</a></p>
     <p class="gray">200-2013 SBMCHINA.com Copyrights</p>
 </div>
-
-<!-- <div id="foot">
-    <p id="slideup"><img src="css/images/wap_38.png" alt=""></p>
-    <div id="hidden_parts">
-        <ul>
-            <li id="list_home"><img src="css/images/wap_42.png" alt="">Home</li>
-            <li><img src="css/images/wap_45.png" alt="">Home</li>
-            <li><img src="css/images/wap_47.png" alt="">Home</li>
-            <li><img src="css/images/wap_49.png" alt="">Home</li>
-            <li><img src="css/images/wap_51.png" alt="">Home</li>
-        </ul>
-        <div class="clear"></div>
-    </div>
-</div> -->

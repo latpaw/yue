@@ -7,10 +7,13 @@
 	"technical":"technical",
 	"application":"Raymond mill was designed to grind non-flammable and non-explosive materials. It ever is the mainstream grinding machine in powder making industry. ",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Jaw Crusher":["jaw.jpg","#products/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"LM Mill":["lm.jpg","#products/lm"],
+		"MTM Mill":["mtm.jpg","#products/mtm"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"],
+		"Ball Mill":["ball.jpg","#products/ball"],
+		"SCM Mill":["scm.jpg","#products/scm"]
 	}
 }

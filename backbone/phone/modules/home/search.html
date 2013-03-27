@@ -1,0 +1,46 @@
+<p id="result"></p>
+<button id="clear_s">Clear the Search History</button>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+$("#searchinput").val(window.localStorage.param)
+})
+
+	var param = window.localStorage.param || "crusher"
+	// console.log(param)
+	var result=[];
+	var html = "<ul id='search_r'>";
+	$.ajax({
+		dataType:"json",
+		url:"data/search.json",
+		success:function(data){
+			for(i in data["products"]){
+      		if(data["products"][i].indexOf(param)>0){
+      			// console.log(i)
+      			result.push(i)
+      			html+="<li><a href='#products/"+i+"'>"+data["products"][i].split(";")[1]+"</a></li>"
+      		}
+      	}
+      	for(i in data["projects"]){
+      		if(data["projects"][i].indexOf(param)>0){
+      			// console.log(i)
+      			result.push(i)
+      			html+="<li><a href='#solutions/"+i+"'>"+data["projects"][i].split(";")[1]+"</a></li>"
+      		}
+      	}
+
+		},
+		error:function(){
+			console.log("error")
+		}
+	}).done(function(data){
+		html+="</ul>"
+      	$("#result").html(html)
+	})
+	
+	$("#clear_s").click(function(){
+		window.localStorage.param=""
+		$("#search_r").remove()
+		$("#searchinput").val("")
+	})
+
+	</script>

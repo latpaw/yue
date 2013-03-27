@@ -1,16 +1,18 @@
 {
 	"name":"Rubber-tyred series Mobile Crusher ",
 	"h1":"Rubber-tyred series Mobile Crusher ",
-	"bimg":["rubber.jpg"],
+	"bimg":["rubber.jpg","rubber2.jpg","rubber3.jpg"],
 	"overview":"According to customers’ requirements of improving crushing plants mobility, SBM developed Rubber-tyred series Mobile Crusher. It contains many types models, such as mobile jaw crushing plant, mobile impact crushing plant and mobile cone crushing plant, etc.  ",
 	"feature":["Meet high demands for mobility both on site and on the road","Greatly reduce Material Transportation cost","Easy to combine with other plants","Excellent adaptability to environment"],
 	"technical":"technical",
 	"application":"Rubber-tyred series Mobile Crushers are used in great many fields that have great requirements of plants’ mobility, such as river aggregates processing, construction waste recycling, road &bridge construction and mining industries and so on. ",
 	"related":{
-		"jaw crusher":["jaw-crusher.png","#jaw"],
-		"cone crusher":["jaw-crusher.png","#cone"],
-		"impact crusher":["jaw-crusher.png","#impact"],
-		"impact crushers":["jaw-crusher.png","#impacts"],
-		"impact crushersd":["jaw-crusher.png","#impactss"]
+		"Jaw Crusher":["jaw.jpg","#products/jaw"],
+		"Cone Crusher":["cone.jpg","#products/cone"],
+		"Impact Crusher":["impact.jpg","#products/impact"],
+		"LM Mill":["lm.jpg","#products/lm"],
+		"MTW Mill":["mtw.jpg","#products/mtw"],
+		"Vibrating Screen":["screen.jpg","#products/screen"],
+		"Vibrating Feeder":["feeder.jpg","#products/feeder"]
 	}
 }
