@@ -4,7 +4,7 @@
 	"bimg":["belt.jpg","belt2.jpg","belt3.jpg"],
 	"overview":"Belt conveyors is widely used in various industries. SBM designed the unique belts and belt systems to meet specific end-user requirements for high performance and cost-efficiency, especially in the mining and construction industry. ",
 	"feature":["High carrying capacity and the length is customized","Anti-skidding design ensure that it works very well even in severe environment","Easy to operate and easy to maintain ","Different models for choice"],
-	"technical":"technical",
+	"technical":"<table class='dataintable' id='para_belt' dir=''> <tbody><tr> <td>Width(mm)</td> <td colspan='3'>Length(m)/Power(kw)</td>  <td>Capacity(t/h)</td> </tr> <tr> <td>400</td> <td>≤12/2.2</td>  <td valign='top'>20~25/3.5~7.5 </td> <td valign='center'>1.25~2.0</td> <td valign='center'>30~60</td> </tr> <tr> <td height='27'>500</td> <td>≤12/3<br></td>  <td>20~30/5.5~7.5<br></td> <td>1.25~2.0</td> <td>40~80</td> </tr> <tr> <td>650</td> <td>≤12/4<br></td>  <td>20~30/5.5~11<br></td> <td>1.25~2.0</td> <td>80~120</td> </tr> <tr> <td>800</td> <td>≤10/4<br></td>  <td>15~30/5.5~15<br></td> <td>1.25~2.0</td> <td>120~200</td> </tr> <tr> <td>1000</td> <td>≤10/5.5<br></td>  <td>20~40/11~22<br></td> <td>1.25~2.0</td> <td>200~320</td> </tr> <tr> <td>1200</td> <td>≤10/7.5<br></td>  <td>20~40/15~30<br></td> <td>1.25~2.0</td> <td>290~480</td> </tr> </tbody></table>",
 	"application":"Belt conveyor is used for transferring lump materials or manufactured products in quarry, mining, construction, metallurgical industries and other industries. ",
 	"related":{
 		"Jaw Crusher":["jaw.jpg","#products/jaw"],

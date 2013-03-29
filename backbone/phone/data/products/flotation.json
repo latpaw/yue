@@ -4,7 +4,7 @@
 	"bimg":["flotation.jpg"],
 	"overview":"Flotation machine is indispensable machine in many mineral dressing plants. Agitator flotation machine, pneumatic flotation machine and pneumatic- agitator flotation machine are produced for differents projects. ",
 	"feature":["Large air-absorption capacity and low energy consumption","Optimistic structure design & Excellent performance","Reasonable circulation of mineral slurry","Automatic control Easy to adjust"],
-	"technical":"technical",
+	"technical":"<table class='dataintable'> <thead> <tr> <td rowspan='2'>Model</td> <td rowspan='2'>Effective&nbsp;capacity<br> (m³)</td> <td rowspan='2'>capacity</td> <td colspan='2'>Motor&nbsp;power&nbsp;KW</td> </tr> <tr> <td>for agitating</td> <td>for scraper</td> </tr> </thead> <tbody> <tr> <td>XJ1</td> <td>0.13</td> <td>0.05~0.6</td> <td>200</td> <td>600</td> </tr> <tr> <td>XJ2</td> <td>0.23</td> <td>0.12~0.28</td> <td>250</td> <td>504</td> </tr> <tr> <td>XJ3</td> <td>0.35</td> <td>0.18~0.4</td> <td>300</td> <td>483</td> </tr> <tr> <td>XJ6</td> <td>0.62</td> <td>0.3~0.9</td> <td>350</td> <td>400</td> </tr> <tr> <td>XJ11</td> <td>1.1</td> <td>0.6~1.6</td> <td>500</td> <td>330</td> </tr> <tr> <td>XJ28</td> <td>2.8</td> <td>1.5~3.5</td> <td>600</td> <td>280</td> </tr> <tr> <td>XJ58</td> <td>5.8</td> <td>5~7</td> <td>750</td> <td>240</td> </tr> </tbody> </table>",
 	"application":"Flotation machine are mainly used in mineral ore dressing plants. It is applicable for the separation of numerous of mineral ores, such as fluorite and talc, gold ore, copper ore, iron ore and zinc ore, etc. ",
 	"related":{
 		"Jaw Crusher":["jaw.jpg","#products/jaw"],

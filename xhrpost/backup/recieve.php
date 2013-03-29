@@ -11,6 +11,8 @@ $visits = explode("!",$_POST['visits']);
 	echo "提交成功! <br>";
 	echo "Your name is ".$name."<br />";
 	echo "your email is ".$email."<br />";
+	echo "your company is ".$company."<br />";
+	echo "your phone is ".$phone."<br />";
 	echo "your country is ".$country."<br />";
 
 	echo "your referer  is".$visits[0]."<br />";
