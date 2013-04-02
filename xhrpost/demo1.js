@@ -129,6 +129,15 @@ submit.onclick=function(ev){ ///////////////when submit
   var textarea = byid("textarea")
   var message = "Checked: "+checkbox(value)+ "; Message: "+textarea.value 
     ////
+    if(email.value==""){
+      var ei = document.getElementById("email_info")
+      ei.innerHTML="Please leave us your email, We will never sell or share your email address with third parties."
+      ei.style.background="#ff6600"
+      ei.style.color="#fff"
+      email.focus()
+      return false
+    }
+
   var xrequest =function(){
     if(this.XMLHttpRequest){
       return new XMLHttpRequest(); 

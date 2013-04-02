@@ -70,7 +70,7 @@ a.link img{float:right;width:20px;margin-right:1em;margin-top:10px;}
 #copy p{text-align:center;}
 #copy{margin-bottom:3em;}
 
-#slideup{width:12%;display:block;margin:0 auto;}
+#slideup{width:14%;display:block;margin:0 auto;}
 #hidden_parts{background:#1c3376;overflow:hidden;}
 #hidden_parts li{float:left;width:24%;list-style:none;padding-top:12px;text-align:center;
 margin-bottom:-10000px; padding-bottom:10000px; }
@@ -84,7 +84,7 @@ margin-bottom:-10000px; padding-bottom:10000px; }
 .hidden{border-collapse:collapse;width:100%;margin-top:2em;}
 .hidden td{width:33%;background:#173a81;border:1px dashed #eee;padding:1em 0;border-top:none;z-index:1000;}
 .hidden a{margin:0;padding:0;line-height:1.5em;;color:#fff;text-align:center;width:100%;display:block;}
-.float{margin-top:-22px;z-index:2000;position:absolute;}
+.float{top:-10px;z-index:2000;position:absolute;}
 .float img{margin:0 auto;display:block;}
 
 
@@ -94,7 +94,7 @@ h2,h3{margin:1em 1em;}
 .contents p{margin:0 1em;}
 .inquiry_button{margin:1em 1em;border:none;background:#fe7b01;width:95%;line-height:3em;color:#fff;}
 .about_foot{margin:0 1em;margin-top:1em;margin-bottom:1em;}
-.about_foot a{line-height:3em; background:#fff; color:#666; width:20%; margin-left:1em;display:inline-block;text-align:center;}
+.about_foot a{ background:#fff; color:#666; width:20%; margin-left:1em;display:inline-block;text-align:center;}
 .contact_foot a{line-height:3em; background:#fff; color:#666; width:100px; margin-left:1em;display:inline-block;text-align:center;}
 .contact_foot{text-align:center;margin:0 auto;margin-top:1em;margin-bottom:1em;}
 

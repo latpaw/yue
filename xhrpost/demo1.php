@@ -7,7 +7,7 @@
 		</div>
 		<div class="input" id="email_out">
 			<span><?php locale("email");?>:</span> <input type="text" name="email" id="email" > <span style="color:#f00">*</span>
-			<p style="color:#003781;font-size:10px;margin-left:140px">( We will never sell or share your information with third parties. )</p>
+			<p style="color:#003781;font-size:10px;margin-left:135px;margin-top:2px;padding-left:5px" id="email_info">( We will never sell or share your information with third parties. )</p>
 		</div>
 		<input type="hidden" name="visits" id="visits" value="<?php echo $_GET['visits'];?>">
 

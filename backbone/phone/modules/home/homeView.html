@@ -140,17 +140,17 @@
             <div style="width:100%">
                 <div class="clear"></div>  
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist1">
-                    <tr class="bupno"><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/jaw">PE Jaw Crusher</a></td><td><a href="#products/jaw">PEW Jaw Crusher</a></td><td><a href="#products/impact"> PF Impact Crusher</a></td></tr>
+                    <tr class="bupno"><td style="position:relative"><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/jaw">PE Jaw Crusher</a></td><td><a href="#products/jaw">PEW Jaw Crusher</a></td><td><a href="#products/impact"> PF Impact Crusher</a></td></tr>
                     <tr><td><a href="#products/impact">PFW Impact Crusher</a></td><td><a href="#products/cone">Cone Crusher</a></td><td><a href="#products/cone">S Cone Crusher</a></td></tr>
                     <tr><td><a href="#products/sand">Sand Making Crusher</a></td><td><a href="#products/cone">HP Cone Crusher</a></td><td><a href="#products/hammer">Hammer Crusher</a></td></tr>
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist2">
-                    <tr class="bupno"><td><a href="#products/ball">Ball Mill</a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/lm">LM Mill</a></td><td><a href="#products/mtm">MTM Mill</a></td></tr>
+                    <tr class="bupno"><td><a href="#products/ball">Ball Mill</a></td><td style="position:relative"><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/lm">LM Mill</a></td><td><a href="#products/mtm">MTM Mill</a></td></tr>
                     <tr><td><a href="#products/mtw">MTW Mill</a></td><td><a href="#products/raymond">Raymond Mill</a></td><td><a href="#products/scm">SCM Mill</a></td></tr>
                     <tr><td><a href="#products/t130x">T130X Mill</a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist3">
-                    <tr class="bupno"><td><a href="#products/screen">Vibrating Screen</a></td><td><a href=""></a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="">&nbsp;</a></td></tr>
+                    <tr class="bupno"><td><a href="#products/screen">Vibrating Screen</a></td><td><a href=""></a></td><td style="position:relative"><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="">&nbsp;</a></td></tr>
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
@@ -161,17 +161,17 @@
             <div style="width:100%">
                 <div class="clear"></div>  
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist4">
-                    <tr class="bupno"><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/washing">Sand Washing Machine</a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
+                    <tr class="bupno"><td style="position:relative"><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/washing">Sand Washing Machine</a></td><td><a href=""></a></td><td><a href=""></a></td></tr>
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist5">
-                    <tr class="bupno"><td><a href="#products/belt">Belt Conveyor</a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/feeder">Vibrating Feeder</a></td><td><a href=""></a></td></tr>
+                    <tr class="bupno"><td><a href="#products/belt">Belt Conveyor</a></td><td style="position:relative"><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="#products/feeder">Vibrating Feeder</a></td><td><a href=""></a></td></tr>
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
                 <table class="hidden" cell-padding="0" cell-spacing="0"  id="elist6">
-                    <tr class="bupno"><td><a href="#products/hydraulic">Traked Mobile Plant</a></td><td><a href="#products/rubber">Rubber Mobile Crusher</a></td><td><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="">&nbsp;</a></td></tr>
+                    <tr class="bupno"><td><a href="#products/hydraulic">Traked Mobile Plant</a></td><td><a href="#products/rubber">Rubber Mobile Crusher</a></td><td style="position:relative"><p class="float"><img src="css/images/uptri.png" alt=""></p><a href="">&nbsp;</a></td></tr>
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
 					<!--<tr><td><a href=""></a></td><td><a href=""></a></td><td><a href=""></a></td></tr>-->
                 </table>
@@ -189,18 +189,17 @@
            $("#index_line_p").height(function(){return $("#index_line_p").next().height()+"px"}) 
         })
 
-            
-
            $(document).ready(function(){
             $(".float").each(function(){$(this).width(function(){return $(this).parent().width()})})
             //up there
             $("#elistul").on("click","li",function(){
                 var index = $(this).index()+1
                 if(index>=5){index-=1}
-                $(".hidden").hide()
             if($("#elist"+index).hasClass("active")){
-                    $("#elist"+index).hide().removeClass("active")}
-                else{$("#elist"+index).show().addClass("active")
+                    $(".hidden").removeClass("active").hide()}
+                else{
+                $(".hidden").removeClass("active").hide()
+                    $("#elist"+index).addClass("active").show()
                 }
             }
             ).find(".hidden").hide()
