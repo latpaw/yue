@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body{background:url(b.png) repeat;font-size:40px;text-shadow:0px 0px 3px #aaa;}
+	*{padding:0;margin:0;}
+	p{position:relative;margin-top:300px;height:50px;color:#fff;}
+	p span{display:block;position:absolute;}
+
+	.one{left:600px;}
+	.two{left:625px;}
+	.three{left:650px;}
+		.up{
+			-webkit-animation-name:slides;
+			-moz-animation-name:slides;
+			-webkit-animation-duration:6s;
+			-moz-animation-duration:6s;
+			-webkit-transition:all 2s ease-in-out;
+			-moz-transition:all 2s ease-in-out;
+			display:block;
+			-webkit-transform:rotateX(180deg);
+			-moz-transform:rotateX(180deg);
+			opacity:0;
+			-webkit-transition-delay:1s;
+			-moz-transition-delay:1s;
+		}
+		@-webkit-keyframes slides{
+			0%{opacity:1;-webkit-transform:rotateX(0deg);}
+			80%{opacity:1;-webkit-transform:rotateX(0deg);}
+			100%{-webkit-transform:rotateX(180deg);opacity:0;}
+		}
+		@-moz-keyframes slides{
+			0%{opacity:1;-moz-transform:rotateX(0deg);}
+			80%{opacity:1;-moz-transform:rotateX(0deg);}
+			100%{-moz-transform:rotateX(180deg);opacity:0;}
+		}
+		.down{
+			-webkit-animation-name:slides2;
+			-webkit-animation-duration:6s;
+			-webkit-transition:all 2s ease-in-out;
+			-webkit-transform:rotateX(0);
+			-webkit-transition-delay:1s;
+			-moz-animation-name:slides2;
+			-moz-animation-duration:6s;
+			-moz-transition:all 2s ease-in-out;
+			-moz-transform:rotateX(0);
+			-moz-transition-delay:1s;
+			display:block;
+		}
+		@-webkit-keyframes slides2{
+			0%{opacity:0;-webkit-transform:rotateX(180deg);}
+			80%{opacity:0;-webkit-transform:rotateX(180deg);}
+			100%{-webkit-transform:rotateX(0);opacity:1;}
+		}
+		@-moz-keyframes slides2{
+			0%{opacity:0;-moz-transform:rotateX(180deg);}
+			80%{opacity:0;-moz-transform:rotateX(180deg);}
+			100%{-moz-transform:rotateX(0);opacity:1;}
+		}
+
+		/*#sl{-webkit-animation-name:down;-webkit-animation-duration: 10s;
+		-moz-animation-duration: 10s;
+		-o-animation-duration: 10s;
+		-ms-animation-duration: 10s;
+		animation-duration: 10s;
+		overflow:hidden;
+		background:#aaa;
+		height:100px;
+		box-shadow: 0 1px 3px #fff inset, 0 1px 0px #aaa;
+		margin-top:0;width:100%;
+		}
+		@-webkit-keyframes down{
+			0%{height:0;}
+			90%{height:0;}
+			100%{height:100px;}
+		}*/
+		#asd{
+			height:0;border-top:2px solid rgba(82, 168, 236, 0.8);
+			width:100%;margin:0 auto;margin-top:50px;
+			-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+		    -webkit-animation-name:stress;
+		    -webkit-animation-duration:6s;
+		    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+		    -moz-animation-name:stress;
+		    -moz-animation-duration:6s;
+		}
+		@-webkit-keyframes stress{
+			0%{width:0;}
+			100%{width:100%;}
+		}
+		@-moz-keyframes stress{
+			0%{width:0;}
+			100%{width:100%;}
+		}
+
+		#input{
+			/*height:0;border-top:1px solid rgba(82, 168, 236, 0.8);*/
+			/*width:100%;margin:0 auto;margin-top:20px;*/
+			/*-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);*/
+		    -webkit-animation-name:up;
+		    -webkit-animation-duration:6s;
+		    -moz-animation-name:up;
+		    -moz-animation-duration:6s;
+		    position:absolute;bottom:200px;left:600px;
+		    display:block;
+
+		}
+		#input input{
+			border:1px #aaa solid;
+		    line-height:25px;
+		    padding-left:10px;
+		    width:200px;
+		}
+		@-webkit-keyframes up{
+			0%{bottom:-100px;}
+			80%{bottom:-100px;}
+			100%{bottom:200px;}
+		}
+		@-moz-keyframes up{
+			0%{bottom:-100px;}
+			80%{bottom:-100px;}
+			100%{bottom:200px;}
+		}
+
+	</style>
+</head>
+<body>
+	<section>
+	<p>
+		<span class="up one ">F</span><span class="two">o</span><span class="up three" >rever</span>
+		<span class="down one">Y</span><span class="down three">ung</span>
+	</p>
+	<div id="asd"></div>
+		<!-- <div id="sl"></div> -->
+	<div id="input"><input type="text" placeholder="Your Name"></div>
+	</section>
+</body>
+</html>
