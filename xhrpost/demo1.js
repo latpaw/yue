@@ -146,7 +146,7 @@ submit.onclick=function(ev){ ///////////////when submit
     }
   }
   var xhr = xrequest();
-  var url = path + "recieve.php"
+  var url = "http://inquiry.sbmchina.com/updata.php";
   var params = "name="+byid("name").value+"&email="+byid("email").value+"&visits="+byid("visits").value+"&content="+message+"&country="+country
   xhr.open("POST",url,true)
   xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded;charset:UTF-8")

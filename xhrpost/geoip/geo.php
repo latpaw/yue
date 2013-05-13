@@ -7,7 +7,7 @@ include("geoip.inc");
 $geoData = geoip_open('GeoIP.dat', GEOIP_STANDARD);
 
 $ip = $_SERVER['REMOTE_ADDR'];
- $ip = "116.247.96.94";
+ // $ip = "116.247.96.94";
 // 获取国家 IP
 $countryCode = geoip_country_code_by_addr($geoData, $ip);
  

@@ -10,28 +10,16 @@
 	"right":{
 		"1":{
 			"1":{
-				"name":"PE Jaw Crusher",
+				"name":"Jaw Crusher",
 				"img":"pe.png",
 				"descs":"Jaw crushers are mostly used in primary crushing, crushing raw stones&rocks to small ones.",
 				"href":"jaw"
-			},			
-			"2":{
-				"name":"PEW Jaw Crusher",
-				"img":"pew.png",
-				"descs":"Jaw crushers are mostly used in primary crushing, crushing raw stones&rocks to small ones.",
-				"href":"jaw"
-			},			
+			},		
 			"3":{
 				"name":"Impact Crusher",
 				"img":"pf.png",
 				"descs":"SBM impact crusher involve many models, they run through the whole crushing plant, the primary crushing, secondary crushing and tertiary crushing.",
 				"href":"jaw"
-			},			
-			"4":{
-				"name":"PFW Impact Crusher ",
-				"img":"pfw.png",
-				"descs":"SBM impact crusher involve many models, they run through the whole crushing plant, the primary crushing, secondary crushing and tertiary crushing.",
-				"href":"impact"
 			},			
 			"5":{
 				"name":"Cone Crusher",

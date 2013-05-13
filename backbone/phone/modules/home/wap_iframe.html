@@ -1,6 +1,6 @@
 
 <form action="" style="width:95%;margin:0 auto;background:#f4f4f4;margin-bottom:3em">
-	<p style="margin:2em" id="info">Simply complete the form below, click submit, we will contact you within one business day.</p>
+	<p style="margin:2em" id="info">PLS finish the form and then we will contact you within 24 hours</p>
 	<div style="width:95%;border:1px #ddd solid;border-bottom:none;padding-left:2em;background:#fff;"><input type="text" placeholder="Name" id="name" style="width:100%;display:block;margin:0 auto;height:3em;border:none"></div>
 	<div style="width:95%;border:1px #ddd solid;border-bottom:none;padding-left:2em;background:#fff;"><input type="text" placeholder="Email" id="email" style="width:100%;display:block;margin:0 auto;height:3em;border:none"></div>
 	<div style="background:#fff;border:1px #ddd solid;width:95%;display:block;padding-left:2em;padding-top:1em;padding-bottom:1em;color:#666">
@@ -15,7 +15,7 @@
 
 	<div style="width:95%;display:block;border:1px #ddd solid;padding-left:2em;margin-top:1em;background:#fff;"><textarea name="message" id="message" cols="30" rows="10" style="display:block;height:5em;width:100%;border:none" placeholder="Message"></textarea></div>
 
-	<button class="inquiry_button" style="margin:1em 1em;border:none;background:#fe7b01;width:95%;line-height:3em;color:#fff;">Send</button>
+	<button class="inquiry_button" id="sub" style="margin:1em 1em;border:none;background:#fe7b01;width:95%;line-height:3em;color:#fff;">Send</button>
 </form>
 <script type="text/javascript" src="jquery.js" ></script>
 <p id="ssss"></p>
@@ -54,7 +54,7 @@ e.preventDefault();
 		// console.log(data)
 		$.post("http://inquiry.sbmchina.com/updata.php",data).done(function(){
 			console.log("yes")
-			$("#info").before($("<p></p>").attr("id","info1").html("Your Message Has been sent to our sales successfully! Thanks.").css({"border":"1px #ff8a00 solid","background":"#ff8a00","color":"#000","line-height":"2em","margin-top":"1em","border-radius":"1em","text-align":"center","overflow":"hidden"}))
+			$("#sub").before($("<p></p>").attr("id","info1").html("Your Message Has been sent to our sales successfully! Thanks.").css({"border":"1px #ff8a00 solid","background":"#ff8a00","color":"#000","line-height":"2em","margin-top":"1em","border-radius":"1em","text-align":"center","overflow":"hidden"}))
 			window.setTimeout(function(){$("#info1").animate({"opacity":"0","height":"0"},500,function(){$(this).remove()})},2000)
 			window.localStorage.setItem("sent","true")
 		})
