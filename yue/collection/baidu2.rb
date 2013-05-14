@@ -19,22 +19,19 @@ a = Mechanize.new{|agent|
 }
 words = ["印度汽配展2014","印度汽车摩托车配件展","亚洲汽车配件展","Auto Expo India 2014","第十二届印度汽配展","2014印度汽配展"]
 words.each do |word|
+  word = word + " 18217120627"
   a.get("http://www.baidu.com/") do |page|
     sr = page.form_with("f") do |f|
       f.wd = word
     end.submit
-    sr.search(".t").each do |ff|
-     ff.search("a").each do |link| 
-       url = get_url(link["href"])
-       y = proto.index(url) || 0
-       if y > 0
-        ss = a.click(link)
-        p word+url
-       else
-         p url
-       end
-     end
-
+    sr.search(".f").each do |ff|
+      ex = ff.content.index("18217120627") || 0
+      if ex > 0
+        ff.search("a").each do |link|
+          ss = a.click(link)
+          p word,link.content,ss.title
+        end
+      end
       #ff.search(".g").each do |gg|
         #proto.each do |p|
           #if gg.content.index(p) 
