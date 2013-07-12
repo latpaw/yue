@@ -45,8 +45,35 @@ words.each do |word|
       #end
       #end
       #end
+(0..50).each do |x|
+  words.each do |word|
+    word = word + " 18217120627"
+    a.get("http://www.baidu.com/") do |page|
+      sr = page.form_with("f") do |f|
+        f.wd = word
+      end.submit
+      sr.search(".f").each do |ff|
+        ex = ff.content.index("18217120627") || 0
+        if ex > 0
+          ff.search("h3 a").each do |link|
+            ss = a.click(link).title rescue "网页出错"
+            sleep 1
+            p word,link["href"],ss
+            p x,"",""
+          end
+        end
+        #ff.search(".g").each do |gg|
+        #proto.each do |p|
+        #if gg.content.index(p) 
+        #ff.search("a").each do |link|
+        #ss = a.click(link)
+        #p ss.title
+        #end
+        #end
+        #end
+        #end
+      end
     end
   end
 end
-
 
