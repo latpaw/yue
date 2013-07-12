@@ -1,79 +1,42 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-<script type="text/javascript" src="jquery-1.8.3.js"></script>
-<script type="text/javascript" src="underscore.js"></script>
-<script type="text/javascript" src="backbonerisk.js"></script>
-<!--[if lt IE 9]>
-<script src="less.js"></script>
-<![endif]-->
-<!--[if gte IE 9]><!-->
-<script src="inquiry.js"></script>
-<!--<![endif]-->
+	<title>Document</title>
 </head>
 <body>
-	<a href="xhrpost/iframe.html">iframe</a>
-<input type="text" id="pp" />
-<input type="button" value="submit" id="sub" />
-<ul>
-</ul>
+	<button id="noti" onclick="window.webkitNotifications.requestPermission();">Request</button>
+	<script type="text/javascript">
+	if(window.webkitNotifications.checkPermission()!=0){
+		document.querySelector("#noti").style.display="block"
+	}else{document.querySelector("#noti").style.display="none"}
 
-<script type="text/javascript">
+	var ws       = new WebSocket('ws://inquiry.zenithcrusher.com:4567');
+	ws.onopen    = function()  { show('websocket opened'); };
+	ws.onclose   = function()  { show('websocket closed'); }
+	ws.onmessage = function(m) { show('websocket message: ' +  m.data); notify("",m.data); };
 
-var app = Backbone.View.extend({
-	tagName:'h3',
-		render:function(){
-			$(this.el).html('hello world');
-			return this;
+	function show(par){
+		document.getElementById("a").innerHTML=par;
+	}
+	function notify(title,content) {
+		if (window.webkitNotifications) {
+			if (window.webkitNotifications.checkPermission() == 0) {
+				var notification_test = window.webkitNotifications.createNotification("rails.png", title, content);
+				notification_test.ondisplay = function(event) {
+					setTimeout(function(){event.currentTarget.cancel();},3000)
+				}
+            // notification_test.onerror = function() {}
+            // notification_test.onclose = function() {}
+            // notification_test.onclick = function() {this.cancel();}
+            // notification_test.replaceId = 'NewId';
+            notification_test.show();
+        } else {
+        	window.webkitNotifications.requestPermission();
+        }
+    } 
 }
-})
-
-$('body').append(new app().render().el)
-
-
-
-
-
-
-
-
-
-
-
-var Man = Backbone.Model.extend({name:"this is name"})
-Manlist = Backbone.Collection.extend({model:Man})
-Mans = new Manlist();
-var ManView = Backbone.View.extend({tagName:'li',
-	events:{},
-	//temp: this.model,
-	render:function(){
-		console.log(this.model)
-      $(this.el).html(this.temp)
-		  return this;
-    }
-})
-	new ManView().render();
-var Appview = Backbone.View.extend({
-	el:$("#sub"),
-    events: {"click":"one",},
-	initialize:function(){
-},
-	one:function(){
-manview = new ManView().render().el;$(manview).html($("#pp").val());
-		$("ul").append(manview)
-    },
-	render:function(){
-		//console.log(this.model)
-}
-})
-
-window.app=new Appview()
 </script>
-
-
-
 
 </body>
 </html>

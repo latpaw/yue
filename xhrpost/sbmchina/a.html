@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+body{font-size:12px;}
+ul{list-style-type: none;margin:0;padding:0}
+.dropdown:hover{cursor:pointer}
+.input{margin:10px;padding:0;position:relative;color:#999;padding-left:10px;}
+.input span{width:132px;display:inline-block;vertical-align:top;}
+.input p{display:inline-block;max-width:100%;margin:0;padding:0;line-height:20px;}
+#equipment p{line-height:18px;max-width:100%;}
+input{border:1px #ccc solid;height:18px;width:300px;background:#efefef;max-width:100%;}
+input:focus{outline:none;}
+#active{background:#009900}
+#emailp{position:absolute;top:30px;left:145px;width:200px;color:#333;z-index:1000;background: #fff}
+select{border:none;width:;}
+
+#form{position:relative;max-width:688px;}
+
+#textarea{border:1px #ccc solid;width:300px;max-width:100%;height:105px;padding:0;background:#efefef;}
+
+.box{border:1px #ccc solid;background: #fff;display:inline-block;font-style:normal;width:18px;height:18px;vertical-align:middle;margin-right:6px;cursor:pointer;}
+.box span{width:10px;height:10px;background:#ff6600;margin:4px auto;display:block;padding:0;border-radius:0;}
+.gray span{background:#ccc;}
+
+#submit{background:#003781;width:110px;height:24px;float:left;margin-left:22.5%;color:#fff;font-style:italic;border:none;}
+#form{border:1px #e3e3e3 solid;padding-top:20px;padding-bottom:20px;}
+.clear{clear:both;}
+
+#name_out, #email_out,#application {color:#111;}
+#name_out{margin-top:20px;}
+#email_out{margin-top:20px;}
+#equipment{margin-top:40px;}
+#message{margin-top:30px;}
+#application{margin-top:30px;}
+#email_info{margin-left:140px;}
+#form .input .margin_text span{float:left;margin-right:10px;width:auto;}
+@media screen and (max-width:486px){
+	#form .margin_text{margin-top:20px;}
+	#email_info{margin-left:0;}
+}
+
+	</style>
+	
+</head>
+<body>
+
+	<form action="http://inquiry.sbmchina.com/updata_ppc.php" name="form" method="post" id="form">
+		<p id="result" style="color:#003781;margin:0 20px;background:#f60;border-radius:3px;line-height:30px;text-align:center;margin-bottom:10px"> </p>
+		<b style="color:#003781;padding-left:20px;">Get Price and Support</b>
+		<p style="padding-left:20px;color:#333">You can get the price list and a SBM representative will contact you within one business day. </p>
+		<div class="input" id="name_out">
+			<span>Name:</span> <input type="text" class="margin_text" name="name" id="name" >
+		</div>
+		<div class="input" id="email_out">
+			<span>Email:</span> <input type="text" class="margin_text" name="email" id="email" > <span style="color:#f00">*</span>
+			<p style="color:#003781;font-size:10px;margin-top:2px;padding-left:5px" id="email_info">( We will never sell or share your information with third parties. )</p>
+		</div>
+		<div class="input" id="country_out">
+			<input type="hidden" name="country" id="country" value="">
+		</div>
+
+		<div class="input" id="application">
+			<span>Application:</span>
+			<p class="margin_text"> <input  type="checkbox" class="box orange" value="For construction" name="application[]">For Construction <b style="font-size:10px;font-weight:normal">(like concrete, highway,  railway, brick, building, etc)</b> <br><br>
+				<input  type="checkbox" class="box orange" value="For Mining" name="application[]">For Mining <b style="font-size:10px;font-weight:normal">(like gold,iron,copper,beneficiation, or nonmetal beneficiation etc)</b>
+			</p> 
+		</div>
+		<div class="input" id="equipment">
+			<span>Equipment:</span>
+			<p class="margin_text"><span><input type="checkbox" class="box gray" value="crushers" name="products[]"> Crushers</span>  <span><input  type="checkbox" class="box gray" value="mills" name="products[]"> Mills</span> <span><input type="checkbox"  class="box gray" value="feeder" name="products[]"> Feeder </span> <span><input type="checkbox"  class="box gray" value="conveyor" name="products[]"> Conveyor </span> <span><input type="checkbox"  class="box gray" value="screen" name="products[]"> Screen</span> </p>
+		</div>
+        <div class="input" id="message">
+        	<span>Question:</span>
+        	<textarea id="textarea" class="margin_text" name="content"></textarea>
+        </div>
+
+		<input type="submit" id="submit" value="Submit">
+		<div class="clear"></div>
+	</form>
+	
+<script type="text/javascript">
+// alert(parent.location.href)
+var byid=function(id){return document.getElementById(id)}
+
+///////////////////////////////process the url
+var href = "http://172.16.2.197:8081/xhrpost/a.html"
+var href_tmp = href.split("?")[0].split("/")
+var path = href_tmp.slice(0,href_tmp.length-1)
+path = path.join("/")+"/"
+</script>
+<script type="text/javascript" src="a.js"></script>
+
+</body>
+</html>

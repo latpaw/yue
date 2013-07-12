@@ -1,3 +1,4 @@
+# coding:utf-8
 require "mechanize"
 
 def get_url url
@@ -10,7 +11,7 @@ def get_url url
 end
 
 proto = Array.new
-IO.foreach("/Users/latpaw/a") do |line|
+IO.foreach("a") do |line|
   proto << line.chop
 end
 proto = proto.join(";")
@@ -27,20 +28,22 @@ words.each do |word|
     sr.search(".f").each do |ff|
       ex = ff.content.index("18217120627") || 0
       if ex > 0
-        ff.search("a").each do |link|
-          ss = a.click(link)
-          p word,link.content,ss.title
+        ff.search("h3 a").each do |link|
+          ss = a.click(link).title rescue "网页出错"
+          sleep 5
+          p word,link["href"],ss
+          p "",""
         end
       end
       #ff.search(".g").each do |gg|
-        #proto.each do |p|
-          #if gg.content.index(p) 
-            #ff.search("a").each do |link|
-              #ss = a.click(link)
-              #p ss.title
-            #end
-          #end
-        #end
+      #proto.each do |p|
+      #if gg.content.index(p) 
+      #ff.search("a").each do |link|
+      #ss = a.click(link)
+      #p ss.title
+      #end
+      #end
+      #end
       #end
     end
   end

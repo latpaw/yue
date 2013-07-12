@@ -43,10 +43,12 @@ function cookie2obj(){
 	var c = document.cookie.split(";")
 	var obj={};
 	for(i in c){
-		_c = c[i].split("=")
-		key = _c[0]//.trim()
-        val = _c[1]
-        obj[key] = val
+		if(typeof c[i] == "string"){
+		  _c = c[i].split("=")
+		  key = _c[0]//.trim()
+          val = _c[1]
+          obj[key] = val
+	    }
 	}
 	return obj
 }

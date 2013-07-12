@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <button id="asd" onclick="window.webkitNotifications.requestPermission();">Request</button>
+	<script>
+     // document.getElementById("asd").click()
+    function notify(title,content) {
+    if (window.webkitNotifications) {
+        if (window.webkitNotifications.checkPermission() == 0) {
+            var notification_test = window.webkitNotifications.createNotification("rails.png", title, content);
+             notification_test.ondisplay = function(event) {
+                setTimeout(function(){event.currentTarget.cancel();},3000)
+             }
+            // notification_test.onerror = function() {}
+            // notification_test.onclose = function() {}
+            // notification_test.onclick = function() {this.cancel();}
+            // notification_test.replaceId = 'NewId';
+            notification_test.show();
+        } else {
+            window.webkitNotifications.requestPermission();
+        }
+    } 
+}
+
+var es = new EventSource("newserver.php");
+es.onmessage=function(msg){
+   console.log(msg.data)
+   notify(msg.data)
+}
+
+
+	</script>
+	
+</body>
+</html>
