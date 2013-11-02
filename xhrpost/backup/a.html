@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+
+#form{
+  clear:both;
+  overflow:hidden;
+  }
+  #form tr td{position:relative;}
+#form input,#form select{ width: 300px;}
+#form textarea{ width: 400px; color: #999999}
+#form input[type='checkbox']{ width: 20px;}
+#form a{color:#000; text-decoration:none;}
+#form a:hover{color:#930; text-decoration:underline;}
+#submit3{ width: 120px; height: 30px; cursor: pointer;}
+ul{list-style-type: none;margin:0;padding:0}
+.dropdown:hover{cursor:pointer}
+#active{background:#009900}
+#emailp{position:absolute;top:10px;left:0px;width:300px;color:#333;z-index:1000;background: #fff}
+  </style>
+</head>
+<body>
+  
+
+<form action="/products/booksave.asp" method="post" name="form" id="form" onSubmit="return checkForm();">     
+    <table>
+      <tr>
+        <td width="20%" >Your Name: <font color="#FF0000"> *</font></td>
+        <td width="80%" ><input name="name" type="text" id="name" /></td>
+      </tr>
+      <tr>
+        <td >Your Email: <font color="#FF0000"> *</font></td>
+        <td ><input name="Email" type="text" id="email" /></td>
+      </tr>
+      <tr>
+        <td >Country: <font color="#FF0000"> *</font></td>
+        <td ><select disabled type="text" name="country" id="country">
+    </select><b id="not">Not</b></td>
+      </tr>
+      <tr>
+        <td >Contact Tel: </td>
+        <td ><input name="Tel" type="text" id="tel"/></td>
+      </tr>
+      <tr>
+        <td>Application: <font color="#FF0000"> *</font></td>
+        <td><input type="checkbox" name="application" value="For Construction" id="construction"> For Construction (like concrete, highway, railway, brick, building, etc)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="checkbox" name="application" value="For Mining" id="mining"> For Mining ( like gold, copper, Iron ore beneficiation or nonmetal beneficiation, etc)</td>
+      </tr>
+      <tr>
+        <td>Equipment:</td>
+        <td><input type="checkbox" name="industry" value="Crusher">Crusher <input type="checkbox" name="industry-4" value="Ball Mill">Ball Mill <input type="checkbox" name="industry" value="Other Mills">Other mills <input type="checkbox" name="industry" value="Feeder"> Feeder <input type="checkbox" name="industry" value="Conveyor"> Conveyor <input type="checkbox" name="industry" value="Screen"> Screen <input type="checkbox" name="industry-9" value="Beneficiation"> Beneficiation Equipments</td>
+      </tr>
+      <tr>
+        <td  valign="middle">Detailed Requirements:</td>
+        <td  valign="top"><textarea name="content" cols="45" rows="6" id="formMsg"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><p>(like raw materials name, capacity in TPH, output size like 0-10,10-15, 15-20 mm for crushing or 75 microns ( 200 meshes) for mill machine and other requirements)</p></td>
+      </tr>
+      
+      <tr>
+      <td></td>
+        <td height="40" valign="middle"><input name="submit" type="submit" id="submit3" value=" Send Message " /></td>
+      </tr>
+    </table>
+  </form>
+
+
+  <script type="text/javascript">
+  var byid=function(id){return document.getElementById(id)}
+var email =byid("email");
+var path = "http://inquiry.sbmchina.com/xhrpost/"
+
+   email.onfocus = function(){
+     if(email.value.length == email.value.indexOf("@")+1 && email.value.length!=0){
+      newul(email.value)
+     } // when the last letter is @
+
+    email.onkeyup=function(e){
+         var content = email.value || ""
+         var p = byid("emailp")
+      if(content.indexOf("@")>0 && e.keyCode!="40" && e.keyCode!="38"){ // when type in @
+          newul(content)
+          liclick(email)
+      }
+  
+      if(content.indexOf("@")<0){ // delete to @ and more
+         if(p){p.parentNode.removeChild(p)}
+         }
+
+      if(e.keyCode=="40"){// down key
+          var li = byid("active")
+           if(li && li.nextSibling && li.nextSibling.nodeName.toLowerCase() == "li"){
+            li.removeAttribute("id")
+            var active = li.nextSibling
+            active.id="active"
+         }
+      }
+      if(e.keyCode=="38"){// up key
+        var li = byid("active")
+        if(li && li.previousSibling && li.previousSibling.nodeName.toLowerCase() =="li"){
+           li.removeAttribute("id")
+           var active = li.previousSibling
+           active.id="active"
+        }
+     }
+     if(e.keyCode=="13"){ //enter key
+      var li = byid("active")
+      if(li){email.value=li.innerHTML}
+      if(p) p.parentNode.removeChild(p);
+   }
+   var ul = byid("emailist")
+   if(ul && ul.innerHTML=="" && p){
+    p.parentNode.removeChild(p)
+   }
+
+}
+}
+// email.onblur =function(){
+//   var emailp = byid("emailp");
+//   emailp.parentNode.removeChild(emailp);
+// }
+
+var newul = function(content){// build the p and ul for new options and set the first li with id "active"
+  var all = ["gmail.com","yahoo.com","hotmail.com"]
+  var split_content = content.split("@")
+  var reg = new RegExp("^"+(split_content[1] || ""))
+
+  if(!document.getElementById("emailp")&&reg.test(all.toString())){
+   var p = document.createElement("p")
+   p.id="emailp"
+   var ul = document.createElement("ul")
+   ul.id="emailist"
+   p.appendChild(ul)
+   insertAfter(p,email)
+   ul.style.width=email.style.width
+   ul.style.border="1px #aaa solid"
+  }else{
+    ul= byid("emailist")
+      }
+
+ if(ul){
+  ul.innerHTML=""
+  for(i in all){
+    if(reg.test(all[i])){
+      ul.innerHTML+= "<li class='dropdown'>"+split_content[0]+"@"+all[i]+"</li>"
+    }
+  }
+  if(ul.firstChild){
+    ul.firstChild.id="active"
+  }
+}
+}
+
+var liclick = function(email){ // when click on the li
+  if(byid("emailist")){
+   var lis = byid("emailist").childNodes
+   for(i=0;i<=lis.length-1;i++){
+      lis[i].onclick=function(){
+         email.value = this.innerHTML
+         var p = byid("emailp")
+         p.parentNode.removeChild(p)
+      }
+      lis[i].onmouseover=function(e){byid("active").removeAttribute("id");this.id="active";}
+   }
+ }
+}
+function insertAfter(newEl, targetEl){ //insert after function
+   var parentEl = targetEl.parentNode;
+   if(parentEl.lastChild == targetEl){
+     parentEl.appendChild(newEl);
+  }else{
+     parentEl.insertBefore(newEl,targetEl.nextSibling);
+  }            
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+{ /////////////////////////////////auto set country
+  function auto_country(countryname){
+    byid("country").innerHTML='<option value="'+countryname+'">'+countryname+'</option>'
+       byid("country").value=countryname
+       if(navigator.appVersion.indexOf("MSIE") >=0){
+        var cout = byid("country_out")
+        cout.innerHTML= 'country: <select id="country" name="country" disabled >'+'<option value="'+countryname+'">'+countryname+'</option>'+'</select><b id="not">Not</b>'
+        var no = byid("not")
+        no.onclick= function(){
+          notclick()
+        }
+       }
+  }
+  var script = document.createElement("script")
+  script.type="text/javascript"
+  script.src= path+"geoip/geo.php?callback=auto_country"
+  document.getElementsByTagName("head")[0].appendChild(script)
+ }///////////////////////////////////
+ 
+ { /////////////////////////////////// set options when wrong pick
+  function setoptions(options){
+    var options = options.split(","),
+        c = byid("country"),
+        n = "";
+       for(i in options){
+        var trim_option = options[i].replace('"','').replace('"','')
+       n += '<option value="'+trim_option+'">'+trim_option+'</option>'}
+       c.innerHTML = n
+       if(navigator.appVersion.indexOf("MSIE") >=0){
+        var cout = byid("country_out")
+        cout.innerHTML= 'country: <select id="country" name="country">'+n+'</select>'
+       }
+  }
+
+  // var not = byid("not")
+  byid("country").onclick= function(){
+  byid("country").removeAttribute("disabled")
+  var script2 = document.createElement("script")
+  script2.type="text/javascript"
+  script2.src= path + "geoip/countries.php?callback=setoptions"
+  document.getElementsByTagName("head")[0].appendChild(script2)
+  if(navigator.appVersion.indexOf("MSIE") <0){
+  not.parentNode.removeChild(not)}
+
+  }
+ } ///////////////////////////////
+
+
+  </script>
+
+
+</body>
+</html>

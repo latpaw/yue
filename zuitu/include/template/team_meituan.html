@@ -1,0 +1,153 @@
+<!--{include header}-->
+    <!--{if option_yes('indexcateteam')}-->
+	 <div id="group-filter">
+            <div class="filter-by-group-title">按分类:</div>
+			<div class="filter-by-group-id">
+		    <ul>${current_team_category($group_id)}</ul>
+			</div>
+     </div>
+	 <!--{/if}-->
+<div id="bdw" class="bdw">
+<div id="bd" class="cf">
+<!--{if is_newbie()}--><div id="sysmsg-guide"><div class="link"><a href="/help/tour.php"></a></div><a id="sysmsg-guide-close" href="javascript:void(0);" class="close">关闭</a></div><!--{/if}-->
+
+<!--{if $team['close_time']}-->
+<div id="sysmsg-tip" class="sysmsg-tip-deal-close"><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content"><div class="deal-close"><div class="focus">抱歉，您来晚了，<br />团购已经结束啦。</div><div id="tip-deal-subscribe-body" class="body"><form id="tip-deal-subscribe-form" method="post" action="/subscribe.php" class="validator"><table><tr><td>不想错过明天的团购？立刻订阅每日最新团购信息：&nbsp;</td><td><input type="text" name="email" class="f-text" value="" require="true" datatype="email" /></td><td>&nbsp;<input class="commit" type="submit" value="订阅" /></td></tr></table></form></div></div><span id="sysmsg-tip-close" class="sysmsg-tip-close">关闭</span></div><div class="sysmsg-tip-bottom"></div></div>
+<!--{/if}-->
+
+<!--{if $order}-->
+<div id="sysmsg-tip" ><div class="sysmsg-tip-top"></div><div class="sysmsg-tip-content">您已经下过订单，但还没有付款。<a href="/order/check.php?id={$order['id']}">查看订单并付款</a><span id="sysmsg-tip-close" class="sysmsg-tip-close">关闭</span></div><div class="sysmsg-tip-bottom"></div></div><div id="deal-default"> 
+<!--{/if}-->
+
+	<div id="deal-default">
+		<div id="content" >
+		
+		<!-- {if $first_big} -->
+			<div class="primary">
+				<h1><a href="/team.php?id={$first['id']}">{$first['title']}</a></h1>
+				<div class="main">
+					<div class="deal-buy">
+						<!--{if $first['state']=='soldout'}-->
+                        <div class="deal-price-tag-soldout"></div>
+						<p class="deal-price"><strong <!--{if $first['team_price'] > 9999}-->class="digits5"<!--{/if}-->>{$currency}${moneyit($first['team_price'])}</strong></p>
+						<!--{else}-->
+						<div class="deal-price-tag-open"></div>
+						<p class="deal-price"><strong <!--{if $first['team_price'] > 9999}-->class="digits5"<!--{/if}-->>{$currency}${moneyit($first['team_price'])}</strong><span><a href="/team.php?id={$first['id']}" rel="nofollow"></a></span> </p>
+						<!--{/if}-->
+					</div>
+					<table class="discount"><tbody>
+						<tr>
+							<th>原价</th>
+							<th>折扣</th>
+							<th>节省</th>
+						</tr>
+						<tr class="number">
+							<td><del>{$currency}${moneyit($first['market_price'])}</del></td>
+							<td>${team_discount($first)}折</td>
+							<td>{$currency}${moneyit($first['market_price']-$first['team_price'])}</td>
+						</tr>
+						<tr>
+							<td class="status-box" colspan="3">
+								<div id="deal-status-147271" class=" deal-status deal-status-open"><p class="deal-buy-tip-top"><strong>{$first['now_number']}</strong> 人已购买</p></div>
+								<div id="deal-timeleftfirst" curtime="{$now}000" diff="{$detail[$first['id']]['diff_time']}000" class="item-time">
+								<ul id="counterfirst">
+									<!--{if $detail[$first['id']]['left_day']>0}-->
+									<li><span>{$detail[$first['id']]['left_day']}</span>天</li><li><span>{$detail[$first['id']]['left_hour']}</span>小时</li><li><span>{$detail[$first['id']]['left_minute']}</span>分钟</li>
+									<!--{else}-->
+										<li><span>{$detail[$first['id']]['left_hour']}</span>小时</li><li><span>{$detail[$first['id']]['left_minute']}</span>分钟</li><li><span>{$detail[$first['id']]['left_time']}</span>秒</li>
+									<!--{/if}-->
+								</ul>
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+				<div class="sidebar">
+					<!-- {if $detail[$first['id']]['is_today']} -->
+					<a class="new pngfix" title="点击查看详情" href="/team.php?id={$first['id']}" rel="nofollow"></a>
+					<!-- {/if} -->
+					<div class="cover">
+						<a title="" href="/team.php?id={$first['id']}" rel="nofollow">
+						<img src="${team_image($first['image'])}" alt="{$first['title']}" title="点击查看详情"></a>
+						</div>
+				</div>
+			</div>
+			<script>window.x_init_hook_multiclockfirst = function(){X.misc.multiclock('deal-timeleftfirst', 'counterfirst');};</script>
+		<!-- {/if} -->
+			
+			<div class="secondary">
+			<!--{loop $teams $tindex $team}-->
+				<div class="item <!-- {if $tindex%2 == 0} -->odd<!-- {/if} -->">
+					<h1><a href="/team.php?id={$team['id']}">${mb_strimwidth($team['title'],0, 66,'...')}</a></h1>
+					<div class="cover">
+						<!-- {if $detail[$team['id']]['is_today']} -->
+						<a class="new pngfix" title="点击查看详情" href="/team.php?id={$team['id']}" rel="nofollow"></a>
+						<!-- {/if} -->
+						<a title="{$team['title']}" href="/team.php?id={$team['id']}" rel="nofollow"><img src="${team_image($team['image'])}" width="300"  title="点击查看详情" alt="{$team['title']}"></a>
+					</div>
+					<div class="inner">
+						<div class="deal-buy">
+						    <!--{if $team['state']=='soldout'}-->
+							<div class="deal-price-tag-soldout"></div>
+							<div class="deal-price-tag"></div>
+							<p class="deal-price"><strong>{$currency}${moneyit($team['team_price'])}</strong></p>
+							<!--{else}-->
+							<div class="deal-price-tag-open"></div>
+							<div class="deal-price-tag"></div>
+							<p class="deal-price"><strong>{$currency}${moneyit($team['team_price'])}</strong><span><a href="/team.php?id={$team['id']}" rel="nofollow"></a></span> </p>
+							<!--{/if}-->
+						</div>
+						<table class="discount"><tbody>
+							<tr>
+								<th>现价</th>
+								<td class="price"><strong>{$currency}${moneyit($team['team_price'])}</strong></td>
+							</tr>
+							<tr>
+								<th>原价</th>
+								<td><del><strong>{$currency}${moneyit($team['market_price'])}</strong></del></td>
+							</tr>
+							<tr>
+								<th>折扣</th>
+								<td><strong>${team_discount($team)}折</strong></td>
+							</tr>
+						</tbody></table>
+						<div  id="deal-timeleft{$tindex}" curtime="{$now}000" diff="{$detail[$team['id']]['diff_time']}000" class="item-time">
+							<ul id="counter{$tindex}">
+							<!--{if $detail[$team['id']]['left_day']>0}-->
+								<li><span>{$detail[$team['id']]['left_day']}</span>天</li><li><span>{$detail[$team['id']]['left_hour']}</span>小时</li><li><span>{$detail[$team['id']]['left_minute']}</span>分钟</li>
+							<!--{else}-->
+								<li><span>{$detail[$team['id']]['left_hour']}</span>小时</li><li><span>{$detail[$team['id']]['left_minute']}</span>分钟</li><li><span>{$detail[$team['id']]['left_time']}</span>秒</li>
+							<!--{/if}-->
+							</ul>
+						</div>
+						<div id="deal-status-bjwdrj" class="deal-status deal-status-open">
+							<p class="deal-buy-tip-top"><strong>{$team['now_number']}</strong> 人已购买</p>
+						</div>
+						<!--<div class="clear"></div>-->
+					</div>
+					<div class="clear"></div>
+				</div>
+				<script>window.x_init_hook_multiclock{$tindex} = function(){X.misc.multiclock('deal-timeleft{$tindex}', 'counter{$tindex}');};</script>
+			<!-- {/loop} -->
+			</div>
+			<div class="clear"></div>
+			<div>{$pagestring}</div>
+		</div>
+	<div id="sidebar">
+        <!--{include block_side_daysign}-->
+ 		<!--{include block_side_invite}-->
+		<!--{include block_side_bulletin}-->
+		<!--{include block_side_flv}-->
+		<!--{include block_side_others_seconds}-->
+		<!--{include block_side_ask}-->
+		<!--{include block_side_others}-->
+		<!--{include block_side_mobile}-->
+		<!--{include block_side_vote}-->
+		<!--{include block_side_business}-->
+		<!--{include block_side_subscribe}-->
+	</div>
+</div>
+</div> <!-- bd end -->
+</div> <!-- bdw end -->
+
+<!--{include footer}-->
