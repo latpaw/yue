@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo 4</title>
+	<style>.hh{height:1000px;}
+		.active{font-size:20px;margin-left:200px;}
+		#asd{-webkit-transition:all 1s;}
+		#left,#right{width:156px;overflow:hidden;height:120px;float:left;-webkit-transition:all 1s;}
+		#left img{margin-left:0}
+		#right img{margin-left:-156px;}
+		#right{margin-left:200px;}
+	</style>
+</head>
+ <body>
+
+    	   <div class="hh"></div>
+<div id="asd" data-0="color:rgb(0,0,255); " data-top="color:rgb(255,0,0); " >WOOOT</div>
+<div id="left"><img src="gdn_18.png" alt=""></div><div id="right"><img src="gdn_18.png" alt=""></div>   
+   <div class="hh"></div>
+<script type="text/javascript" src="yue/require.js"></script>
+ <script type="text/javascript">
+        	//var s = skrollr.init();
+        	var asd = document.querySelector("#asd");
+        	var right = document.querySelector("#right");
+        	var left = document.querySelector("#left");
+
+        	window.onscroll=function(){
+        		var position = asd.getBoundingClientRect();
+        		if(position.top < 200 && position.top > 0 ){
+        			asd.className="active";
+        			right.style.marginLeft="0px";
+        			right.style.width="156px";
+        			left.style.width="156px"
+        			right.children[0].style.marginLeft="-156px";
+
+        		}
+        		else{
+        			asd.className="";
+        			right.style.marginLeft="200px";
+        			right.style.width="302px";
+        			left.style.width="302px"
+        			right.children[0].style.marginLeft="0px";
+        		}
+        	}
+        </script>
+    </body>
+  
+</html>

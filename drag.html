@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.left{border:1px solid #aaa;background: #f00;width:20px;height:20px;margin-left:0px;}
+		.content{height: 100px;width:100px;border:1px #aaa solid;}
+		.left{-webkit-transition:all 1s;}
+	</style>
+</head>
+<body>
+
+	
+	<div class="content">
+		
+
+	</div>
+<div class="left" draggable='true' id="aaaa">
+		a
+	</div>
+	<script>
+		// function show(files){
+		// 	var file = files[0];
+		// 	var obj_url = window.webkitURL.createObjectURL(file);
+		// 	console.log(file.type,file.size,file.name)
+		// 	var iframe = document.querySelector("iframe");
+		// 	iframe.setAttribute("src",obj_url);
+		// 	window.webkitURL.revokeObjectURL(obj_url);
+		// }
+		var content = document.querySelector(".content");
+		content.addEventListener('dragenter',dragenter,false);
+		content.addEventListener('dragover',dragover,false);
+		content.addEventListener('drop',drop,false);
+		var ll = document.querySelector(".left");
+		ll.addEventListener("dragstart",drag,false);
+		function drag(e){
+			//e.stopPropagation();
+			//e.preventDefault();
+			e.dataTransfer.setData("Text",e.target.id)
+		}
+		var f;
+		function dragenter(e){
+			e.stopPropagation();
+			e.preventDefault();
+		}
+		function dragover(e){
+			e.stopPropagation();
+			e.preventDefault();
+		}
+		function drop(e){
+			e.stopPropagation();
+			e.preventDefault();
+			//var dt = e.dataTransfer;
+			// var file = dt.files[0];
+			// var img = document.createElement("img");
+			// img.file=file
+			// content.appendChild(img);
+
+			// var reader = new FileReader();
+   //  reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+   //  reader.readAsDataURL(file);
+   //  window.img = img;
+  // dt.setData("Text", "This is text to drag")
+   var aid=e.dataTransfer.getData("text/plain")
+   content.appendChild(document.querySelector("#"+aid))
+		}
+
+		//window.onclick=function(){document.querySelector("input").click()}
+		
+	</script>
+	
+</body>
+</html>
